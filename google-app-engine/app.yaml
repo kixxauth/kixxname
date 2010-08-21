@@ -171,7 +171,7 @@ handlers:
 # `/google-app-engine/static/css/README.txt`
 - url: /css
   static_dir: static/css
-  expiration: 10d
+  expiration: 4d
 
 # ### All of our static image files.
 # `/google-app-engine/static/img/README.txt`
@@ -183,7 +183,7 @@ handlers:
 # `/google-app-engine/static/js/README.txt`
 - url: /js
   static_dir: static/js
-  expiration: 10d
+  expiration: 4d
  
 # ### The favicon is static.
 # `/google-app-engine/static/favicon.ico`

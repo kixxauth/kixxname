@@ -1,31 +1,34 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-<title>{{ title }} - Kris Walker</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="{{ description }}" />
-<link rel="stylesheet" href="./css/master.css" media="Screen"/> 
-	<!--[if IE 8]>
-			<link rel="stylesheet" href="./css/ie8.css" media="screen" />
-	<![endif]-->
-	<!--[if IE 7]>
-			<link rel="stylesheet" href="./css/ie7.css" />
-	<![endif]-->
-	<!--[if IE 6]>
-			<link rel="stylesheet" href="./css/ie6.css"  />
-	<![endif]-->
-<link rel="stylesheet" href="./css/handheld.css" media="handheld, only screen and (max-device-width:480px)"/>
-</head>
-<body id="kixxname">
-<div id="background">
-  <img id="background-fireworks" alt="Background fireworks."
-  src="" width="" height="" />
-</div>
-<div id="stretcher">
-<div id="container">
+{% comment %}
 
-  <!-- Finally after all that layout markup, the actual web page begins. -->
-  <div id="page">
+Base Template
+=============
+
+This is the template that 'vertical search' pages use.
+
+For more information regarding the Django template syntax, have a look at the
+documentation.
+http://docs.djangoproject.com/en/1.2/topics/templates/#topics-templates
+
+copyright: (c) 2010 by Kris Walker. Some rights reserved.
+
+License
+-------
+
+All text content, excluding XHTML markup source code, in this file is (c) 2010
+by Kris Walker (http://www.kixx.name) and, unless otherwise indicated, is
+licensed under a Creative Commons Attribution-Share Alike 3.0 Unported License
+(http://creativecommons.org/licenses/by-sa/3.0/).
+
+See CC-LICENSE in this folder for more details.
+
+All XHTML and related source code is copyright (c) 2010 by Kris Walker
+(http://www.kixx.name). All rights reserved.
+
+{% endcomment %}
+
+{% extends "base.html" %}
+
+{% block page %}
     <div id="header">
       <h1 id="page-header">
       <em>I&#39;m Kris Walker</em>, a {{ skills }} who works in {{ sub_location }} and {{
@@ -133,9 +136,4 @@
         www.kixx.name
       </a>.
     </div>
-  </div><!-- end #page -->
-
-</div><!-- end #container -->
-</div><!-- end #stretcher -->
-</body>
-</html>
+{% endblock %}
