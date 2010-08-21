@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="vector-art.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="282.00396"
+     inkscape:cy="182.85714"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="974"
+     inkscape:window-x="1280"
+     inkscape:window-y="24" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:6;stroke-linecap:square;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 10,942.36218 L 20,942.36218 L 60,992.36218 L 20,1042.3622 L 10,1042.3622"
+       id="path3155"
+       sodipodi:nodetypes="ccccc" />
+    <rect
+       style="opacity:1;fill:#f6e50a;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3177"
+       width="50"
+       height="100"
+       x="100"
+       y="942.36218" />
+    <g
+       id="g3271"
+       transform="matrix(0.309119,0,0,0.309119,285.18437,593.53971)">
+      <path
+         transform="translate(-35.714286,-57.142857)"
+         d="M 727.14285,570.93359 A 320,320 0 1 1 87.142853,570.93359 A 320,320 0 1 1 727.14285,570.93359 z"
+         sodipodi:ry="320"
+         sodipodi:rx="320"
+         sodipodi:cy="570.93359"
+         sodipodi:cx="407.14285"
+         id="path2383"
+         style="opacity:1;fill:#156cbc;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         sodipodi:type="arc" />
+      <g
+         inkscape:export-ydpi="92.193748"
+         inkscape:export-xdpi="92.193748"
+         inkscape:export-filename="/home/kixx/Documents/FireworksProject/Graphics/fireworks-pop.png"
+         transform="translate(150.97052,157.78192)"
+         id="g2439">
+        <path
+           style="fill:#d43e14;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 375.03253,108.76041 C 375.03253,108.76041 349.10269,170.36845 374.53859,235.99859 C 407.17941,320.21902 465.79251,312.92463 465.79251,312.92463 C 465.79251,312.92463 392.92828,368.22356 385.80691,415.55462 C 373.66982,496.22197 411.5288,557.37808 411.5288,557.37808 C 411.5288,557.37808 376.02251,491.39394 268.37013,497.34848 C 164.47563,503.09516 145.78121,608.97155 145.78121,608.97155 C 145.78121,608.97155 136.11602,530.8465 73.429465,480.44012 C 10.742902,430.03374 -64.876414,426.37994 -64.876414,426.37994 C -64.876414,426.37994 11.545455,409.5768 45.492245,330.84502 C 75.627068,260.95419 30.592564,190.13821 30.592564,190.13821 C 30.592564,190.13821 88.009048,254.53731 194.98704,239.91288 C 297.9528,225.83694 375.03253,108.76041 375.03253,108.76041 z"
+           id="path2457"
+           sodipodi:nodetypes="cscscscscscsc"
+           inkscape:export-filename="/home/kixx/Documents/FireworksProject/Logo/spark-100.png"
+           inkscape:export-xdpi="16.679445"
+           inkscape:export-ydpi="16.679445" />
+        <path
+           style="fill:#f8e60a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 110.50305,295.03384 C 110.50305,295.03384 148.99263,318.44632 215.34153,304.16535 C 281.69042,289.88436 308.80594,246.09155 308.80594,246.09155 C 308.80594,246.09155 300.54345,253.79106 317.66317,294.02985 C 334.78289,334.26864 367.78845,331.91674 367.78845,331.91674 C 367.78845,331.91674 339.22973,335.06475 325.51497,388.59968 C 311.80023,442.13459 336.77643,458.99735 336.77643,458.99735 C 336.77643,458.99735 291.66892,423.84453 233.58251,430.42601 C 175.49609,437.00749 152.82741,481.5964 152.82741,481.5964 C 152.82741,481.5964 164.10149,451.94817 117.73953,416.11182 C 84.391648,390.33493 58.390747,404.10985 58.390747,404.10985 C 58.390747,404.10985 90.322438,388.54317 110.9852,353.86405 C 130.0111,321.93213 111.75749,295.71737 110.50305,295.03384 z"
+           id="path3229"
+           sodipodi:nodetypes="cscscscscscsc"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90" />
+      </g>
+    </g>
+    <g
+       id="g3308">
+      <path
+         inkscape:export-ydpi="16.679445"
+         inkscape:export-xdpi="16.679445"
+         inkscape:export-filename="/home/kixx/Documents/FireworksProject/Logo/spark-100.png"
+         sodipodi:nodetypes="cscscscscscsc"
+         id="path3298"
+         d="M 147.06613,696.6555 C 147.06613,696.6555 139.05072,715.69971 146.91344,735.98724 C 157.00334,762.02137 175.12176,759.76654 175.12176,759.76654 C 175.12176,759.76654 152.59805,776.86049 150.3967,791.49142 C 146.64489,816.42723 158.34782,835.33174 158.34782,835.33174 C 158.34782,835.33174 147.37215,814.93479 114.09476,816.77545 C 81.978991,818.55186 76.200191,851.28027 76.200191,851.28027 C 76.200191,851.28027 73.212497,827.13033 53.834892,811.54876 C 34.457284,795.96719 11.081917,794.83773 11.081917,794.83773 C 11.081917,794.83773 34.705369,789.64356 45.198966,765.30607 C 54.514213,743.70149 40.593192,721.81092 40.593192,721.81092 C 40.593192,721.81092 58.341718,741.71791 91.410648,737.19722 C 123.23932,732.84608 147.06613,696.6555 147.06613,696.6555 z"
+         style="fill:#d43e14;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.1638329;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         sodipodi:nodetypes="cscscscscscsc"
+         id="path3300"
+         d="M 65.295041,754.23616 C 65.295041,754.23616 77.192902,761.4734 97.702607,757.05888 C 118.21231,752.64435 126.59423,739.10716 126.59423,739.10716 C 126.59423,739.10716 124.04014,741.48723 129.33217,753.9258 C 134.6242,766.36438 144.82685,765.63736 144.82685,765.63736 C 144.82685,765.63736 135.9988,766.61047 131.75931,783.15913 C 127.51982,799.70779 135.24044,804.92039 135.24044,804.92039 C 135.24044,804.92039 121.29685,794.05399 103.34124,796.08845 C 85.385625,798.12291 78.378305,811.90619 78.378305,811.90619 C 78.378305,811.90619 81.863337,802.74136 67.531975,791.66366 C 57.223511,783.69553 49.186138,787.95362 49.186138,787.95362 C 49.186138,787.95362 59.056831,783.14167 65.444083,772.42169 C 71.32535,762.55093 65.682813,754.44745 65.295041,754.23616 z"
+         style="fill:#f8e60a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.1638329;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:#f8e60a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.1638329;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 195.28855,634.09167 C 195.28855,634.09167 207.18641,641.32891 227.69611,636.91439 C 248.20582,632.49986 256.58774,618.96267 256.58774,618.96267 C 256.58774,618.96267 254.03365,621.34274 259.32568,633.78131 C 264.61771,646.21989 274.82036,645.49287 274.82036,645.49287 C 274.82036,645.49287 265.99231,646.46598 261.75282,663.01464 C 257.51333,679.5633 265.23395,684.7759 265.23395,684.7759 C 265.23395,684.7759 251.29036,673.9095 233.33475,675.94396 C 215.37913,677.97842 208.37181,691.7617 208.37181,691.7617 C 208.37181,691.7617 211.85684,682.59687 197.52548,671.51917 C 187.21702,663.55104 179.17964,667.80913 179.17964,667.80913 C 179.17964,667.80913 189.05034,662.99718 195.43759,652.2772 C 201.31886,642.40644 195.67632,634.30296 195.28855,634.09167 z"
+       id="path3304"
+       sodipodi:nodetypes="cscscscscscsc"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#d43e14;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.1638329;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 147.96429,521.0498 C 147.96429,521.0498 139.94888,540.09401 147.8116,560.38154 C 157.9015,586.41567 176.01992,584.16084 176.01992,584.16084 C 176.01992,584.16084 153.49621,601.25479 151.29486,615.88572 C 147.54305,640.82153 159.24598,659.72604 159.24598,659.72604 C 159.24598,659.72604 148.27031,639.32909 114.99292,641.16975 C 82.87715,642.94616 77.09835,675.67457 77.09835,675.67457 C 77.09835,675.67457 74.11066,651.52463 54.73305,635.94306 C 35.355446,620.36149 11.980079,619.23203 11.980079,619.23203 C 11.980079,619.23203 35.603531,614.03786 46.097128,589.70037 C 55.41237,568.09579 41.491354,546.20522 41.491354,546.20522 C 41.491354,546.20522 59.23988,566.11221 92.30881,561.59152 C 124.13748,557.24038 147.96429,521.0498 147.96429,521.0498 z"
+       id="path3306"
+       sodipodi:nodetypes="cscscscscscsc"
+       inkscape:export-filename="/home/kixx/Documents/FireworksProject/Logo/spark-100.png"
+       inkscape:export-xdpi="16.679445"
+       inkscape:export-ydpi="16.679445" />
+    <path
+       style="fill:#f6e50a;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.63163601999999996;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 244.97312,933.03834 C 244.97312,933.03834 252.00138,943.95043 268.20808,946.32509 C 289.31028,949.41704 300.09453,938.54716 300.09453,938.54716 C 300.09453,938.54716 297.1313,957.99931 300.99843,968.66271 C 307.08998,985.45985 319.51853,992.10823 319.51853,992.10823 C 319.51853,992.10823 301.60372,997.46234 292.00932,1008.7968 C 280.78047,1022.0621 282.54316,1038.5277 282.54316,1038.5277 C 282.54316,1038.5277 273.00928,1026.373 254.35857,1025.2344 C 235.70787,1024.0959 220.88194,1035.6102 220.88194,1035.6102 C 220.88194,1035.6102 229.77013,1018.6053 224.99012,998.95135 C 220.74688,981.50444 202.4918,974.07101 202.4918,974.07101 C 202.4918,974.07101 222.81083,974.75445 233.91955,964.03666 C 248.59102,949.88151 244.97312,933.03834 244.97312,933.03834 z"
+       id="path3312"
+       sodipodi:nodetypes="cscscscscscsc"
+       inkscape:export-filename="/home/kixx/Projects/GAE/kixxname/assets/spark.png"
+       inkscape:export-xdpi="16.679445"
+       inkscape:export-ydpi="16.679445" />
+  </g>
+</svg>
