@@ -24,15 +24,13 @@ See CC-LICENSE in this folder for more details.
 All XHTML and related source code is copyright (c) 2010 by Kris Walker
 (http://www.kixx.name). All rights reserved.
 
-{% endcomment %}
-
-{% extends "base.html" %}
-
+{% endcomment %}{% extends "base.html" %}
+{% block title %}{{ title_actions }} in {{ sub_location }} and {{ super_location }}{% endblock %}
 {% block page %}
     <div id="header">
-      <h1 id="page-header">
-      <em>I&#39;m Kris Walker</em>, a {{ skills }} who works in {{ sub_location }} and {{
-      super_location }}.
+      <h1 id="header-content">
+        <a href="/" title="Kris Walker {{ home_page }}.">I&#39;m Kris Walker</a>,
+        a {{ skills }} who works right here in {{ sub_location }} and {{ super_location }}.
       </h1>
       <ul id="navigation" class="special">
         <li class="navigation first">
@@ -50,13 +48,13 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
     </div>
     <div id="content-container">
       <div id="content" class="column">
-        <h3>{{ actions }}</h3>
+        <h3>{{ actions }}.</h3>
 
         <h4>For fun and profit.</h4>
 
         <p>My focus is on bringing more customers to your cash register and helping you
         streamline your workflow, reclaiming your valuable time. I do this by listening to
-        you first, and then making stupid computers do all the work.</p>
+        you first, and then making stupid computers do all the work. {{ content_first }}</p>
 
         <h3>Straightforward pricing.</h3>
 
@@ -70,11 +68,14 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 
         <h4>Small business rules!</h4>
 
-        <p>I&#39;m a big believer in the strength of local business, so that&#39;s where I
-        focus my efforts, right here in {{ sub_location }} and {{ super_location }}.
-        In fact, I get so much satisfaction out of working with small businesses that I
-        offer a discount just for you. Check the <a href="/pricing">price schedule</a> for more
-        information.</p>
+        <p>I&#39;m a big believer in the strength of local business, so
+        that&#39;s where I focus my efforts, right here in {{ sub_location }}
+        and {{ super_location }}.  In fact, I get so much satisfaction out of
+        working with small businesses that I offer a discount just for you.
+        Check the
+        <a href="/service_and_price_schedule"
+          title="Service and price schedule.">price schedule</a>
+        for more information.</p>
 
         <p>However, if your needs are larger or more complex than one computer guy can
         handle, I'm also a partner in the best web development and software firm
@@ -86,54 +87,40 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
       </div><!-- end #content -->
       <div id="sidebar" class="column">
         <div id="portrait">
-          <img src="./img/" width="150" height="150" alt="Portrait of Kris Walker." />
+          <img src="/img/kris_walker_portrait-150.jpg" width="150" height="150"
+            alt="Portrait of Kris Walker." />
         </div>
+        <h2>Get to know me.</h2>
         <ul id="links">
           <li class="links">
             <a href="/resume"
-              title="Kris Walker's resume." class="links">Resume</a>
+              title="Kris Walker's resume." class="links">* Resume</a>
           </li>
           <li class="links">
             <a href="http://fireworksfactory.blogspot.com/"
-              title="Kris Walker's blog." class="links">Blog</a>
+              title="Kris Walker's blog." class="links">* Blog</a>
           </li>
           <li class="links">
             <a href="http://twitter.com/kixxauth"
-              title="Kris Walker's twitter page." class="links">Twitter: @kixxauth</a>
+              title="Kris Walker's twitter page." class="links">* Twitter: @kixxauth</a>
           </li>
           <li class="links">
             <a href="http://www.delicious.com/kristoffwalk/"
-              title="Kris Walker's Delicious bookmarks." class="links">Delicious Bookmarks</a>
+              title="Kris Walker's Delicious bookmarks." class="links">* Delicious Bookmarks</a>
           </li>
           <li class="links">
             <a href="http://www.linkedin.com/in/kixx7"
-              title="Kris Walker's Linked In page." class="links">Linked In</a>
+              title="Kris Walker's Linked In page." class="links">* Linked In</a>
           </li>
           <li class="links">
             <a href="http://github.com/kixxauth"
-              title="Kris Walker's Git Hub page." class="links">Git Hub</a>
+              title="Kris Walker's Git Hub page." class="links">* Git Hub</a>
+          </li>
+          <li class="links">
+            <a href="mailto:kixxauth@gmail.com"
+              title="Kris Walker's email address." class="links">* Email address: kixxauth@ gmail.com</a>
           </li>
         </ul>
       </div><!-- end #sidebar -->
     </div><!-- end #content-container -->
-    <div id="footer">
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
-        <img alt="Creative Commons License" style="border-width:0"
-        src="http://kixxname.appspot.com/img/somerights20.png" />
-      </a>
-      The <span xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">www.kixx.name website</span> by
-      <a xmlns:cc="http://creativecommons.org/ns#"
-        href="http://www.kixx.name" property="cc:attributionName"
-        rel="cc:attributionURL">Kris Walker</a>
-      is licensed under a
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
-        Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
-      </a>. Based on a work at
-      <a xmlns:dc="http://purl.org/dc/elements/1.1/"
-        href="http://github.com/kixxauth/kixxname" rel="dc:source">github.com</a>.
-      Permissions beyond the scope of this license may be available at
-      <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.kixx.name" rel="cc:morePermissions">
-        www.kixx.name
-      </a>.
-    </div>
 {% endblock %}

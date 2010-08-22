@@ -20,6 +20,7 @@ import logging
 import utils
 from fwerks import Handler
 import dstore
+import content
 
 from werkzeug.utils import http_date, cached_property
 from werkzeug.exceptions import InternalServerError
@@ -186,9 +187,11 @@ class VerticalHandler(BaseHandler):
 
   def respond(self):
     # Prepare the response.
+    locale, action = self.name.split(',')
+    context = content.vertical(locale, action)
     response = set_common_headers(
         self.out(
-          utils.render_template('vertical')))
+          utils.render_template('vertical', context)))
     response.mimetype = 'text/html'
 
     # Expire in 10 days.

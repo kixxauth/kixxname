@@ -1,0 +1,238 @@
+/*
+ * Copyright (c) 2010 Kris walker <www.kixx.name> <kixxauth@gmail.com>
+ *
+ * Styles for devices reading 'screen' stylesheets.
+ * (Desktop and laptop computers.)
+ */
+
+/* @reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* @HTML5 @reset */
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section { display:block; }
+
+/* @blockquote @reset
+   Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+
+/* @table @reset */
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; }
+table, td, th { vertical-align: middle; }
+
+/* @list @reset */
+ul { list-style: none outside none; }
+
+/* @image @reset */
+a img { border: none; }
+
+/* @endreset */
+
+body {
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  color: #000;
+  background: #fff url(./img/bg.png) repeat fixed top left;
+  /* @jello */
+  padding: 0 390px;
+}
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+	filter:alpha(opacity=70); /* IE6, IE7, IE8 ... sometimes */
+	-moz-opacity:0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+}
+#stretcher {
+  /* @jello */
+  width: 45%;
+  margin: 0 auto;
+}
+#container {
+  /* @jello */
+  margin: 0 -385px;
+}
+/* @page */
+#page {
+  margin-top: 2em;
+  width: 100%; /* helps IE */
+	filter:alpha(opacity=92); /* IE6, IE7, IE8 ... sometimes */
+	-moz-opacity:0.92;
+	-khtml-opacity: 0.92;
+	opacity: 0.92;
+}
+/* @links */
+a {
+  text-decoration: none;
+  color: #0046a6;
+}
+a:hover {
+  text-decoration: underline;
+}
+#header h1, a.navigation, #content h3, #content h4, #sidebar h2, #footer h2, a.links {
+  font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', Tahoma, sans-serif;
+}
+#header, #content, #sidebar, #footer, a.navigation {
+  border: 1px solid #bbb;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+}
+#header {
+  background-color: #fff;
+  width: 100%; /* helps IE */
+  overflow: auto; /* Contain floats. */
+  padding-bottom: 12em;
+  margin-bottom: -10em;
+}
+#header-content {
+  font-size: 2em;
+  line-height: 1.2;
+  padding: 1em 2em 0;
+}
+#header-content a {
+  font-size: 1.5em;
+  color: #000;
+}
+#header-content a:hover {
+  text-decoration: none;
+}
+#navigation {
+  background-color: #f6eb5a;
+  font-size: 1.2em;
+  overflow: hidden;
+  margin-top: 1em;
+  padding: 0 4% 1em 0;
+}
+li.navigation {
+  float: left;
+  margin-left: 4%;
+  margin-top: 1em; /* makes wrapping nicer */
+}
+a.navigation {
+  display: block;
+  padding: .4em 1em .6em;
+  background: #0046a6 url(img/0046a6_gradient-70.png) repeat-x 50% 50%;
+  color: #fff;
+}
+a.navigation:hover {
+  text-decoration: none;
+  background-position: 0 0;
+  border: 1px solid #ccc;
+}
+#content-container {
+  overflow: hidden;
+  width: 100%;
+}
+#content {
+  background-color: #fff;
+  width: 59%;
+  padding: 2em 4% 3em;
+}
+#sidebar {
+  background-color: #fff;
+  width: 23%;
+  padding: 2em 2% 3em;
+}
+#sidebar, #content {
+  float: left;
+  margin-left: 2%;
+}
+#content h3 {
+  font-size: 1.4em;
+  margin-top: 1.4em;
+}
+#content h4 {
+  font-size: 1.1em;
+  line-height: 2.5;
+}
+#content p {
+  margin-top: 1em;
+}
+#portrait {
+  text-align: center;
+  padding-top: 10px;
+  margin: 0 auto 1.5em auto;
+}
+#portrait img {
+  border: 1px solid #bbb;
+}
+#sidebar h2 {
+  font-size: 1.3em;
+}
+li.links {
+  margin-top: .5em;
+}
+a.links {
+  display: block;
+  font-size: 1.2em;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+#footer {
+  background-color: #fff;
+  margin: 4em 2%;
+  padding: 0 3% 1em;
+  position: relative;
+}
+#footer h2 {
+  font-size: 1.3em;
+  margin-top: 1em;
+  padding-left: .5em;
+  border-bottom: 1px dashed #000;
+}
+#social-links {
+  overflow: hidden;
+  width: 100%;
+  margin: .8em 0 0 2%;
+}
+li.social-link {
+  float: left;
+  margin-left: 24px;
+  height: 32px;
+  width: 32px;
+}
+a.social-link {
+  display: block;
+  text-indent: -9999px;
+  width: 100%;
+  height: 100%;
+}
+#social-email { background: #fff url(img/icon_Gmail-32.png) no-repeat; }
+#social-blog { background: #fff url(img/icon_Blogger-32.png) no-repeat; }
+#social-twitter { background: #fff url(img/icon_Twitter-32.png) no-repeat; }
+#social-delicious { background: #fff url(img/icon_Delicious-32.png) no-repeat; }
+#social-linkedin { background: #fff url(img/icon_LinkedIn-32.png) no-repeat; }
+#social-github {
+  height: 150px;
+  width: 150px;
+  background: transparent url(/img/forkme_right_green_007200.gif) no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#license {
+  font-size: .8em;
+  color: #222;
+  margin-top: 1em;
+}

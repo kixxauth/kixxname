@@ -3,17 +3,18 @@ Kris Walker does {{ actions }} (for fun and profit) right here in {{
 sub\_location }} and {{ super\_location }}.
 </description>
 
-<h1 id="page-header">
-<em>I&#39;m Kris Walker</em>, a {{ skills }} who works in {{ sub_location }} and {{
-super_location }}.
+<h1 id="header-content">
+  <a href="/" title="Kris Walker {{ home_page }}.">I&#39;m Kris Walker</a>,
+  a {{ skills }} who works right here in {{ sub_location }}
+  and {{ super_location }}.
 </h1>
 
 ### {{ actions }}
 #### For fun and profit.
 
 My focus is on bringing more customers to your cash register and helping you
-streamline your workflow, reclaiming your valuable time. I do this by listening to
-you first, and then making stupid computers do all the work.
+streamline your workflow. I want to reclaim your precious time by listening to
+you first, and then making stupid computers do all the work. {{ content\_first }}
 
 ### Straightforward pricing.
 #### It&#39;s the honest thing to do.
