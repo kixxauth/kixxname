@@ -32,15 +32,13 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 <link rel="stylesheet" href="./css/master.css" media="Screen"/> 
 <!--[if IE 6]>
 <style type="text/css">
-  #background {
-    position: absolute;
-    filter:alpha(opacity=70);
-  }
-  #container {
-    /* @jello */
-    height: 0;
-    position: relative;
-  }
+  #background { position: absolute; }
+  /* @jello layout */
+  #container { height: 0; position: relative; }
+  /* Fix @margin doubling on floated elements. */
+  #content, #sidebar, li.navigation { display: inline; }
+  #social-github { top: 1px; right: 2%; }
+  a.links { display: inline;}
 </style>
 <![endif]-->
 {% block master_css %}{% endblock %}

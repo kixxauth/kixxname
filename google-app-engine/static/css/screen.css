@@ -47,7 +47,7 @@ a img { border: none; }
 /* @endreset */
 
 body {
-  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  font-family: "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
   color: #000;
   background: #fff url(./img/bg.png) repeat fixed top left;
   /* @jello */
@@ -70,7 +70,7 @@ body {
 }
 #container {
   /* @jello */
-  margin: 0 -385px;
+  margin: 0 -382px;
 }
 /* @page */
 #page {
@@ -92,21 +92,21 @@ a:hover {
 #header h1, a.navigation, #content h3, #content h4, #sidebar h2, #footer h2, a.links {
   font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', Tahoma, sans-serif;
 }
-#header, #content, #sidebar, #footer, a.navigation {
+#header, #content, #sidebar, #footer {
+  background-color: #f7f7f7;
   border: 1px solid #bbb;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
   border-radius: 7px;
 }
 #header {
-  background-color: #fff;
-  width: 100%; /* helps IE */
-  overflow: auto; /* Contain floats. */
+  width: 99.5%; /* helps IE */
+  overflow: hidden; /* Contain floats. */
   padding-bottom: 12em;
-  margin-bottom: -10em;
+  margin: 0 auto -10em;
 }
 #header-content {
-  font-size: 2em;
+  font-size: 1.7em;
   line-height: 1.2;
   padding: 1em 2em 0;
 }
@@ -119,9 +119,10 @@ a:hover {
 }
 #navigation {
   background-color: #f6eb5a;
+  width: 96%; /* helps IE */
   font-size: 1.2em;
   overflow: hidden;
-  margin-top: 1em;
+  margin-top: 2em;
   padding: 0 4% 1em 0;
 }
 li.navigation {
@@ -131,6 +132,10 @@ li.navigation {
 }
 a.navigation {
   display: block;
+  border: 1px solid #bbb;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
   padding: .4em 1em .6em;
   background: #0046a6 url(img/0046a6_gradient-70.png) repeat-x 50% 50%;
   color: #fff;
@@ -145,12 +150,10 @@ a.navigation:hover {
   width: 100%;
 }
 #content {
-  background-color: #fff;
-  width: 59%;
+  width: 58.5%;
   padding: 2em 4% 3em;
 }
 #sidebar {
-  background-color: #fff;
   width: 23%;
   padding: 2em 2% 3em;
 }
@@ -159,12 +162,12 @@ a.navigation:hover {
   margin-left: 2%;
 }
 #content h3 {
-  font-size: 1.4em;
+  font-size: 1.5em;
   margin-top: 1.4em;
 }
 #content h4 {
-  font-size: 1.1em;
-  line-height: 2.5;
+  font-size: 1.2em;
+  line-height: 2;
 }
 #content p {
   margin-top: 1em;
@@ -185,32 +188,30 @@ li.links {
 }
 a.links {
   display: block;
-  font-size: 1.2em;
   text-indent: -1em;
   padding-left: 1em;
 }
 #footer {
-  background-color: #fff;
   margin: 4em 2%;
   padding: 0 3% 1em;
   position: relative;
 }
 #footer h2 {
   font-size: 1.3em;
-  margin-top: 1em;
+  margin-top: 1.5em;
   padding-left: .5em;
   border-bottom: 1px dashed #000;
 }
 #social-links {
   overflow: hidden;
   width: 100%;
-  margin: .8em 0 0 2%;
+  margin: 1.2em 0 0 2%;
 }
 li.social-link {
   float: left;
-  margin-left: 24px;
-  height: 32px;
-  width: 32px;
+  margin-left: 32px;
+  height: 48px;
+  width: 48px;
 }
 a.social-link {
   display: block;
@@ -218,11 +219,11 @@ a.social-link {
   width: 100%;
   height: 100%;
 }
-#social-email { background: #fff url(img/icon_Gmail-32.png) no-repeat; }
-#social-blog { background: #fff url(img/icon_Blogger-32.png) no-repeat; }
-#social-twitter { background: #fff url(img/icon_Twitter-32.png) no-repeat; }
-#social-delicious { background: #fff url(img/icon_Delicious-32.png) no-repeat; }
-#social-linkedin { background: #fff url(img/icon_LinkedIn-32.png) no-repeat; }
+#social-email { background: transparent url(img/icon_Gmail-48.gif) no-repeat; }
+#social-blog { background: transparent url(img/icon_Blogger-48.gif) no-repeat; }
+#social-twitter { background: transparent url(img/icon_Twitter-48.gif) no-repeat; }
+#social-delicious { background: transparent url(img/icon_Delicious-48.gif) no-repeat; }
+#social-linkedin { background: transparent url(img/icon_LinkedIn-48.gif) no-repeat; }
 #social-github {
   height: 150px;
   width: 150px;
@@ -232,7 +233,7 @@ a.social-link {
   right: 0;
 }
 #license {
-  font-size: .8em;
+  font-size: .7em;
   color: #222;
   margin-top: 1em;
 }
