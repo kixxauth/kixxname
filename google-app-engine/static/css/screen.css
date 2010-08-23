@@ -5,6 +5,14 @@
  * (Desktop and laptop computers.)
  */
 
+@font-face {
+	font-family: 'BorisBlackBloxx';
+	src: url('borisblackbloxx-webfont.eot');
+	src: local('☺'), url('borisblackbloxx-webfont.woff') format('woff'), url('borisblackbloxx-webfont.ttf') format('truetype'), url('borisblackbloxx-webfont.svgz#webfont0wEhMjNz') format('svg'), url('borisblackbloxx-webfont.svg#webfont0wEhMjNz') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* @reset */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -74,8 +82,8 @@ body {
 }
 /* @page */
 #page {
-  margin-top: 2em;
   width: 100%; /* helps IE */
+  margin: 3em 0;
 	filter:alpha(opacity=92); /* IE6, IE7, IE8 ... sometimes */
 	-moz-opacity:0.92;
 	-khtml-opacity: 0.92;
@@ -90,20 +98,35 @@ a:hover {
   text-decoration: underline;
 }
 #header h1, a.navigation, #content h3, #content h4, #sidebar h2, #footer h2, a.links {
-  font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', Tahoma, sans-serif;
+  font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', sans-serif;
 }
-#header, #content, #sidebar, #footer {
+#header, #content-container, #footer {
   background-color: #f7f7f7;
-  border: 1px solid #bbb;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
+  overflow: hidden; /* Contain floats. */
+  margin: 0 auto;
+}
+#header, #content-container {
+  width: 99%; /* helps IE -border */
+  border-right: 4px solid #333;
+  border-left: 4px solid #333;
 }
 #header {
-  width: 99.5%; /* helps IE */
-  overflow: hidden; /* Contain floats. */
-  padding-bottom: 12em;
-  margin: 0 auto -10em;
+  border-top: 4px solid #333;
+  -moz-border-radius-topleft: 7px;
+  -moz-border-radius-topright: 7px;
+  -webkit-border-top-left-radius: 7px;
+  -webkit-border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+#content-container {
+  border-bottom: 4px solid #333;
+  -moz-border-radius-bottomleft: 7px;
+  -moz-border-radius-bottomright: 7px;
+  -webkit-border-bottom-left-radius: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 #header-content {
   font-size: 1.7em;
@@ -124,6 +147,8 @@ a:hover {
   overflow: hidden;
   margin-top: 2em;
   padding: 0 4% 1em 0;
+  border-top: 4px solid #333;
+  border-bottom: 4px solid #333;
 }
 li.navigation {
   float: left;
@@ -132,75 +157,97 @@ li.navigation {
 }
 a.navigation {
   display: block;
-  border: 1px solid #bbb;
+  border: 1px solid #333;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: .4em 1em .6em;
-  background: #0046a6 url(img/0046a6_gradient-70.png) repeat-x 50% 50%;
+  background: transparent url(img/0046a6_gradient-70.png) repeat-x 50% 50%;
   color: #fff;
 }
 a.navigation:hover {
   text-decoration: none;
   background-position: 0 0;
-  border: 1px solid #ccc;
-}
-#content-container {
-  overflow: hidden;
-  width: 100%;
+  border: 1px solid #777;
 }
 #content {
-  width: 58.5%;
-  padding: 2em 4% 3em;
+  width: 60.5%;
+  padding: 4em 4% 5em;
+  float: left;
 }
 #sidebar {
-  width: 23%;
-  padding: 2em 2% 3em;
-}
-#sidebar, #content {
-  float: left;
+  background-color: #d55632;
+  color: #fff;
+  width: 28.5%;
   margin-left: 2%;
+  padding: 2em 0 3em;
+  border-left: 4px solid #333;
+  border-bottom: 4px solid #333;
+  -moz-border-radius-bottomleft: 7px;
+  -webkit-border-bottom-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  float: right;
 }
 #content h3 {
   font-size: 1.5em;
-  margin-top: 1.4em;
+  background: transparent url(img/talk-bubble-48.gif) no-repeat;
+  height: 40px;
+  padding-left: 60px;
 }
 #content h4 {
   font-size: 1.2em;
   line-height: 2;
+  padding-left: 80px;
 }
 #content p {
   margin-top: 1em;
+  font-size: 1.05em;
 }
-#portrait {
-  text-align: center;
-  padding-top: 10px;
-  margin: 0 auto 1.5em auto;
-}
-#portrait img {
-  border: 1px solid #bbb;
+#content hr {
+  margin: 3em 0 4em;
 }
 #sidebar h2 {
   font-size: 1.3em;
+  text-align: center;
+}
+#portrait {
+  text-align: center;
+  margin-top: 1em;
+  background: transparent url(img/frame-420.gif) no-repeat 50% 50%;
+  height: 190px;
+}
+#portrait img {
+  border: 1px solid #333;
+  margin-top: 18px;
+}
+#links {
+  margin: 1em 5% 0;
 }
 li.links {
   margin-top: .5em;
 }
 a.links {
   display: block;
-  text-indent: -1em;
-  padding-left: 1em;
+  color: #fff;
+  text-align: center;
 }
 #footer {
-  margin: 4em 2%;
+  width: 93.5%; /* helps IE -border */
   padding: 0 3% 1em;
+  margin-top: 3em;
+  border: 4px solid #333;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
   position: relative;
 }
 #footer h2 {
-  font-size: 1.3em;
-  margin-top: 1.5em;
-  padding-left: .5em;
-  border-bottom: 1px dashed #000;
+  background: transparent url(img/talk-bubble-220.gif) no-repeat;
+  height: 120px;
+  font-size: 24px;
+  line-height: 64px;
+  margin-top: 3em;
+  text-indent: 32px;
 }
 #social-links {
   overflow: hidden;
@@ -230,7 +277,7 @@ a.social-link {
   background: transparent url(/img/forkme_right_green_007200.gif) no-repeat;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -1px;
 }
 #license {
   font-size: .7em;

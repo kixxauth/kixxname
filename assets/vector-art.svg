@@ -35,9 +35,9 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="282.00396"
-     inkscape:cy="182.85714"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="289.50935"
+     inkscape:cy="901.77026"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -149,5 +149,54 @@
        inkscape:export-filename="/home/kixx/Projects/GAE/kixxname/assets/spark.png"
        inkscape:export-xdpi="16.679445"
        inkscape:export-ydpi="16.679445" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2.83431268;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 543.76095,850.72735 L 523.56489,880.54998 L 476.44073,864.64457 L 481.15315,896.853 L 427.29697,897.64827 L 456.91787,925.08509 L 409.12051,940.99048 L 456.91787,957.29351 L 426.62377,984.73032 L 482.49955,983.53742 L 474.42113,1016.5411 L 524.23808,1001.431 L 539.04853,1030.4584 L 577.42106,1004.2145 L 618.4864,1026.482 L 625.21841,993.87601 L 675.70858,1004.6121 L 658.87852,972.006 L 712.06149,967.63203 L 671.66936,942.58102 L 716.77391,919.91583 L 660.22493,910.77023 L 681.76739,882.53814 L 623.87201,887.30977 L 618.48639,855.49897 L 573.38184,876.97126 L 543.76095,850.72735 z"
+       id="path3732"
+       sodipodi:nodetypes="ccccccccccccccccccccccccccc" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4.2733202;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 585.28329,230.81547 C 562.79843,231.08363 541.42926,234.56735 520.91641,240.44951 C 513.7542,259.20805 505.80631,290.32061 520.91641,323.26417 C 555.94579,330.68781 590.98402,329.04084 626.01334,326.29746 C 629.40214,335.88804 625.57361,352.1339 620.84342,369.20238 C 636.09013,351.42864 644.87462,338.27058 647.41816,324.54234 C 650.41064,324.29834 653.41106,324.0486 656.40355,323.81741 C 665.28192,297.93785 668.49386,270.84378 656.40355,240.44951 C 631.38148,233.49467 607.76815,230.5473 585.28329,230.81547 z"
+       id="path7492"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.50856948;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2889"
+       sodipodi:cx="352.85715"
+       sodipodi:cy="223.79076"
+       sodipodi:rx="312.85715"
+       sodipodi:ry="137.14285"
+       d="M 665.71429,223.79076 A 312.85715,137.14285 0 1 1 40,223.79076 A 312.85715,137.14285 0 1 1 665.71429,223.79076 z"
+       transform="matrix(0.4758556,0,0,0.3603628,35.030602,355.82631)" />
+    <path
+       style="fill:#f8e60a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 114.61731,343.45894 L 114.61731,328.45894 L 379.61732,328.45894 C 379.61732,328.45894 394.61732,324.77264 394.61732,313.45894 C 394.61732,302.14523 394.61732,223.45894 394.61732,223.45894 C 394.61732,223.45894 391.87384,208.45894 379.61732,208.45894 C 367.3608,208.45894 61.617311,208.45894 61.617311,208.45894 C 61.617311,208.45894 46.617311,210.25962 46.617311,223.45894 C 46.617311,234.77265 46.617311,313.45894 46.617311,313.45894 C 46.617311,313.45894 49.360791,328.45894 61.617311,328.45894 C 73.873831,328.45894 94.617311,328.45894 94.617311,328.45894 L 114.61731,343.45894 z"
+       id="path2403"
+       sodipodi:nodetypes="cccscscscscc" />
+    <path
+       style="fill:#f8e60a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 575.22567,68.81817 C 593.59967,69.025831 611.06196,71.723609 627.82448,76.278728 C 633.67724,90.805261 640.17203,114.89869 627.82448,140.41004 C 605.71598,143.06331 611.51537,143.33468 604.46203,143.91758 C 598.60653,150.57211 596.27337,155.04081 599.51544,169.41915 C 571.62487,164.15145 563.56464,160.91334 547.81833,144.48938 C 536.99592,145.07281 519.55357,141.0175 517.10819,140.83847 C 509.85303,120.79745 507.22833,99.815919 517.10819,76.278728 C 537.55552,70.89293 556.85168,68.6105 575.22567,68.81817 z"
+       id="path4184"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-filename="/home/kixx/Projects/GAE/kixxname/google-app-engine/static/css/img/talk-bubble-48.png"
+       inkscape:export-xdpi="33.359283"
+       inkscape:export-ydpi="33.359283" />
+    <path
+       style="fill:#f6eb5a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 235.96766,40.17661 C 187.20636,40.440944 140.86457,43.874961 96.379809,49.673199 C 80.847637,68.164105 63.611617,98.832776 96.379809,131.30632 C 172.34553,138.62405 248.33043,137.00058 324.296,134.29634 C 331.64505,143.75009 323.34239,159.76416 313.08437,176.58912 C 346.14882,159.06897 365.19911,146.09863 370.71511,132.56626 C 377.20468,132.32574 383.71148,132.07956 390.20108,131.85167 C 409.45496,106.34134 416.42047,79.633825 390.20108,49.673199 C 335.93751,42.817585 284.72897,39.912266 235.96766,40.17661 z"
+       id="path4188"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-filename="/home/kixx/Projects/GAE/kixxname/google-app-engine/static/css/img/talk-bubble-220.png"
+       inkscape:export-xdpi="79.762398"
+       inkscape:export-ydpi="79.762398" />
+    <path
+       style="fill:#f6eb5a;fill-opacity:1;fill-rule:evenodd;stroke:#333333;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 499.69532,449.49407 C 499.69532,449.49407 560.79038,441.52248 603.26767,442.04893 C 645.74495,442.57539 706.84001,449.49407 706.84001,449.49407 L 706.84001,523.94547 C 706.84001,523.94547 651.60389,531.39062 603.26767,531.39062 C 554.93144,531.39062 499.69532,523.94547 499.69532,523.94547 L 499.69532,449.49407 z"
+       id="path4212"
+       sodipodi:nodetypes="csccscc"
+       inkscape:export-filename="/home/kixx/Projects/GAE/kixxname/google-app-engine/static/css/img/frame-400.png"
+       inkscape:export-xdpi="185.13177"
+       inkscape:export-ydpi="185.13177" />
   </g>
 </svg>
