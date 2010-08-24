@@ -206,6 +206,28 @@ class VerticalHandler(BaseHandler):
     """Accept the HTTP HEAD method."""
     return self.respond()
 
+class PriceHandler(BaseHandler):
+  """Handle requests for the price schedule page."""
+
+  def respond(self):
+    response = set_common_headers(
+        self.out(
+          utils.render_template('pricing', content.pricing)))
+    response.mimetype = 'text/html'
+
+    # Expire in 1 day.
+    response.expires = int(time.time()) + 86400
+    return self.finalize_response(response)
+
+  def get(self):
+    """Accept the HTTP GET method."""
+    return self.respond()
+
+  def head(self):
+    """Accept the HTTP HEAD method."""
+    return self.respond()
+
+
 # Create the handler map for export to the request handling script.  As you can
 # see, the map is a list of tuples. The first item in each tuple is the URL
 # rule for Werkzeug to match. The second item in each tuple is the name of the
@@ -220,6 +242,10 @@ handler_map = [
       ('/poughkeepsie_and_hudson_valley_website_design'
         , 'poughkeepsie_and_hudson_valley,website_design'
         , VerticalHandler)
+
+    , ('/service_and_price_schedule'
+        , 'price schedule'
+        , PriceHandler)
     ]
 
 

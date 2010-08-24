@@ -52,10 +52,10 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 <div id="container">
 
   <!-- Finally after all that layout markup, the actual web page begins. -->
-  <div id="page">
+  <div id="page" class="page-{{ page_class }}">
 {% block page %}{% endblock %}
     <div id="footer">
-      <h2>* Connect.</h2>
+      <h2 class="social-link">* Connect.</h2>
       <ul id="social-links">
         <li class="social-link">
           <a href="mailto:kixxauth@gmail.com" class="social-link"
@@ -87,18 +87,17 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
             id="social-github" title="Kris Walker's computer code on GitHub">Fork me on GitHub.</a>
         </li>
       </ul>
-      <h2>Legalese</h2>
+      <h2 class="license">Legalese</h2>
       <div id="license">
         <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
           <img alt="Creative Commons License" style="border-width:0"
           src="http://kixxname.appspot.com/img/somerights20.png" />
         </a>
-        The <span xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">www.kixx.name website</span>
-        is &copy; 2010 by
+        Copyright &copy; 2010 by
         <a xmlns:cc="http://creativecommons.org/ns#"
-          href="http://www.kixx.name" property="cc:attributionName"
+          href="http://www.kixx.name"
           rel="cc:attributionURL">Kris Walker</a>
-        and is licensed  to you under a
+        Except where otherwise noted, content on this site is licensed under a
         <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
           Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
         </a>. Based on source code at
@@ -109,7 +108,7 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
           www.kixx.name
         </a>.
       </div><!-- end #license -->
-    </div>
+    </div><!-- end #footer -->
   </div><!-- end #page -->
 
 </div><!-- end #container -->
