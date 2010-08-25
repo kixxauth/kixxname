@@ -15,7 +15,7 @@ ACTIONS = {
       # Targeting 'website design'
       'website_design': [
           'website design' # Page title, description * for iPhone and ...
-        , 'website designer & builder' # Page intro (header)
+        , 'website designer &amp; builder' # Page intro (header)
         , 'designs and builds websites' # description * right here in ...
         , 'websites' # Portfolio link.
         , 'Creating usable websites' # First content section.

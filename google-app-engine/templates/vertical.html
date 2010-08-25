@@ -25,97 +25,50 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 (http://www.kixx.name). All rights reserved.
 
 {% endcomment %}{% extends "base.html" %}
+
 {% block title %}{{ title_actions }} in {{ sub_location }} and {{ super_location }}{% endblock %}
+
+{% block conditional_ie %}<!--[if IE 6]>
+<style type="text/css">
+  #background { position: absolute; }
+  /* @jello layout */
+  #container { height: 0; position: relative; }
+  /* Fix @margin doubling on floated elements. */
+  #content, #sidebar, li.navigation { display: inline; }
+  a.links { display: inline;}
+</style>
+<![endif]-->{% endblock %}
+
 {% block page %}
-    <div id="header">
-      <h1 id="header-content" class="header-content-{{ page_class }}">
-        <a href="/" title="Kris Walker {{ home_page }}." class="header-content-{{ page_class }}">
-          I&#39;m Kris Walker</a>,
-        a {{ skills }} who works right here in {{ sub_location }} & {{ super_location }}.
-      </h1>
+    <div id="header" class="header-{{ page_class }}">
+      <h1 id="header-content" class="header">
+        <a href="/" class="header" title="Kris Walker {{ home_page }}.">I&#39;m Kris Walker,</a>
+        a {{ skills }} who works right here in {{ sub_location }} &amp; {{ super_location }}.</h1>
+      <h2 id="header-subcontent" class="header"><strong class="header">Fireworks</strong> <em class="header">Computer Systems</em></h2>
       <ul id="navigation" class="navigation-{{ page_class }}">
-        <li class="navigation first">
-          <a href="/service_and_price_schedule" title="Service and price schedule."
-            class="navigation">Services & pricing.</a>
-        </li>
-        <li class="navigation">
-          <a href="/website_and_mobile_design_samples" title="A sample of my {{ portfolio }}."
-            class="navigation">Sample {{ portfolio }}.</a>
-        </li>
-        <li class="navigation last">
-          <a href="/contact" title="Contact Kris Walker." class="navigation">Contact me.</a>
-        </li>
-      </ul>
-    </div>
-    <div id="content-container">
-      <div id="content" class="column">
-        <h3>{{ actions }}</h3>
-        <h4>For fun and profit.</h4>
-        <p>My focus is simple: Get more customers through your doors with a smaller
-        investment of your precious time. A good {{ item }} that is well planned for
-        the future can add tremendous value to your business. I&#39;ll listen to you
-        first, and then we&#39;ll make the computers do all the work.</p>
-        <hr />
-
-        <h3>Straightforward pricing.</h3>
-        <h4>It&#39;s the honest thing to do.</h4>
-        <p>I don&#39;t know about you, but if I can&#39;t get up to date pricing
-        that&#39;s easy to understand, I take my business elsewhere. Confusing price
-        schemes are the last thing you want to waste time on.</p>
-        <hr />
-
-        <h3>Local, Local, Local</h3>
-        <h4>Small business rules!</h4>
-        <p>I&#39;m a big believer in the strength of local business, so that&#39;s where I
-        focus my efforts, right here in {{ sub_location }} and {{ super_location }}.
-        In fact, I get so much satisfaction out of working with small businesses that I
-        offer a discount just for you. Check the <a href="/pricing">price schedule</a> for more
-        information.</p>
-        <p>However, if your needs are larger, or more complex than one computer guy can
-        handle, I'm also a partner in the best web development and software firm
-        ever... <a href="http://www.fireworksproject.com">The Fireworks Project</a>.
-        Stop by to see what we can build for you.</p>
-
-        <p><a href="http://www.fireworksproject.com">
-          <img alt="The Fireworks Project. Dream Big." src="/img/the_fireworks_project_logo.gif" /></a></p>
-        <hr />
-      </div><!-- end #content -->
-      <div id="sidebar" class="column">
-        <h2>Get to know me.</h2>
-        <div id="portrait">
-          <img src="/img/kris_walker_portrait-150.jpg" width="150" height="150"
-            alt="Portrait of Kris Walker." />
-        </div>
-        <ul id="links">
-          <li class="links">
-            <a href="/resume"
-              title="Kris Walker's resume." class="links">* Resume</a>
-          </li>
-          <li class="links">
-            <a href="http://fireworksfactory.blogspot.com/"
-              title="Kris Walker's blog." class="links">* Blog</a>
-          </li>
-          <li class="links">
-            <a href="mailto:kixxauth@gmail.com"
-              title="Kris Walker's email address." class="links">* Email address: kixxauth@gmail.com</a>
-          </li>
-          <li class="links">
-            <a href="http://twitter.com/kixxauth"
-              title="Kris Walker's twitter page." class="links">* Twitter: @kixxauth</a>
-          </li>
-          <li class="links">
-            <a href="http://www.delicious.com/kristoffwalk/"
-              title="Kris Walker's Delicious bookmarks." class="links">* Delicious Bookmarks</a>
-          </li>
-          <li class="links">
-            <a href="http://www.linkedin.com/in/kixx7"
-              title="Kris Walker's Linked In page." class="links">* Linked In</a>
-          </li>
-          <li class="links">
-            <a href="http://github.com/kixxauth"
-              title="Kris Walker's Git Hub page." class="links">* Git Hub</a>
-          </li>
-        </ul>
-      </div><!-- end #sidebar -->
-    </div><!-- end #content-container -->
-{% endblock %}
+        <li class="navigation first"><a href="/resume" title="Kris Walker's resume." class="navigation">Resume</a>
+        </li><li class="navigation"><a href="http://fireworksfactory.blogspot.com/" title="Kris Walker's blog." class="navigation">Blog</a>
+        </li><li class="navigation last"><a href="/contact" title="Contact Kris Walker." class="navigation">Contact me.</a></li>
+      </ul></div>
+    <div id="main">
+      <div class="content"><h3 class="content">{{ actions }}</h3><h4 class="content">For fun and profit.</h4>
+        <p class="content">My focus is simple: Get more customers through your doors with a smaller investment
+        of your precious time. A good {{ item }} that is well planned for the future can add tremendous value to your
+        business. I&#39;ll listen to you first, and then we&#39;ll make the computers do all the work.</p>
+        <p class="action"><a href="/website_and_mobile_design_samples" title="A sample of my {{ portfolio }}." class="action">Sample {{ portfolio }}.</a></p></div>
+      <div class="content">
+        <h3 class="content">Upfront pricing.</h3><h4 class="content">It&#39;s the honest thing to do.</h4>
+        <p>I don&#39;t know about you, but if I can&#39;t get up to date pricing that&#39;s easy to understand,
+        I take my business elsewhere. Confusing price schemes are the last thing you want to waste time on.</p>
+        <p class="action"><a href="/service_and_price_schedule" title="Service and price schedule." class="action">Services &amp; pricing.</a></p></div>
+      <div class="content"><h3 class="content">Local, Local, Local</h3><h4 class="content">Small business rules!</h4>
+        <p class="content">I&#39;m a big believer in the strength of local business, so that&#39;s where I
+        focus my efforts, right here in {{ sub_location }} and {{ super_location }}.  In fact, I get so much
+        satisfaction out of working with small businesses that I offer a discount just for you.
+        Check the <a href="/service_and_price_schedule" title="Service and price schedule.">price schedule</a>
+        for more information.</p></div>
+      <div class="content"><h3 class="content">Dream big.</h3><h4 class="content">For growing businesses.</h4>
+        <p class="content">However, if your needs are larger, or more complex than one computer guy can
+        handle, I&#39;m also a partner in the best web development and software firm ever...
+        <a href="http://www.fireworksproject.com" title="The Fireworks Project web &amp; software development">The Fireworks Project</a>. Stop by to see what we can build for you.</p></div>
+    </div><!-- end #main -->{% endblock %}

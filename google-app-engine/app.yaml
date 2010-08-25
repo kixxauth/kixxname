@@ -167,12 +167,6 @@ api_version: 1
 #
 handlers:
 
-# ### All of our static CSS files.
-# `/google-app-engine/static/css/README.txt`
-- url: /css
-  static_dir: static/css
-  expiration: 4d
-
 # ### All of our static image files.
 # `/google-app-engine/static/img/README.txt`
 - url: /img
@@ -184,6 +178,12 @@ handlers:
 - url: /js
   static_dir: static/js
   expiration: 4d
+
+# ### All of our static web font files.
+# `/google-app-engine/static/fonts/README.txt`
+- url: /fonts
+  static_dir: static/fonts
+  expiration: 21d
  
 # ### The favicon is static.
 # `/google-app-engine/static/favicon.ico`

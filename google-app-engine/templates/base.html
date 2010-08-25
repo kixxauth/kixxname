@@ -28,90 +28,89 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 <head>
 <title>{% block title %}{% endblock %} - Kris Walker</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="{{ description }}" />
-<link rel="stylesheet" href="./css/master.css" media="Screen"/> 
-<!--[if IE 6]>
-<style type="text/css">
-  #background { position: absolute; }
-  /* @jello layout */
-  #container { height: 0; position: relative; }
-  /* Fix @margin doubling on floated elements. */
-  #content, #sidebar, li.navigation { display: inline; }
-  a.links { display: inline;}
-</style>
-<![endif]-->
-{% block master_css %}{% endblock %}
-<link rel="stylesheet" href="./css/handheld.css" media="handheld, only screen and (max-device-width:480px)"/>
-</head>
-<body id="kixxname">
-<div id="background">
-  <img id="background-fireworks" alt="Background fireworks."
-    src="/img/pow_bg.gif" width="750" height="696" />
-</div>
-<div id="stretcher">
-<div id="container">
-
-  <!-- Finally after all that layout markup, the actual web page begins. -->
-  <div id="page" class="page-{{ page_class }}">
-{% block page %}{% endblock %}
-    <div id="footer">
-      <h2 class="social-link">* Connect.</h2>
-      <ul id="social-links">
-        <li class="social-link">
-          <a href="mailto:kixxauth@gmail.com" class="social-link"
-            id="social-email" title="Kris Walker's email address.">email me</a>
-        </li>
-        <li class="social-link">
-          <a class="social-link"
-            href="http://fireworksfactory.blogspot.com/"
-            id="social-blog" title="Kris Walker's blog.">Kris Walker blogs.</a>
-        </li>
-        <li class="social-link">
-          <a class="social-link"
-            href="http://twitter.com/kixxauth"
-            id="social-twitter" title="Kris Walker on Twitter.">Kris Walker tweets.</a>
-        </li>
-        <li class="social-link">
-          <a class="social-link"
-            href="http://www.delicious.com/kristoffwalk/"
-            id="social-delicious" title="Kris Walker's Delicious bookmarks.">Kris Walker&#39;s bookmarks.</a>
-        </li>
-        <li class="social-link">
-          <a class="social-link"
-            href="http://www.linkedin.com/in/kixx7"
-            id="social-linkedin" title="Kris Walker's page on LinkedIn">Kris Walker as a professional.</a>
-        </li>
-        <li class="social-link">
-          <a class="social-link"
-            href="http://github.com/kixxauth"
-            id="social-github" title="Kris Walker's computer code on GitHub">Fork me on GitHub.</a>
-        </li>
-      </ul>
-      <h2 class="license">Legalese</h2>
-      <div id="license">
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
-          <img alt="Creative Commons License" style="border-width:0"
-          src="http://kixxname.appspot.com/img/somerights20.png" />
-        </a>
-        Copyright &copy; 2010 by
-        <a xmlns:cc="http://creativecommons.org/ns#"
-          href="http://www.kixx.name"
-          rel="cc:attributionURL">Kris Walker</a>
-        Except where otherwise noted, content on this site is licensed under a
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
-          Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
-        </a>. Based on source code at
-        <a xmlns:dc="http://purl.org/dc/elements/1.1/"
-          href="http://github.com/kixxauth/kixxname" rel="dc:source">github.com/kixxauth/kixxname</a>.
-        Permissions beyond the scope of this license may be available at
-        <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.kixx.name" rel="cc:morePermissions">
-          www.kixx.name
-        </a>.
-      </div><!-- end #license -->
-    </div><!-- end #footer -->
-  </div><!-- end #page -->
-
-</div><!-- end #container -->
-</div><!-- end #stretcher -->
-</body>
-</html>
+<meta name="description" content="{{ description }}" />{% comment %}
+'handheld_device' is triggered for iPhone, iPad, and Android only.
+{% endcomment %}{% if handheld_device %}
+{# iPhone and Android #}<link rel="stylesheet" media="all and (max-device-width:480px)"
+  href="./css/handheld.css?maxwidth=480&class={{ page_class }}"/>
+{# iPad #}<link rel="stylesheet" media="all and (min-device-width: 481px) and (max-device-width: 1024px)"
+  href="./css/handheld.css?maxwidth=1024&class={{ page_class }}">
+{% else %}
+<link rel="stylesheet" media="all" href="./css/all.css?class={{ page_class }}"/>{% endif %}
+{# Conditional comments to target IE. #}{% block conditional_ie %}{% endblock %}
+</head><body id="kixxname">{# Holds the fixed background image. #}<div id="background"></div>
+{# Jello layout. #}<div id="stretcher"><div id="container">
+  <div id="page" class="page-{{ page_class }}">{% block page %}{% endblock %}</div><!-- end #page -->
+  <div id="footer">
+    <dl id="sitemap">
+      <dt class="sitemap">About Kris Walker.</dt>
+      <dd class="sitemap">
+        <p id="portrait">
+          <img src="/img/kris_walker_portrait-150.jpg" width="150" height="150"
+            alt="Portrait of Kris Walker." />
+        </p>
+      </dd>
+      <dt class="sitemap">Kris Walker does web design.</dt>
+      <dd class="sitemap">
+      </dd>
+      <dt class="sitemap">Kris Walker is a programmer.</dt>
+      <dd class="sitemap">
+      </dd>
+      <dt class="sitemap">Kris Walker on the net.</dt>
+      <dd class="sitemap">
+        <ul id="social-links">
+          <li class="social-link">
+            <a href="mailto:kixxauth@gmail.com" class="social-link"
+              id="social-email" title="Kris Walker's email address.">email me</a>
+          </li>
+          <li class="social-link">
+            <a class="social-link"
+              href="http://fireworksfactory.blogspot.com/"
+              id="social-blog" title="Kris Walker's blog.">Kris Walker blogs.</a>
+          </li>
+          <li class="social-link">
+            <a class="social-link"
+              href="http://twitter.com/kixxauth"
+              id="social-twitter" title="Kris Walker on Twitter.">Kris Walker tweets.</a>
+          </li>
+          <li class="social-link">
+            <a class="social-link"
+              href="http://www.delicious.com/kristoffwalk/"
+              id="social-delicious" title="Kris Walker's Delicious bookmarks.">Kris Walker&#39;s bookmarks.</a>
+          </li>
+          <li class="social-link">
+            <a class="social-link"
+              href="http://www.linkedin.com/in/kixx7"
+              id="social-linkedin" title="Kris Walker's page on LinkedIn">Kris Walker as a professional.</a>
+          </li>
+          <li class="social-link">
+            <a class="social-link"
+              href="http://github.com/kixxauth"
+              id="social-github" title="Kris Walker's computer code on GitHub">Fork me on GitHub.</a>
+          </li>
+        </ul>
+      </dd>
+    </dl><!-- end #sitemap -->
+    <div id="license">
+      <h3 class="license">Legalese</h3>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+        <img alt="Creative Commons License" style="border-width:0"
+        src="http://kixxname.appspot.com/img/somerights20.png" />
+      </a>
+      Copyright &copy; 2010 by
+      <a xmlns:cc="http://creativecommons.org/ns#"
+        href="http://www.kixx.name"
+        rel="cc:attributionURL">Kris Walker</a>
+      Except where otherwise noted, content on this site is licensed under a
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+        Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
+      </a>. Based on source code at
+      <a xmlns:dc="http://purl.org/dc/elements/1.1/"
+        href="http://github.com/kixxauth/kixxname" rel="dc:source">github.com/kixxauth/kixxname</a>.
+      Permissions beyond the scope of this license may be available at
+      <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.kixx.name" rel="cc:morePermissions">
+        www.kixx.name
+      </a>.
+    </div><!-- end #license -->
+  </div><!-- end #footer -->
+</div><!-- end #container --></div><!-- end #stretcher --></body></html>
