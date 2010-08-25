@@ -227,6 +227,29 @@ class PriceHandler(BaseHandler):
     """Accept the HTTP HEAD method."""
     return self.respond()
 
+class StylesheetHandler(Handler):
+  """Handle requests for CSS stylesheets."""
+
+  def respond(self):
+    name = self.name +'-'+ self.request.args.get('class', 'default')
+    response = self.out(utils.render_template(name, type='css'))
+    response.mimetype = 'text/css'
+
+    # Expire in 3 days.
+    response.expires = int(time.time()) + (86400 *3)
+
+    # Only send a response body if the E-Tag does not match.
+    response.add_etag()
+    return response.make_conditional(self.request)
+
+  def get(self):
+    """Accept the HTTP GET method."""
+    return self.respond()
+
+  def head(self):
+    """Accept the HTTP HEAD method."""
+    return self.respond()
+
 
 # Create the handler map for export to the request handling script.  As you can
 # see, the map is a list of tuples. The first item in each tuple is the URL
@@ -246,6 +269,8 @@ handler_map = [
     , ('/service_and_price_schedule'
         , 'price schedule'
         , PriceHandler)
+
+    , ('/css/all.css', 'all', StylesheetHandler)
     ]
 
 

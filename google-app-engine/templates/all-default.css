@@ -1,0 +1,17 @@
+{% comment %}
+
+Vertical styles template.
+=========================
+
+This is the default style template.
+
+For more information regarding the Django template syntax, have a look at the
+documentation.
+http://docs.djangoproject.com/en/1.2/topics/templates/#topics-templates
+
+copyright: (c) 2010 by Kris Walker. All rights reserved.
+
+{% endcomment %}/* Unless otherwise noted, this file is (c) 2010 by Kris Walker. All rights reserved. */
+body {
+  font-family: sans-serif;
+}

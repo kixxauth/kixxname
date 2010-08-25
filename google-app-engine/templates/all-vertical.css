@@ -1,0 +1,19 @@
+{% comment %}
+
+Vertical styles template.
+=========================
+
+This is the style template that 'vertical search' pages use.
+
+For more information regarding the Django template syntax, have a look at the
+documentation.
+http://docs.djangoproject.com/en/1.2/topics/templates/#topics-templates
+
+copyright: (c) 2010 by Kris Walker. All rights reserved.
+
+{% endcomment %}{% extends "reset.css" %}
+
+{% block styles %}/*---------------------------------------------------------
+  copyright: (c) 2010 by Kris Walker. All rights reserved.
+----------------------------------------------------------*/
+{% endblock %}
