@@ -55,4 +55,165 @@ caption, th, td { text-align: left; }
 table, td, th { vertical-align: middle; }
 ul { list-style: none outside none; }
 a img { border: none; }
+
+/*---------------------------------------------------------
+  copyright: (c) 2010 by Kris Walker. All rights reserved.
+----------------------------------------------------------*/
+/* Firefox bug: https://bugzilla.mozilla.org/show_bug.cgi?id=567573 */
+@font-face {
+  font-family: 'BorisBlackBloxx';
+  src: url('/fonts/borisblackbloxx-webfont.eot');
+  src: local('☺'), url('/fonts/borisblackbloxx-webfont.woff') format('woff'), url('/fonts/borisblackbloxx-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+	font-family: 'Comic Book';
+	src: url('/fonts/comic_book-webfont.eot');
+	src: local('☺'), url('/fonts/comic_book-webfont.woff') format('woff'), url('/fonts/comic_book-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+/* @jello @layout http://sandbox.mikepurvis.com/css/jello/ */
+body {
+  font-family: "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
+  font-size: 100%;
+  color: #000;
+}
+@media screen {
+  body {
+    background: #fff url(/img/bg.png) repeat fixed top left;
+    /* @jello */
+    padding: 0 390px;
+  }
+  a {
+    text-decoration: none;
+  }
+  #background {
+    background: transparent url(/img/pow_bg.gif) no-repeat;
+    filter:alpha(opacity=70); /* IE6, IE7, IE8 ... sometimes */
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    width: 750px;
+    height: 696px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #stretcher {
+    /* @jello */
+    width: 45%;
+    margin: 0 auto;
+  }
+  #container {
+    /* @jello */
+    margin: 0 -382px;
+    padding: 2em 0;
+  }
+  #footer {
+    background-color: #fff;
+    width: 98.5%;
+    position: relative;
+    margin-top: 1em;
+    padding-bottom: 1em;
+  }
+  #sitemap {
+    margin-top: 1em;
+    overflow: hidden;
+    position: relative;
+  }
+  #sitemap, #license {
+    width: 97%;
+    margin-left: 2%;
+  }
+  div.sitemap {
+    background-color: #fff;
+    height: 27em;
+    float: left;
+    position: relative;
+  }
+  #sitemap h3.sitemap, #license h3.license {
+    font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
+    text-align: center;
+  }
+  #sitemap h3.sitemap {
+    background-color: #d5512b;
+    color: #fff;
+    font-size: 1.2em;
+    padding: .2em .5em .3em;
+    border-bottom: 3px solid #000;
+    margin-bottom: 1em;
+    line-height: 1.2;
+  }
+  #sitemap-skills {
+    width: 46%;
+  }
+  #sitemap-about, #sitemap-net {
+    width: 23%;
+  }
+  #sitemap-skills, #sitemap-net {
+    margin-left: 2.4%;
+  }
+  #sitemap #portrait {
+    text-align: center;
+  }
+  #social-links {
+    margin-right: 1em;
+  }
+  #sitemap li.social-link {
+    float: left;
+    margin: 1em 0 0 1em;
+  }
+  #sitemap li.social-link a.social-link{
+    display: block;
+    text-indent: -3987px;
+    height: 48px;
+    width: 48px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+  }
+  #social-email {
+    background-image: url(/img/icon_Gmail-48.gif);
+  }
+  #social-blog {
+    background-image: url(/img/icon_Blogger-48.gif);
+  }
+  #social-twitter {
+    background-image: url(/img/icon_Twitter-48.gif);
+  }
+  #social-delicious {
+    background-image: url(/img/icon_Delicious-48.gif);
+  }
+  #social-linkedin {
+    background-image: url(/img/icon_LinkedIn-48.gif);
+  }
+  #sitemap #social-github {
+    height: 160px;
+    width: 160px;
+    background-image: url(/img/github_ribbon.gif);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  #license {
+    background-color: #f6e50a;
+    font-size: .9em;
+    padding: 1em 2%;
+    width: 91.2%;
+    margin-top: 1em;
+  }
+  #license h3.license {
+    font-size: 1.5em;
+    padding-bottom: .2em;
+    border-bottom: 1px dashed #000;
+    margin-bottom: .5em;
+  }
+  #footer, div.sitemap, #license {
+    border: 3px solid #000;
+  }
+}
+#page {
+  width: 100%; /* helps IE */
+}
 {% block styles %}{% endblock %}

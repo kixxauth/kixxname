@@ -18,7 +18,7 @@ ACTIONS = {
         , 'website designer &amp; builder' # Page intro (header)
         , 'designs and builds websites' # description * right here in ...
         , 'websites' # Portfolio link.
-        , 'Creating usable websites' # First content section.
+        , 'Creating websites' # First content section.
         , ''
         ]
     }

@@ -26,7 +26,7 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 {% endcomment %}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<title>{% block title %}{% endblock %} - Kris Walker</title>
+<title>Kris Walker - {% block title %}{% endblock %}</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="description" content="{{ description }}" />{% comment %}
 'handheld_device' is triggered for iPhone, iPad, and Android only.
@@ -42,22 +42,19 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 {# Jello layout. #}<div id="stretcher"><div id="container">
   <div id="page" class="page-{{ page_class }}">{% block page %}{% endblock %}</div><!-- end #page -->
   <div id="footer">
-    <dl id="sitemap">
-      <dt class="sitemap">About Kris Walker.</dt>
-      <dd class="sitemap">
+    <div id="sitemap">
+      <div id="sitemap-about" class="sitemap">
+        <h3 class="sitemap">About Kris Walker.</h3>
         <p id="portrait">
           <img src="/img/kris_walker_portrait-150.jpg" width="150" height="150"
             alt="Portrait of Kris Walker." />
         </p>
-      </dd>
-      <dt class="sitemap">Kris Walker does web design.</dt>
-      <dd class="sitemap">
-      </dd>
-      <dt class="sitemap">Kris Walker is a programmer.</dt>
-      <dd class="sitemap">
-      </dd>
-      <dt class="sitemap">Kris Walker on the net.</dt>
-      <dd class="sitemap">
+      </div>
+      <div id="sitemap-skills" class="sitemap">
+        <h3 class="sitemap">Kris Walker does computer programming and web design.</h3>
+      </div>
+      <div id="sitemap-net" class="sitemap">
+        <h3 class="sitemap">Kris Walker on the net.</h3>
         <ul id="social-links">
           <li class="social-link">
             <a href="mailto:kixxauth@gmail.com" class="social-link"
@@ -89,8 +86,8 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
               id="social-github" title="Kris Walker's computer code on GitHub">Fork me on GitHub.</a>
           </li>
         </ul>
-      </dd>
-    </dl><!-- end #sitemap -->
+      </div>
+    </div><!-- end #sitemap -->
     <div id="license">
       <h3 class="license">Legalese</h3>
       <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">

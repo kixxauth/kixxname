@@ -183,6 +183,14 @@ handlers:
 # `/google-app-engine/static/fonts/README.txt`
 - url: /fonts
   static_dir: static/fonts
+  mime_type: application/octet-stream
+  expiration: 21d
+
+# ### SVG web fonts.
+# `/google-app-engine/static/svgfonts/README.txt`
+- url: /svgfonts
+  static_dir: static/svgfonts
+  mime_type: image/svg+xml
   expiration: 21d
  
 # ### The favicon is static.
