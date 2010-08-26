@@ -40,17 +40,11 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 </style>
 <![endif]-->{% endblock %}
 
-{% block page %}
-    <div id="header" class="header-{{ page_class }}">
-      <h1 id="header-content" class="header">
+{% block header %}
         <a href="/" class="header" title="Kris Walker {{ home_page }}.">I&#39;m Kris Walker,</a>
-        a {{ skills }} who works right here in {{ sub_location }} &amp; {{ super_location }}.</h1>
-      <h2 id="header-subcontent" class="header"><strong class="header">Fireworks</strong> <em class="header">Computer Systems</em></h2>
-      <ul id="navigation" class="navigation-{{ page_class }}">
-        <li class="navigation first"><a href="/resume" title="Kris Walker's resume." class="navigation">Resume</a>
-        </li><li class="navigation"><a href="http://fireworksfactory.blogspot.com/" title="Kris Walker's blog." class="navigation">Blog</a>
-        </li><li class="navigation last"><a href="/contact" title="Contact Kris Walker." class="navigation">Contact me</a></li>
-      </ul></div>
+        a {{ skills }} who works right here in {{ sub_location }} &amp; {{ super_location }}.{% endblock %}
+
+{% block page %}
     <div id="main">
       <div id="content-service" class="content">
         <h3 class="content">{{ actions }}.</h3><h4 class="content">For fun and profit.</h4>

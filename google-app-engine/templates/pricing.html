@@ -1,0 +1,167 @@
+{% comment %}
+
+Pricing Template
+================
+
+This is the template that the price schedule page uses.
+
+For more information regarding the Django template syntax, have a look at the
+documentation.
+http://docs.djangoproject.com/en/1.2/topics/templates/#topics-templates
+
+copyright: (c) 2010 by Kris Walker. Some rights reserved.
+
+License
+-------
+
+All text content, excluding XHTML markup source code, in this file is (c) 2010
+by Kris Walker (http://www.kixx.name) and, unless otherwise indicated, is
+licensed under a Creative Commons Attribution-Share Alike 3.0 Unported License
+(http://creativecommons.org/licenses/by-sa/3.0/).
+
+See CC-LICENSE in this folder for more details.
+
+All XHTML and related source code is copyright (c) 2010 by Kris Walker
+(http://www.kixx.name). All rights reserved.
+
+{% endcomment %}{% extends "base.html" %}
+
+{% block title %}Web design services and pricing.{% endblock %}
+
+{% block conditional_ie %}{% endblock %}
+
+{% block header %}
+          <strong class="header-content">Upfront pricing.</strong>
+          Information you need to make an informed decision without wasting time.{% endblock %}
+
+{% block page %}
+    <div id="main">
+      <div id="content" class="column">
+        <table cellspacing="0">
+          <tr>
+            <th>Which price level?</th>
+            <td>Free starter kit.</td>
+            <td>Bootstrap.</td>
+            <td>Growing.</td>
+            <td>Top tier.</td>
+          </tr>
+          <tr>
+            <th>Domain registration.</th>
+            <td><em>Free</em> with domain management sign up.</td>
+            <td>{{ price_start_domain }}</td>
+            <td>{{ price_growing_domain }}</td>
+            <td>{{ price_full_domain }}</td>
+          </tr>
+          <tr>
+            <th>Search optimization.</th>
+            <td><em>Free</em> with search optimization maintainer.</td>
+            <td>{{ price_start_seo }}</td>
+            <td>{{ price_growing_seo }}</td>
+            <td>{{ price_full_seo }}</td>
+          </tr>
+          <tr>
+            <th>Hosting server set up.</th>
+            <td><em>Free</em> with hosting service sign up.</td>
+            <td>{{ price_start_hosting_setup }}</td>
+            <td>{{ price_growing_hosting_setup }}</td>
+            <td>{{ price_full_hosting_setup }}</td>
+          </tr>
+          <tr>
+            <th>4 total web pages.</th>
+            <td><em>Free</em> with a template design.</td>
+            <td>{{ price_start_package }}</td>
+            <td>{{ price_growing_package }}</td>
+            <td>{{ price_full_package }}</td>
+          </tr>
+        </table>
+        <h3>Additions:</h3>
+        <table cellspacing="0">
+          <tr>
+            <th>Price Level</th>
+            <th>Boot Strap</th>
+            <th>Growing</th>
+            <th>Top Tier</th>
+          </tr>
+          <tr>
+            <th>Additional pages.</th>
+            <td>{{ price_start_page }}</td>
+            <td>{{ price_growing_page }}</td>
+            <td>{{ price_full_page }}</td>
+          </tr>
+          <tr>
+            <th>Content management.</th>
+            <td>{{ price_start_cms }}</td>
+            <td>{{ price_growing_cms }}</td>
+            <td>{{ price_full_cms }}</td>
+          </tr>
+          <tr>
+            <th>Content managed pages.</th>
+            <td>{{ price_start_cmspage }}</td>
+            <td>{{ price_growing_cmspage }}</td>
+            <td>{{ price_full_cmspage }}</td>
+          </tr>
+          <tr>
+            <th>Web form pages.</th>
+            <td>{{ price_start_form }}</td>
+            <td>{{ price_growing_form }}</td>
+            <td>{{ price_full_form }}</td>
+          </tr>
+          <tr>
+            <th>Page interaction.</th>
+            <td>{{ price_start_hourly }}</td>
+            <td>{{ price_growing_hourly }}</td>
+            <td>{{ price_full_hourly }}</td>
+          </tr>
+        </table>
+        <h3>Services:</h3>
+        <table cellspacing="0">
+          <tr>
+            <th>Price Level</th>
+            <th>Boot Strap</th>
+            <th>Growing</th>
+            <th>Top Tier</th>
+          </tr>
+          <tr>
+            <th>Server Hosting.</th>
+            <td>{{ price_start_hosting }}</td>
+            <td>{{ price_growing_hosting }}</td>
+            <td>{{ price_full_hosting }}</td>
+          </tr>
+          <tr>
+            <th>Domain management.</th>
+            <td>{{ price_start_domain_service }}</td>
+            <td>{{ price_growing_domain_service }}</td>
+            <td>{{ price_full_domain_service }}</td>
+          </tr>
+          <tr>
+            <th>Search optimization maintainer.</th>
+            <td>{{ price_start_seo_service }}</td>
+            <td>{{ price_growing_seo_service }}</td>
+            <td>{{ price_full_seo_service }}</td>
+          </tr>
+          <tr>
+            <th>Changes and updates.</th>
+            <td>{{ price_start_hourly }}</td>
+            <td>{{ price_growing_hourly }}</td>
+            <td>{{ price_full_hourly }}</td>
+          </tr>
+        </table>
+        <h3>Money savers:</h3>
+        <table cellspacing="0">
+          <tr>
+            <th>Price Level</th>
+            <th>Boot Strap</th>
+            <th>Growing</th>
+            <th>Top Tier</th>
+          </tr>
+          <tr>
+            <th>Server Hosting.</th>
+            <td>{{ price_start_hosting }}</td>
+            <td>{{ price_growing_hosting }}</td>
+            <td>{{ price_full_hosting }}</td>
+          </tr>
+        </table>
+      </div><!-- end #content -->
+    </div><!-- end #content-container -->
+{% endblock %}
+

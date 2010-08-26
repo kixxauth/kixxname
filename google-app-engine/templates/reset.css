@@ -89,6 +89,19 @@ body {
   a {
     text-decoration: none;
   }
+  /* @fontstack */
+  #sitemap h3.sitemap, #license h3.license {
+    font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
+    text-align: center;
+  }
+  #header-content, #navigation li.navigation a.navigation {
+    font-family: 'Comic Book', 'Marker Felt', 'Comic Sans MS', 'URW Gothic L', serif;
+  }
+  /* @border */
+  #header-content, #header-subcontent, #navigation, #navigation li.navigation a.navigation,
+  #footer, div.sitemap, #license {
+    border: 3px solid #000;
+  }
   #background {
     background: transparent url(/img/pow_bg.gif) no-repeat;
     filter:alpha(opacity=70); /* IE6, IE7, IE8 ... sometimes */
@@ -111,6 +124,48 @@ body {
     margin: 0 -382px;
     padding: 2em 0;
   }
+  #header {
+    position: relative;
+    padding-top: 2em;
+  }
+  #header-content {
+    background-color: #fff;
+    width: 85%;
+    font-size: 1.8em;
+    line-height: 1.2;
+    padding: 1.5em 5% 1em;
+    text-align: center;
+  }
+  #header-subcontent {
+    height: 90px;
+    width: 300px;
+    background: #f6e50a url(/img/logo.gif) no-repeat scroll 5px 8px;
+    padding: 10px;
+    text-indent: -9999px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  #navigation {
+    background-color: #003d75;
+    font-size: 1.2em;
+    padding: .5em .5em .5em 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 2%;
+  }
+  #navigation li.navigation {
+    float: left;
+    margin-left: .5em;
+  }
+  #navigation li.navigation a.navigation {
+    background-color: #f6e50a;
+    display: block;
+    padding: .2em .5em .2em;
+    line-height: 1.2;
+    color: #000;
+  }
   #footer {
     background-color: #fff;
     width: 98.5%;
@@ -132,10 +187,6 @@ body {
     height: 27em;
     float: left;
     position: relative;
-  }
-  #sitemap h3.sitemap, #license h3.license {
-    font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
-    text-align: center;
   }
   #sitemap h3.sitemap {
     background-color: #d5512b;
@@ -208,9 +259,6 @@ body {
     padding-bottom: .2em;
     border-bottom: 1px dashed #000;
     margin-bottom: .5em;
-  }
-  #footer, div.sitemap, #license {
-    border: 3px solid #000;
   }
 }
 #page {

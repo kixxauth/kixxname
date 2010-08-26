@@ -1,0 +1,29 @@
+{% comment %}
+
+Pricing styles template.
+========================
+
+This is the style template that the price schedule page uses.
+
+For more information regarding the Django template syntax, have a look at the
+documentation.
+http://docs.djangoproject.com/en/1.2/topics/templates/#topics-templates
+
+copyright: (c) 2010 by Kris Walker. All rights reserved.
+
+{% endcomment %}{% extends "reset.css" %}
+
+{% block styles %}
+@media screen {
+  /* @fontstack */
+  strong.header-content {
+    font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
+  }
+  strong.header-content {
+    display: block;
+    text-align: left;
+    font-size: 1.2em;
+    padding-bottom: .3em;
+  }
+}
+{% endblock %}

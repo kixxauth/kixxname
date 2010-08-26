@@ -40,7 +40,16 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 {# Conditional comments to target IE. #}{% block conditional_ie %}{% endblock %}
 </head><body id="kixxname">{# Holds the fixed background image. #}<div id="background"></div>
 {# Jello layout. #}<div id="stretcher"><div id="container">
-  <div id="page" class="page-{{ page_class }}">{% block page %}{% endblock %}</div><!-- end #page -->
+  <div id="page" class="page-{{ page_class }}">
+    <div id="header" class="header-{{ page_class }}">
+      <h1 id="header-content" class="header">{% block header %}{% endblock %}</h1>
+      <h2 id="header-subcontent" class="header"><strong class="header">Fireworks</strong> <em class="header">Computer Systems</em></h2>
+      <ul id="navigation" class="navigation-{{ page_class }}">
+        <li class="navigation first"><a href="/resume" title="Kris Walker's resume." class="navigation">Resume</a>
+        </li><li class="navigation"><a href="http://fireworksfactory.blogspot.com/" title="Kris Walker's blog." class="navigation">Blog</a>
+        </li><li class="navigation last"><a href="/contact" title="Contact Kris Walker." class="navigation">Contact me</a></li>
+      </ul></div>
+    {% block page %}{% endblock %}</div><!-- end #page -->
   <div id="footer">
     <div id="sitemap">
       <div id="sitemap-about" class="sitemap">
