@@ -14,3 +14,20 @@ Stacks
 * "iphone website" + "mobile website" + "blackberry" + LOCALS
 
 * "website design" + "website builder" + "web page design" + LOCALS
+
+Stats
+
+massachusetts web designers         4400   1,640  2.683
+albany website design               1000     621  1.610
+connecticut web hosting             1600   1,330  1.203
+hudson valley web design             170     276   .616
+albany web hosting                   170     374   .455
+massachusetts web designer          4400  10,800   .407
+massachusetts web design            3600   9,740   .370
+connecticut web design              2400   8,210   .292
+albany web design                   1000   6,930   .144
+massachusetts web design firms      6600  53,100   .124
+massachusetts web design companies  6600  53,700   .123
+hudson valley web designers          210   2,470   .085
+connecticut web development          210   7,740   .027
+massachusetts web development        170   8,580   .020
