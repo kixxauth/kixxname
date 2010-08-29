@@ -16,11 +16,14 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 {% block styles %}
 @media screen {
   /* @fontstack */
-  strong.header-content {
+  strong.header-content, tr.head, strong.free {
     font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
   }
+  table.pricing {
+    font-family: 'Comic Book', 'Marker Felt', 'Comic Sans MS', 'URW Gothic L', serif;
+  }
   /* @border */
-  #main, table.pricing {
+  #main, table.pricing, div.package {
     border: 3px solid #000;
   }
   strong.header-content {
@@ -30,12 +33,46 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
     padding-bottom: .3em;
   }
   #main {
+    background-color: #fff;
+    margin-top: 1em;
     width: 94.5%;
     position: relative;
+    padding: 0 2% 1.5em;
+  }
+  div.package {
+    width: 44.1%;
+    margin-top: 1.5em;
+    height: 20em;
     padding: 1em 2%;
+    float: left;
+  }
+  #seo-package, #custom-package {
+    margin-left: 2%;
   }
   table.pricing {
     width: 100%;
+    margin-top: 1.5em;
+  }
+  th, td {
+    padding: .1em 2% .3em;
+  }
+  tr.head {
+    font-size: 1.2em;
+  }
+  tr.head th.first {
+    font-size: 1.5em;
+  }
+  tr.even {
+    background-color: #ddd;
+  }
+  #website th.price-level {
+    width: 6.5em;
+  }
+  strong.free {
+    font-weight: normal;
+  }
+  th.first {
+    width: 30%;
   }
 }
 {% endblock %}

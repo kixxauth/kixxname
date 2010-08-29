@@ -44,114 +44,226 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 
 {% block page %}
     <div id="main">
+      <div id="packages">
+        <div id="starter-package" class="package">
+          <h3 class="package-name">Start Up</h3>
+          <ul class="package-features">
+            <li class="package-features">Free domain name registration.</li>
+            <li class="package-features">Free hosting set up.</li>
+            <li class="package-features">Free website templates with photos.</li>
+            <li class="package-features">Domain management.</li>
+            <li class="package-features">Up to 3 web pages for free.</li>
+          </ul>
+          <p class="package-price starter full">
+            <em class="setup">Free set up then</em>
+            <span class="dollar">$</span><strong class="price">{{ price_starter_package_full }}</strong>
+            <em class="conditions">per year</em>
+          </p>
+          <h4 class="package-discount growing"><em class="discount">15%</em> Growing Business Discount</h4>
+          <p class="package-price starter growing">
+            <em class="setup">Free set up then</em>
+            <span class="dollar">$</span><strong class="price">{{ price_starter_package_growing }}</strong>
+            <em class="conditions">per year</em>
+          </p>
+          <h4 class="package-discount start"><em class="discount">25%</em> Bootstrapper Discount</h4>
+          <p class="package-price starter start">
+            <em class="setup">Free set up then</em>
+            <span class="dollar">$</span><strong class="price">{{ price_starter_package_bootstrap }}</strong>
+            <em class="conditions">per year</em>
+          </p>
+        </div>
+        <div id="seo-package" class="package">
+          <h3 class="package-name">Customer Magnet</h3>
+          <ul class="package-features">
+            <li class="package-features">Everything in the Start Up package, PLUS:</li>
+            <li class="package-features">Free research and coding for search engine optimization.</li>
+            <li class="package-features">Search engine optimization maintenance plan.</li>
+          </ul>
+          <p class="package-price starter full">
+            <em class="setup">Free set up then</em>
+            <span class="dollar">$</span><strong class="price">{{ price_seo_package_full }}</strong>
+            <em class="conditions">per year</em>
+          </p>
+          <h4 class="package-discount growing"><em class="discount">15%</em> Growing Business Discount</h4>
+          <p class="package-price starter growing">
+            <em class="setup">Free set up then</em>
+            <span class="dollar">$</span><strong class="price">{{ price_seo_package_growing }}</strong>
+            <em class="conditions">per year</em>
+          </p>
+          <h4 class="package-discount start"><em class="discount">25%</em> Bootstrapper Discount</h4>
+          <p class="package-price starter start">
+            <em class="setup">Free set up then</em>
+            <span class="dollar">$</span><strong class="price">{{ price_seo_package_bootstrap }}</strong>
+            <em class="conditions">per year</em>
+          </p>
+       </div>
+        <div id="cms-package" class="package">
+          <h3 class="package-name">Time Saver</h3>
+          <ul class="package-features">
+            <li class="package-features">Everything in the Customer Magnet package, PLUS:</li>
+            <li class="package-features">A content management system so you can change the content of your site yourself with easy point and click tools.</li>
+          </ul>
+          <p class="package-price starter full">
+            <em class="setup"><span class="dollar">$</span>{{ price_custom_package_setup_full }} set up then</em>
+            <span class="dollar">$</span><strong class="price">{{ price_seo_package_full }}</strong>
+            <em class="conditions">per year</em>
+          </p>
+          <h4 class="package-discount growing"><em class="discount">15%</em> Growing Business Discount</h4>
+          <p class="package-price starter growing">
+            <em class="setup"><span class="dollar">$</span>{{ price_custom_package_setup_growing }} set up then</em>
+            <span class="dollar">$</span><strong class="price">{{ price_seo_package_growing }}</strong>
+            <em class="conditions">per year</em>
+          </p>
+          <h4 class="package-discount start"><em class="discount">25%</em> Bootstrapper Discount</h4>
+          <p class="package-price starter start">
+            <em class="setup"><span class="dollar">$</span>{{ price_custom_package_setup_bootstrap }} set up then</em>
+            <span class="dollar">$</span><strong class="price">{{ price_seo_package_bootstrap }}</strong>
+            <em class="conditions">per year</em>
+          </p>
+        </div>
+        <div id="custom-package" class="package">
+          <h3 class="package-name">Custom Design</h3>
+          <ul class="package-features">
+            <li class="package-features">Everything in the Time Saver package, PLUS:</li>
+            <li class="package-features">Custom designed pages for a look and feel that matches your business.</li>
+          </ul>
+          <p class="package-price starter full">
+            <em class="setup"><span class="dollar">$</span>{{ price_cms_package_setup_full }} set up then</em>
+            <span class="dollar">$</span><strong class="price">{{ price_seo_package_full }}</strong>
+            <em class="conditions">per year</em>
+          </p>
+          <h4 class="package-discount growing"><em class="discount">15%</em> Growing Business Discount</h4>
+          <p class="package-price starter growing">
+            <em class="setup"><span class="dollar">$</span>{{ price_cms_package_setup_growing }} set up then</em>
+            <span class="dollar">$</span><strong class="price">{{ price_seo_package_growing }}</strong>
+            <em class="conditions">per year</em>
+          </p>
+          <h4 class="package-discount start"><em class="discount">25%</em> Bootstrapper Discount</h4>
+          <p class="package-price starter start">
+            <em class="setup"><span class="dollar">$</span>{{ price_cms_package_setup_bootstrap }} set up then</em>
+            <span class="dollar">$</span><strong class="price">{{ price_seo_package_bootstrap }}</strong>
+            <em class="conditions">per year</em>
+          </p>
+        </div>
+      </div>
       <table id="website" class="pricing" cellspacing="0">
-        <tr id="website-head" class="website odd">
-          <th>Which price level?</th>
-          <th>Free starter kit.</th>
-          <th>Bootstrap.</th>
-          <th>Growing.</th>
-          <th>Top tier.</th>
-        </tr>
-        <tr id="website-domain" class="website even">
-          <th>Domain registration.</th>
-          <td><em><strong>Free</strong> with domain management sign up.</em></td>
-          <td>${{ price_start_domain }}</td>
-          <td>${{ price_growing_domain }}</td>
-          <td>${{ price_full_domain }}</td>
-        </tr>
-        <tr id="website-seo" class="website odd">
-          <th>Search optimization.</th>
-          <td><em><strong>Free</strong> with search optimization maintainer.</em></td>
-          <td>${{ price_start_seo }}</td>
-          <td>${{ price_growing_seo }}</td>
-          <td>${{ price_full_seo }}</td>
-        </tr>
-        <tr id="website-hosting" class="website even">
-          <th>Hosting server set up.</th>
-          <td><em><strong>Free</strong> with hosting service sign up.</em></td>
-          <td>${{ price_start_hosting_setup }}</td>
-          <td>${{ price_growing_hosting_setup }}</td>
-          <td>${{ price_full_hosting_setup }}</td>
-        </tr>
-        <tr id="website-pages" class="website odd">
-          <th>Design (up to 4 pages).</th>
-          <td><em><strong>Free</strong> with a template design.</em></td>
-          <td>${{ price_start_package }}</td>
-          <td>${{ price_growing_package }}</td>
-          <td>${{ price_full_package }}</td>
-        </tr>
+        <thead class="website">
+          <tr id="website-head" class="website odd head">
+            <th class="first">New Websites</th>
+            <th class="price-level">Full</th>
+            <th class="price-level">Growing</th>
+            <th class="price-level">Bootstrap</th>
+            <th>Free</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="website-domain" class="website even">
+            <th class="first">Domain registration.</th>
+            <td>${{ price_full_domain }}</td>
+            <td>${{ price_growing_domain }}</td>
+            <td>${{ price_start_domain }}</td>
+            <td><em><strong class="free">Free</strong> with domain management sign up.</em></td>
+          </tr>
+          <tr id="website-seo" class="website odd">
+            <th class="first">Search optimization.</th>
+            <td>${{ price_full_seo }}</td>
+            <td>${{ price_growing_seo }}</td>
+            <td>${{ price_start_seo }}</td>
+            <td><em><strong class="free">Free</strong> with search optimization maintainer.</em></td>
+          </tr>
+          <tr id="website-hosting" class="website even">
+            <th class="first">Hosting server set up.</th>
+            <td>${{ price_full_hosting_setup }}</td>
+            <td>${{ price_growing_hosting_setup }}</td>
+            <td>${{ price_start_hosting_setup }}</td>
+            <td><em><strong class="free">Free</strong> with hosting service sign up.</em></td>
+          </tr>
+          <tr id="website-pages" class="website odd">
+            <th class="first">Design (up to 3 pages).</th>
+            <td>${{ price_full_package }}</td>
+            <td>${{ price_growing_package }}</td>
+            <td>${{ price_start_package }}</td>
+            <td><em><strong class="free">Free</strong> with a template design.</em></td>
+          </tr>
+        </tbody>
       </table>
-      <h3 class="table-header">Additions:</h3>
       <table id="additions" class="pricing" cellspacing="0">
-        <tr id="additions-head" class="additions odd">
-          <th>Price Level</th>
-          <th>Boot Strap</th>
-          <th>Growing</th>
-          <th>Top Tier</th>
-        </tr>
-        <tr id="additions-pages" class="additions even">
-          <th>Additional pages.</th>
-          <td>${{ price_start_page }} per page</td>
-          <td>${{ price_growing_page }} per page</td>
-          <td>${{ price_full_page }} per page</td>
-        </tr>
-        <tr id="additions-cms" class="additions odd">
-          <th>Content management system.</th>
-          <td>${{ price_start_cms }}</td>
-          <td>${{ price_growing_cms }}</td>
-          <td>${{ price_full_cms }}</td>
-        </tr>
-        <tr id="additions-cmspages" class="additions even">
-          <th>Content managed pages.</th>
-          <td>${{ price_start_cmspage }} per CM page</td>
-          <td>${{ price_growing_cmspage }} per CM page</td>
-          <td>${{ price_full_cmspage }} per CM page</td>
-        </tr>
-        <tr id="additions-forms" class="additions odd">
-          <th>Web form pages.</th>
-          <td>${{ price_start_form }} per form</td>
-          <td>${{ price_growing_form }} per form</td>
-          <td>${{ price_full_form }} per form</td>
-        </tr>
-        <tr id="additions-js" class="additions even">
-          <th>Page interaction.</th>
-          <td>${{ price_start_hourly }} per hour</td>
-          <td>${{ price_growing_hourly }} per hour</td>
-          <td>${{ price_full_hourly }} per hour</td>
-        </tr>
+        <thead class="additions">
+          <tr id="additions-head" class="additions odd head">
+            <th class="first">Additions</th>
+            <th class="price-level">Full</th>
+            <th class="price-level">Growing</th>
+            <th class="price-level">Bootstrap</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="additions-pages" class="additions even">
+            <th class="first">Additional pages.</th>
+            <td>${{ price_full_page }} per page</td>
+            <td>${{ price_growing_page }} per page</td>
+            <td>${{ price_start_page }} per page</td>
+          </tr>
+          <tr id="additions-cms" class="additions odd">
+            <th class="first">Content management system.</th>
+            <td>${{ price_full_cms }}</td>
+            <td>${{ price_growing_cms }}</td>
+            <td>${{ price_start_cms }}</td>
+          </tr>
+          <tr id="additions-cmspages" class="additions even">
+            <th class="first">Content managed pages.</th>
+            <td>${{ price_full_cmspage }} per CM page</td>
+            <td>${{ price_growing_cmspage }} per CM page</td>
+            <td>${{ price_start_cmspage }} per CM page</td>
+          </tr>
+          <tr id="additions-forms" class="additions odd">
+            <th class="first">Web form pages.</th>
+            <td>${{ price_full_form }} per form</td>
+            <td>${{ price_growing_form }} per form</td>
+            <td>${{ price_start_form }} per form</td>
+          </tr>
+          <tr id="additions-js" class="additions even">
+            <th class="first">Page interaction.</th>
+            <td>${{ price_full_hourly }} per hour</td>
+            <td>${{ price_growing_hourly }} per hour</td>
+            <td>${{ price_start_hourly }} per hour</td>
+          </tr>
+        </tbody>
       </table>
-      <h3>Services:</h3>
       <table id="services" class="pricing" cellspacing="0">
-        <tr id="services-head" class="services odd">
-          <th>Price Level</th>
-          <th>Boot Strap</th>
-          <th>Growing</th>
-          <th>Top Tier</th>
-        </tr>
-        <tr id="services-hosting" class="services even">
-          <th>Server Hosting.</th>
-          <td>${{ price_start_hosting }} per year</td>
-          <td>${{ price_growing_hosting }} per year</td>
-          <td>${{ price_full_hosting }} per year</td>
-        </tr>
-        <tr id="services-domain" class="services odd">
-          <th>Domain management.</th>
-          <td>${{ price_start_domain_service }} per year</td>
-          <td>${{ price_growing_domain_service }} per year</td>
-          <td>${{ price_full_domain_service }} per year</td>
-        </tr>
-        <tr id="services-seo" class="services even">
-          <th>Search optimization maintainer.</th>
-          <td>${{ price_start_seo_service }} per year</td>
-          <td>${{ price_growing_seo_service }} per year</td>
-          <td>${{ price_full_seo_service }} per year</td>
-        </tr>
-        <tr id="services-changes" class="services odd">
-          <th>Changes and updates.</th>
-          <td>${{ price_start_hourly }} per hour</td>
-          <td>${{ price_growing_hourly }} per hour</td>
-          <td>${{ price_full_hourly }} per hour</td>
-        </tr>
+        <thead class="services">
+          <tr id="services-head" class="services odd head">
+            <th class="first">Services</th>
+            <th class="price-level">Full</th>
+            <th class="price-level">Growing</th>
+            <th class="price-level">Bootstrap</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="services-hosting" class="services even">
+            <th class="first">Server Hosting.</th>
+            <td>${{ price_full_hosting }} per year</td>
+            <td>${{ price_growing_hosting }} per year</td>
+            <td>${{ price_start_hosting }} per year</td>
+          </tr>
+          <tr id="services-domain" class="services odd">
+            <th class="first">Domain management.</th>
+            <td>${{ price_full_domain_service }} per year</td>
+            <td>${{ price_growing_domain_service }} per year</td>
+            <td>${{ price_start_domain_service }} per year</td>
+          </tr>
+          <tr id="services-seo" class="services even">
+            <th class="first">Search optimization maintainer.</th>
+            <td>${{ price_full_seo_service }} per year</td>
+            <td>${{ price_growing_seo_service }} per year</td>
+            <td>${{ price_start_seo_service }} per year</td>
+          </tr>
+          <tr id="services-changes" class="services odd">
+            <th class="first">Changes and updates.</th>
+            <td>${{ price_full_hourly }} per hour</td>
+            <td>${{ price_growing_hourly }} per hour</td>
+            <td>${{ price_start_hourly }} per hour</td>
+          </tr>
+        </tbody>
       </table>
     </div><!-- end #content-container -->
 {% endblock %}
