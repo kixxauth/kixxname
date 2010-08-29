@@ -36,132 +36,115 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 
 {% block page %}
     <div id="main">
-      <div id="content" class="column">
-        <table cellspacing="0">
-          <tr>
-            <th>Which price level?</th>
-            <td>Free starter kit.</td>
-            <td>Bootstrap.</td>
-            <td>Growing.</td>
-            <td>Top tier.</td>
-          </tr>
-          <tr>
-            <th>Domain registration.</th>
-            <td><em>Free</em> with domain management sign up.</td>
-            <td>{{ price_start_domain }}</td>
-            <td>{{ price_growing_domain }}</td>
-            <td>{{ price_full_domain }}</td>
-          </tr>
-          <tr>
-            <th>Search optimization.</th>
-            <td><em>Free</em> with search optimization maintainer.</td>
-            <td>{{ price_start_seo }}</td>
-            <td>{{ price_growing_seo }}</td>
-            <td>{{ price_full_seo }}</td>
-          </tr>
-          <tr>
-            <th>Hosting server set up.</th>
-            <td><em>Free</em> with hosting service sign up.</td>
-            <td>{{ price_start_hosting_setup }}</td>
-            <td>{{ price_growing_hosting_setup }}</td>
-            <td>{{ price_full_hosting_setup }}</td>
-          </tr>
-          <tr>
-            <th>4 total web pages.</th>
-            <td><em>Free</em> with a template design.</td>
-            <td>{{ price_start_package }}</td>
-            <td>{{ price_growing_package }}</td>
-            <td>{{ price_full_package }}</td>
-          </tr>
-        </table>
-        <h3>Additions:</h3>
-        <table cellspacing="0">
-          <tr>
-            <th>Price Level</th>
-            <th>Boot Strap</th>
-            <th>Growing</th>
-            <th>Top Tier</th>
-          </tr>
-          <tr>
-            <th>Additional pages.</th>
-            <td>{{ price_start_page }}</td>
-            <td>{{ price_growing_page }}</td>
-            <td>{{ price_full_page }}</td>
-          </tr>
-          <tr>
-            <th>Content management.</th>
-            <td>{{ price_start_cms }}</td>
-            <td>{{ price_growing_cms }}</td>
-            <td>{{ price_full_cms }}</td>
-          </tr>
-          <tr>
-            <th>Content managed pages.</th>
-            <td>{{ price_start_cmspage }}</td>
-            <td>{{ price_growing_cmspage }}</td>
-            <td>{{ price_full_cmspage }}</td>
-          </tr>
-          <tr>
-            <th>Web form pages.</th>
-            <td>{{ price_start_form }}</td>
-            <td>{{ price_growing_form }}</td>
-            <td>{{ price_full_form }}</td>
-          </tr>
-          <tr>
-            <th>Page interaction.</th>
-            <td>{{ price_start_hourly }}</td>
-            <td>{{ price_growing_hourly }}</td>
-            <td>{{ price_full_hourly }}</td>
-          </tr>
-        </table>
-        <h3>Services:</h3>
-        <table cellspacing="0">
-          <tr>
-            <th>Price Level</th>
-            <th>Boot Strap</th>
-            <th>Growing</th>
-            <th>Top Tier</th>
-          </tr>
-          <tr>
-            <th>Server Hosting.</th>
-            <td>{{ price_start_hosting }}</td>
-            <td>{{ price_growing_hosting }}</td>
-            <td>{{ price_full_hosting }}</td>
-          </tr>
-          <tr>
-            <th>Domain management.</th>
-            <td>{{ price_start_domain_service }}</td>
-            <td>{{ price_growing_domain_service }}</td>
-            <td>{{ price_full_domain_service }}</td>
-          </tr>
-          <tr>
-            <th>Search optimization maintainer.</th>
-            <td>{{ price_start_seo_service }}</td>
-            <td>{{ price_growing_seo_service }}</td>
-            <td>{{ price_full_seo_service }}</td>
-          </tr>
-          <tr>
-            <th>Changes and updates.</th>
-            <td>{{ price_start_hourly }}</td>
-            <td>{{ price_growing_hourly }}</td>
-            <td>{{ price_full_hourly }}</td>
-          </tr>
-        </table>
-        <h3>Money savers:</h3>
-        <table cellspacing="0">
-          <tr>
-            <th>Price Level</th>
-            <th>Boot Strap</th>
-            <th>Growing</th>
-            <th>Top Tier</th>
-          </tr>
-          <tr>
-            <th>Server Hosting.</th>
-            <td>{{ price_start_hosting }}</td>
-            <td>{{ price_growing_hosting }}</td>
-            <td>{{ price_full_hosting }}</td>
-          </tr>
-        </table>
-      </div><!-- end #content -->
+      <table id="website" class="pricing" cellspacing="0">
+        <tr id="website-head" class="website odd">
+          <th>Which price level?</th>
+          <th>Free starter kit.</th>
+          <th>Bootstrap.</th>
+          <th>Growing.</th>
+          <th>Top tier.</th>
+        </tr>
+        <tr id="website-domain" class="website even">
+          <th>Domain registration.</th>
+          <td><em><strong>Free</strong> with domain management sign up.</em></td>
+          <td>${{ price_start_domain }}</td>
+          <td>${{ price_growing_domain }}</td>
+          <td>${{ price_full_domain }}</td>
+        </tr>
+        <tr id="website-seo" class="website odd">
+          <th>Search optimization.</th>
+          <td><em><strong>Free</strong> with search optimization maintainer.</em></td>
+          <td>${{ price_start_seo }}</td>
+          <td>${{ price_growing_seo }}</td>
+          <td>${{ price_full_seo }}</td>
+        </tr>
+        <tr id="website-hosting" class="website even">
+          <th>Hosting server set up.</th>
+          <td><em><strong>Free</strong> with hosting service sign up.</em></td>
+          <td>${{ price_start_hosting_setup }}</td>
+          <td>${{ price_growing_hosting_setup }}</td>
+          <td>${{ price_full_hosting_setup }}</td>
+        </tr>
+        <tr id="website-pages" class="website odd">
+          <th>Design (up to 4 pages).</th>
+          <td><em><strong>Free</strong> with a template design.</em></td>
+          <td>${{ price_start_package }}</td>
+          <td>${{ price_growing_package }}</td>
+          <td>${{ price_full_package }}</td>
+        </tr>
+      </table>
+      <h3 class="table-header">Additions:</h3>
+      <table id="additions" class="pricing" cellspacing="0">
+        <tr id="additions-head" class="additions odd">
+          <th>Price Level</th>
+          <th>Boot Strap</th>
+          <th>Growing</th>
+          <th>Top Tier</th>
+        </tr>
+        <tr id="additions-pages" class="additions even">
+          <th>Additional pages.</th>
+          <td>${{ price_start_page }} per page</td>
+          <td>${{ price_growing_page }} per page</td>
+          <td>${{ price_full_page }} per page</td>
+        </tr>
+        <tr id="additions-cms" class="additions odd">
+          <th>Content management system.</th>
+          <td>${{ price_start_cms }}</td>
+          <td>${{ price_growing_cms }}</td>
+          <td>${{ price_full_cms }}</td>
+        </tr>
+        <tr id="additions-cmspages" class="additions even">
+          <th>Content managed pages.</th>
+          <td>${{ price_start_cmspage }} per CM page</td>
+          <td>${{ price_growing_cmspage }} per CM page</td>
+          <td>${{ price_full_cmspage }} per CM page</td>
+        </tr>
+        <tr id="additions-forms" class="additions odd">
+          <th>Web form pages.</th>
+          <td>${{ price_start_form }} per form</td>
+          <td>${{ price_growing_form }} per form</td>
+          <td>${{ price_full_form }} per form</td>
+        </tr>
+        <tr id="additions-js" class="additions even">
+          <th>Page interaction.</th>
+          <td>${{ price_start_hourly }} per hour</td>
+          <td>${{ price_growing_hourly }} per hour</td>
+          <td>${{ price_full_hourly }} per hour</td>
+        </tr>
+      </table>
+      <h3>Services:</h3>
+      <table id="services" class="pricing" cellspacing="0">
+        <tr id="services-head" class="services odd">
+          <th>Price Level</th>
+          <th>Boot Strap</th>
+          <th>Growing</th>
+          <th>Top Tier</th>
+        </tr>
+        <tr id="services-hosting" class="services even">
+          <th>Server Hosting.</th>
+          <td>${{ price_start_hosting }} per year</td>
+          <td>${{ price_growing_hosting }} per year</td>
+          <td>${{ price_full_hosting }} per year</td>
+        </tr>
+        <tr id="services-domain" class="services odd">
+          <th>Domain management.</th>
+          <td>${{ price_start_domain_service }} per year</td>
+          <td>${{ price_growing_domain_service }} per year</td>
+          <td>${{ price_full_domain_service }} per year</td>
+        </tr>
+        <tr id="services-seo" class="services even">
+          <th>Search optimization maintainer.</th>
+          <td>${{ price_start_seo_service }} per year</td>
+          <td>${{ price_growing_seo_service }} per year</td>
+          <td>${{ price_full_seo_service }} per year</td>
+        </tr>
+        <tr id="services-changes" class="services odd">
+          <th>Changes and updates.</th>
+          <td>${{ price_start_hourly }} per hour</td>
+          <td>${{ price_growing_hourly }} per hour</td>
+          <td>${{ price_full_hourly }} per hour</td>
+        </tr>
+      </table>
     </div><!-- end #content-container -->
 {% endblock %}
 

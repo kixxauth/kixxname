@@ -19,11 +19,23 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
   strong.header-content {
     font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
   }
+  /* @border */
+  #main, table.pricing {
+    border: 3px solid #000;
+  }
   strong.header-content {
     display: block;
     text-align: left;
     font-size: 1.2em;
     padding-bottom: .3em;
+  }
+  #main {
+    width: 94.5%;
+    position: relative;
+    padding: 1em 2%;
+  }
+  table.pricing {
+    width: 100%;
   }
 }
 {% endblock %}
