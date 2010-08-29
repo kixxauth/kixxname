@@ -28,7 +28,15 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 
 {% block title %}Web design services and pricing.{% endblock %}
 
-{% block conditional_ie %}{% endblock %}
+{% block conditional_ie %}<!--[if IE 6]>
+<style type="text/css">
+  #background { position: absolute; }
+  /* @jello layout */
+  #container { height: 0; position: relative; }
+  /* Fix @margin doubling on floated elements. */
+  #navigation li.navigation { display: inline; }
+</style>
+<![endif]-->{% endblock %}
 
 {% block header %}
           <strong class="header-content">Upfront pricing.</strong>
