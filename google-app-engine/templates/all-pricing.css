@@ -16,14 +16,15 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 {% block styles %}
 @media screen {
   /* @fontstack */
-  strong.header-content, tr.head, strong.free {
+  strong.header-content, h3.package-name, tr.head, strong.free,
+  h2.discounts-explanation, #price-list-head, #contact-order a.contact-order {
     font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
   }
-  table.pricing {
+  table.pricing, strong.package-discount em.discount, #contact-order {
     font-family: 'Comic Book', 'Marker Felt', 'Comic Sans MS', 'URW Gothic L', serif;
   }
   /* @border */
-  #main, table.pricing, div.package {
+  #main, table.pricing, div.package, #price-list-head, #discounts-explanation, #contact-order {
     border: 3px solid #000;
   }
   strong.header-content {
@@ -33,23 +34,113 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
     padding-bottom: .3em;
   }
   #main {
-    background-color: #fff;
+    background-color: #003d75;
     margin-top: 1em;
     width: 94.5%;
     position: relative;
     padding: 0 2% 1.5em;
   }
+  #contact-order {
+    background-color: #f6e50a;
+    margin-top: 1.5em;
+    font-size: 1.2em;
+    padding: 0 1em 1em;
+    line-height: 1.2;
+  }
+  #contact-order a.contact-order {
+    font-size: 1.2em;
+    color: #003d75;
+    display: block;
+    padding-bottom: .5em;
+  }
+  #contact-order a.contact-order:hover {
+    text-decoration: underline;
+  }
+  p.contact-order {
+    margin-top: 1em;
+  }
+  #packages {
+    overflow: hidden;
+    position: relative;
+  }
   div.package {
+    background-color: #fff;
     width: 44.1%;
     margin-top: 1.5em;
-    height: 20em;
-    padding: 1em 2%;
+    height: 22em;
+    padding: 0.5em 2% 0;
     float: left;
+    color: #003d75;
+    position: relative;
   }
   #seo-package, #custom-package {
     margin-left: 2%;
   }
+  h3.package-name {
+    font-size: 1.2em;
+  }
+  ul.package-features {
+    margin-top: .5em;
+    list-style: circle outside;
+    margin-left: 1em;
+    line-height: 1.2;
+    width: 50%;
+    font-size: .9em;
+    float: left;
+  }
+  div.package-price {
+    width: 100%;
+    clear: both;
+    padding-top: 1.5em;
+    overflow: hidden;
+  }
+  p.package-price {
+    width: 47%;
+    line-height: 1.2;
+    font-size: 1.05em;
+  }
+  p.package-price.growing {
+    float: left;
+  }
+  p.package-price.start {
+    float: right;
+  }
+  em.setup {
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1;
+  }
+  strong.price {
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  strong.package-discount {
+    display: block;
+    font-weight: normal;
+    font-size: .9em;
+    margin-bottom: 1em;
+  }
+  strong.package-discount em.discount {
+    font-size: 2em;
+  }
+  p.package-price.full {
+    width: 40%;
+    color: #333;
+    position: absolute;
+    top: 3.5em;
+    right: 0;
+  }
+  #price-list-head {
+    background-color: #f6e50a;
+    width: 20em;
+    font-size: 2em;
+    margin: .8em auto 0;
+    text-align: center;
+    overflow: hidden;
+    padding: .1em 0 .2em;
+  }
   table.pricing {
+    background-color: #fff;
     width: 100%;
     margin-top: 1.5em;
     clear: both;
@@ -66,14 +157,32 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
   tr.even {
     background-color: #ddd;
   }
-  #website th.price-level {
-    width: 6.5em;
+  #website th.price-level.full {
+    width: 4em;
+  }
+  #website th.price-level.growing {
+    width: 7em;
+  }
+  #website th.price-level.start {
+    width: 9em;
   }
   strong.free {
     font-weight: normal;
   }
   th.first {
     width: 30%;
+  }
+  #discounts-explanation {
+    background-color: #f6e50a;
+    margin-top: 2em;
+    padding: 1em 3%;
+  }
+  h2.discounts-explanation {
+    font-size: 1.3em;
+  }
+  p.discounts-explanation {
+    margin-top: 1em;
+    font-size: 1.05em;
   }
 }
 {% endblock %}

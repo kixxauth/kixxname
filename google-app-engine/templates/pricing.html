@@ -35,124 +35,141 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
   #container { height: 0; position: relative; }
   /* Fix @margin doubling on floated elements. */
   #navigation li.navigation { display: inline; }
+  div.package { position: static; }
+  p.package-price.full { display: none; } /* IE6 can't get position right. */
 </style>
 <![endif]-->{% endblock %}
 
 {% block header %}
           <strong class="header-content">Upfront pricing.</strong>
-          Information you need to make an informed decision without wasting time.{% endblock %}
+          Information you need to make the right decision.{% endblock %}
 
 {% block page %}
     <div id="main">
+      <div id="contact-order">
+        <p class="contact-order"><a class="contact-order" href="mailto:kixxauth@gmail.com">kixxauth@gmail.com</a>
+        Contact me about the Growing Business and Bootstrapper discounts, or to order a website package.
+        The featured packages are just starting points and can be modified to suite your goals and budget.</p>
+        <p class="contact-order">And, don't forget, I also work on improving existing websites too!</p>
+      </div>
       <div id="packages">
         <div id="starter-package" class="package">
-          <h3 class="package-name">Start Up</h3>
+          <h3 class="package-name">Start Up Package</h3>
           <ul class="package-features">
-            <li class="package-features">Free domain name registration.</li>
+            <li class="package-features">Free domain name set up.</li>
             <li class="package-features">Free hosting set up.</li>
-            <li class="package-features">Free website templates with photos.</li>
+            <li class="package-features">Free web page templates.</li>
             <li class="package-features">Domain management.</li>
-            <li class="package-features">Up to 3 web pages for free.</li>
+            <li class="package-features">Up to 3 pages.</li>
           </ul>
-          <p class="package-price starter full">
-            <em class="setup">Free set up then</em>
-            <span class="dollar">$</span><strong class="price">{{ price_starter_package_full }}</strong>
-            <em class="conditions">per year</em>
-          </p>
-          <h4 class="package-discount growing"><em class="discount">15%</em> Growing Business Discount</h4>
-          <p class="package-price starter growing">
-            <em class="setup">Free set up then</em>
-            <span class="dollar">$</span><strong class="price">{{ price_starter_package_growing }}</strong>
-            <em class="conditions">per year</em>
-          </p>
-          <h4 class="package-discount start"><em class="discount">25%</em> Bootstrapper Discount</h4>
-          <p class="package-price starter start">
-            <em class="setup">Free set up then</em>
-            <span class="dollar">$</span><strong class="price">{{ price_starter_package_bootstrap }}</strong>
-            <em class="conditions">per year</em>
-          </p>
+          <div class="package-price">
+            <p class="package-price starter full">
+              <em class="setup">Free</em> set up then
+              <span class="dollar">$</span><strong class="price">{{ price_starter_package_full }}</strong>
+              <em class="conditions">per year</em>
+            </p>
+            <p class="package-price starter growing">
+              <strong class="package-discount growing"><em class="discount">Save 15%</em> Growing Business Discount*</strong>
+              <em class="setup">Free</em> set up then
+              <span class="dollar">$</span><strong class="price">{{ price_starter_package_growing }}</strong>
+              <em class="conditions">per year</em>
+            </p>
+            <p class="package-price starter start">
+              <strong class="package-discount start"><em class="discount">Save 25%</em> Bootstrapper Discount*</strong>
+              <em class="setup">Free</em> set up then
+              <span class="dollar">$</span><strong class="price">{{ price_starter_package_bootstrap }}</strong>
+              <em class="conditions">per year</em>
+            </p>
+          </div>
         </div>
         <div id="seo-package" class="package">
-          <h3 class="package-name">Customer Magnet</h3>
+          <h3 class="package-name">Customer Magnet Package</h3>
           <ul class="package-features">
             <li class="package-features">Everything in the Start Up package, PLUS:</li>
-            <li class="package-features">Free research and coding for search engine optimization.</li>
+            <li class="package-features">Free search engine optimizer set up.</li>
             <li class="package-features">Search engine optimization maintenance plan.</li>
           </ul>
-          <p class="package-price starter full">
-            <em class="setup">Free set up then</em>
-            <span class="dollar">$</span><strong class="price">{{ price_seo_package_full }}</strong>
-            <em class="conditions">per year</em>
-          </p>
-          <h4 class="package-discount growing"><em class="discount">15%</em> Growing Business Discount</h4>
-          <p class="package-price starter growing">
-            <em class="setup">Free set up then</em>
-            <span class="dollar">$</span><strong class="price">{{ price_seo_package_growing }}</strong>
-            <em class="conditions">per year</em>
-          </p>
-          <h4 class="package-discount start"><em class="discount">25%</em> Bootstrapper Discount</h4>
-          <p class="package-price starter start">
-            <em class="setup">Free set up then</em>
-            <span class="dollar">$</span><strong class="price">{{ price_seo_package_bootstrap }}</strong>
-            <em class="conditions">per year</em>
-          </p>
-       </div>
+          <div class="package-price">
+            <p class="package-price starter full">
+              <em class="setup">Free</em> set up then
+              <span class="dollar">$</span><strong class="price">{{ price_seo_package_full }}</strong>
+              <em class="conditions">per year</em>
+            </p>
+            <p class="package-price starter growing">
+              <strong class="package-discount growing"><em class="discount">Save 15%</em> Growing Business Discount*</strong>
+              <em class="setup">Free</em> set up then
+              <span class="dollar">$</span><strong class="price">{{ price_seo_package_growing }}</strong>
+              <em class="conditions">per year</em>
+            </p>
+            <p class="package-price starter start">
+              <strong class="package-discount start"><em class="discount">Save 25%</em> Bootstrapper Discount*</strong>
+              <em class="setup">Free</em> set up then
+              <span class="dollar">$</span><strong class="price">{{ price_seo_package_bootstrap }}</strong>
+              <em class="conditions">per year</em>
+            </p>
+          </div>
+        </div>
         <div id="cms-package" class="package">
-          <h3 class="package-name">Time Saver</h3>
+          <h3 class="package-name">Time Saver Package</h3>
           <ul class="package-features">
             <li class="package-features">Everything in the Customer Magnet package, PLUS:</li>
-            <li class="package-features">A content management system so you can change the content of your site yourself with easy point and click tools.</li>
+            <li class="package-features">Easy point and click content management.</li>
           </ul>
-          <p class="package-price starter full">
-            <em class="setup"><span class="dollar">$</span>{{ price_custom_package_setup_full }} set up then</em>
-            <span class="dollar">$</span><strong class="price">{{ price_seo_package_full }}</strong>
-            <em class="conditions">per year</em>
-          </p>
-          <h4 class="package-discount growing"><em class="discount">15%</em> Growing Business Discount</h4>
-          <p class="package-price starter growing">
-            <em class="setup"><span class="dollar">$</span>{{ price_custom_package_setup_growing }} set up then</em>
-            <span class="dollar">$</span><strong class="price">{{ price_seo_package_growing }}</strong>
-            <em class="conditions">per year</em>
-          </p>
-          <h4 class="package-discount start"><em class="discount">25%</em> Bootstrapper Discount</h4>
-          <p class="package-price starter start">
-            <em class="setup"><span class="dollar">$</span>{{ price_custom_package_setup_bootstrap }} set up then</em>
-            <span class="dollar">$</span><strong class="price">{{ price_seo_package_bootstrap }}</strong>
-            <em class="conditions">per year</em>
-          </p>
+          <div class="package-price">
+            <p class="package-price starter full">
+              <em class="setup"><span class="dollar">$</span>{{ price_custom_package_setup_full }}</em> set up then
+              <span class="dollar">$</span><strong class="price">{{ price_seo_package_full }}</strong>
+              <em class="conditions">per year</em>
+            </p>
+            <p class="package-price starter growing">
+              <strong class="package-discount growing"><em class="discount">Save 15%</em> Growing Business Discount*</strong>
+              <em class="setup"><span class="dollar">$</span>{{ price_custom_package_setup_growing }}</em> set up then
+              <span class="dollar">$</span><strong class="price">{{ price_seo_package_growing }}</strong>
+              <em class="conditions">per year</em>
+            </p>
+            <p class="package-price starter start">
+              <strong class="package-discount start"><em class="discount">Save 25%</em> Bootstrapper Discount*</strong>
+              <em class="setup"><span class="dollar">$</span>{{ price_custom_package_setup_bootstrap }}</em> set up then
+              <span class="dollar">$</span><strong class="price">{{ price_seo_package_bootstrap }}</strong>
+              <em class="conditions">per year</em>
+            </p>
+          </div>
         </div>
         <div id="custom-package" class="package">
-          <h3 class="package-name">Custom Design</h3>
+          <h3 class="package-name">Custom Design Package</h3>
           <ul class="package-features">
             <li class="package-features">Everything in the Time Saver package, PLUS:</li>
-            <li class="package-features">Custom designed pages for a look and feel that matches your business.</li>
+            <li class="package-features">Custom designed pages for a look that matches your business.</li>
           </ul>
-          <p class="package-price starter full">
-            <em class="setup"><span class="dollar">$</span>{{ price_cms_package_setup_full }} set up then</em>
-            <span class="dollar">$</span><strong class="price">{{ price_seo_package_full }}</strong>
-            <em class="conditions">per year</em>
-          </p>
-          <h4 class="package-discount growing"><em class="discount">15%</em> Growing Business Discount</h4>
-          <p class="package-price starter growing">
-            <em class="setup"><span class="dollar">$</span>{{ price_cms_package_setup_growing }} set up then</em>
-            <span class="dollar">$</span><strong class="price">{{ price_seo_package_growing }}</strong>
-            <em class="conditions">per year</em>
-          </p>
-          <h4 class="package-discount start"><em class="discount">25%</em> Bootstrapper Discount</h4>
-          <p class="package-price starter start">
-            <em class="setup"><span class="dollar">$</span>{{ price_cms_package_setup_bootstrap }} set up then</em>
-            <span class="dollar">$</span><strong class="price">{{ price_seo_package_bootstrap }}</strong>
-            <em class="conditions">per year</em>
-          </p>
+          <div class="package-price">
+            <p class="package-price starter full">
+              <em class="setup"><span class="dollar">$</span>{{ price_cms_package_setup_full }}</em> set up then
+              <span class="dollar">$</span><strong class="price">{{ price_seo_package_full }}</strong>
+              <em class="conditions">per year</em>
+            </p>
+            <p class="package-price starter growing">
+              <strong class="package-discount growing"><em class="discount">Save 15%</em> Growing Business Discount*</strong>
+              <em class="setup"><span class="dollar">$</span>{{ price_cms_package_setup_growing }}</em> set up then
+              <span class="dollar">$</span><strong class="price">{{ price_seo_package_growing }}</strong>
+              <em class="conditions">per year</em>
+            </p>
+            <p class="package-price starter start">
+              <strong class="package-discount start"><em class="discount">Save 25%</em> Bootstrapper Discount*</strong>
+              <em class="setup"><span class="dollar">$</span>{{ price_cms_package_setup_bootstrap }}</em> set up then
+              <span class="dollar">$</span><strong class="price">{{ price_seo_package_bootstrap }}</strong>
+              <em class="conditions">per year</em>
+            </p>
+          </div>
         </div>
-      </div>
+      </div><!-- end #packages -->
+      <h2 id="price-list-head">The full price schedule.</h2>
       <table id="website" class="pricing" cellspacing="0">
         <thead class="website">
           <tr id="website-head" class="website odd head">
             <th class="first">New Websites</th>
-            <th class="price-level">Full</th>
-            <th class="price-level">Growing</th>
-            <th class="price-level">Bootstrap</th>
+            <th class="price-level full">Full</th>
+            <th class="price-level growing">Growing*</th>
+            <th class="price-level start">Bootstrapper*</th>
             <th>Free</th>
           </tr>
         </thead>
@@ -192,8 +209,8 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
           <tr id="additions-head" class="additions odd head">
             <th class="first">Additions</th>
             <th class="price-level">Full</th>
-            <th class="price-level">Growing</th>
-            <th class="price-level">Bootstrap</th>
+            <th class="price-level">Growing*</th>
+            <th class="price-level">Bootstrapper*</th>
           </tr>
         </thead>
         <tbody>
@@ -234,8 +251,8 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
           <tr id="services-head" class="services odd head">
             <th class="first">Services</th>
             <th class="price-level">Full</th>
-            <th class="price-level">Growing</th>
-            <th class="price-level">Bootstrap</th>
+            <th class="price-level">Growing*</th>
+            <th class="price-level">Bootstrapper*</th>
           </tr>
         </thead>
         <tbody>
@@ -265,6 +282,16 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
           </tr>
         </tbody>
       </table>
+      <div id="discounts-explanation">
+        <h2 class="discounts-explanation">* Discounts for smaller businesses and start ups.</h2>
+        <p class="discounts-explanation">The &quot;Growing Business&quot; and
+        &quot;Bootstrapper&quot; discounts are based on the size of your
+        business. The Growing Business discount applies to any business with less
+        than 15 employees AND less than $1 million in an annaual sales. The
+        Bootstrapper discount applies to any business with less than 15 employees
+        AND has not yet made a sale OR made the very first sale within the last
+        12 months.</p>
+      </div>
     </div><!-- end #content-container -->
 {% endblock %}
 
