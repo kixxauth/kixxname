@@ -52,6 +52,7 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
   table.pricing {
     width: 100%;
     margin-top: 1.5em;
+    clear: both;
   }
   th, td {
     padding: .1em 2% .3em;
