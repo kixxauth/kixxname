@@ -44,21 +44,10 @@ DISCOUNT_BOOTSTRAP = decimal.Decimal(str(0.25))
 
 RESUME_EXPERIENCES = [
       {
-        'title': 'Regional Manager'
-      , 'org_url': 'http://www.gentlegiantmoving.com/'
-      , 'org': 'Gentle Giant Moving Company'
-      , 'location': 'New York City'
-      , 'start_mf': '2005-05-01'
-      , 'start_read': 'May 2005'
-      , 'end_mf': '2008-01-01'
-      , 'end_read': 'January 2008'
-      , 'description': """I bootstrapped the regional branch location in New York City for Gentle Giant. The personal growth and development I experienced while working on this project has been invaluable to me. I learned to grasp opportunity, execute on ideas, manage people, keep happy customers, and provide opportunity for everyone under my management. Most of all I learned how important it is to maintain a good quality of life for everyone involved in an entrepreneurial project, even for my self."""
-      }
-    , {
         'title': 'Bootstrapper'
       , 'org_url': 'http://www.fireworksproject.com/'
       , 'org': 'The Fireworks Project'
-      , 'location': 'Virtual'
+      , 'location': 'Virtually Everywhere'
       , 'start_mf': '2009-04-01'
       , 'start_read': 'April 2009'
       , 'end_mf': time.strftime('%Y-%m-%d')
@@ -83,6 +72,17 @@ RESUME_EXPERIENCES = [
           www.kixx.name</a>. To get the scoop on my programming abilities check out my programming page at
           <a title="Kris Walker does computer programming and software engineering." href="http://www.kixx.name/freelance_programming">www.kixx.name/freelance_programming</a>.
           Or, you can check out the tag list of skills at the bottom of this page."""
+      }
+    , {
+        'title': 'Regional Manager'
+      , 'org_url': 'http://www.gentlegiantmoving.com/'
+      , 'org': 'Gentle Giant Moving Company'
+      , 'location': 'New York City'
+      , 'start_mf': '2005-05-01'
+      , 'start_read': 'May 2005'
+      , 'end_mf': '2008-01-01'
+      , 'end_read': 'January 2008'
+      , 'description': """I bootstrapped the regional branch location in New York City for Gentle Giant. The personal growth and development I experienced while working on this project has been invaluable to me. I learned to grasp opportunity, execute on ideas, manage people, keep happy customers, and provide opportunity for everyone under my management. Most of all I learned how important it is to maintain a good quality of life for everyone involved in an entrepreneurial project, even for my self."""
       }
     , {
         'title': 'High School Rowing Coach'
@@ -117,7 +117,7 @@ RESUME_EXPERIENCES = [
       , 'start_read': 'September 2001'
       , 'end_mf': '2004-08-01'
       , 'end_read': 'August 2004'
-      , 'description': """My best guess is that I have moved a little over 2,000 customers for Gentle Giant (I would never do that job for any other organization). I met and interacted with a more diverse collection of individuals than most people ever will through my awesome coworkers at Gentle Giant and the many interesting customers the company attracted."""
+      , 'description': """My best guess is that I have moved a little over 2,000 customers for Gentle Giant (I would never do that job for any other organization). I met and interacted with a more diverse collection of individuals than most people will ever get the chance to. The company attracts the best and most interesting customers in the industry and employs amazing people."""
       }
     , {
         'title': 'Fork Truck Operator'

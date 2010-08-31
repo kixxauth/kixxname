@@ -53,7 +53,7 @@ blockquote, q { quotes: "" ""; }
 table { border-collapse: separate; border-spacing: 0; }
 caption, th, td { text-align: left; }
 table, td, th { vertical-align: middle; }
-ul { list-style: none outside none; }
+ul, ol { list-style: none outside none; }
 a img { border: none; }
 
 /*---------------------------------------------------------
