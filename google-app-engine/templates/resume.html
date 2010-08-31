@@ -44,20 +44,36 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 
 {% block page %}
     <div id="main" class="hresume">
-      <div id="vcard" class="contact vcard">
-        <p id="kris-name" class="fn n">
-          <span class="given-name">Kris</span> <span class="family-name">Walker</span>
-        </p>
-        <address class="adr">
-          <span class="street-address">310 North Grand Ave.</span>
-          <span class="locality">Poughkeepsie</span>, <span class="region">NY</span> <span class="postal-code">12603</span><span class="country-name">USA</span>
-        </address>
+      <div id="hcard-Kris-Walker" class="vcard">
+        <img src="/img/kris_walker_portrait-150.jpg" alt="photo of " class="photo"/>
         <p>
           Email: <a class="email" href="mailto:kixxauth@gmail.com">kixxauth@gmail.com</a>
-          Web: <a class="url" href="http://www.kixxname.com">http://www.kixxname.com</a>
-          <a class="url" href="http://www.linkedin.com/in/kixx7">LinkedIn Profile</a>
+          Web: <a class="url fn" href="http://www.kixx.name">http://www.kixxname.com</a>
         </p>
-      </div><!-- end #vcard -->
+        <ul id="hcard-links">
+          <li class="hcard-link"><a class="url blog"
+              href="http://fireworksfactory.blogspot.com/"
+              id="hcard-blog" title="Kris Walker's blog.">Kris Walker blogs.</a></li>
+          <li class="hcard-link"><a class="url microblog"
+              href="http://twitter.com/kixxauth"
+              id="hcard-twitter" title="Kris Walker on Twitter.">Kris Walker tweets.</a></li>
+          <li class="hcard-link"><a class="url bookmarks"
+              href="http://www.delicious.com/kristoffwalk/"
+              id="hcard-delicious" title="Kris Walker's Delicious bookmarks.">Kris Walker&#39;s bookmarks.</a></li>
+          <li class="hcard-link"><a class="url professional"
+              href="http://www.linkedin.com/in/kixx7"
+              id="hcard-linkedin" title="Kris Walker's page on LinkedIn">Kris Walker as a professional.</a></li>
+          <li class="hcard-link"><a class="url repository"
+              href="http://github.com/kixxauth"
+              id="hcard-github" title="Kris Walker's computer code on GitHub">Fork me on GitHub.</a></li>
+        </ul>
+        <address class="adr">
+          <span class="street-address">310 North Grand Ave.</span>
+          <span class="locality">Poughkeepsie</span>,
+          <span class="region">New York</span> <span class="postal-code">12603</span>
+          <span class="country-name">United States of America</span>
+        </address>
+      </div><!-- end #hcard-Kris-Walker -->
       <div id="resume-summary">
         <h2>Summary</h2>
         <p class="summary">
