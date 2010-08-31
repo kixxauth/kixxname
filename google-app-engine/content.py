@@ -7,6 +7,7 @@ VERTICAL_DESCRIPTION = ('Kris Walker %s (for fun and profit) right here in %s an
 
 PRICING_DESCRIPTION = 'Upfront pricing for your website design, including free.'
 RESUME_DESCRIPTION = 'Kris Walker&#39;s web development, computer programming, and life long resume.'
+CONTACT_DESCRIPTION = 'Kris Walker&#39;s contact information. (In hcard microformat.)'
 
 LOCALES = {
       'poughkeepsie_and_hudson_valley': ['The Hudson Valley', 'Poughkeepsie']
@@ -275,3 +276,7 @@ resume = {
     , 'resume_tags': map(resume_tag, RESUME_TAGS)
     }
 
+contact = {
+    'page_class': 'contact'
+    , 'description': CONTACT_DESCRIPTION
+    }
