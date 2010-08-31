@@ -227,6 +227,27 @@ class PriceHandler(BaseHandler):
     """Accept the HTTP HEAD method."""
     return self.respond()
 
+class ResumeHandler(BaseHandler):
+  """Handle requests for the resume page."""
+
+  def respond(self):
+    response = set_common_headers(
+        self.out(
+          utils.render_template('resume', content.resume)))
+    response.mimetype = 'text/html'
+
+    # Expire in 10 days.
+    response.expires = int(time.time()) + (86400 * 10)
+    return self.finalize_response(response)
+
+  def get(self):
+    """Accept the HTTP GET method."""
+    return self.respond()
+
+  def head(self):
+    """Accept the HTTP HEAD method."""
+    return self.respond()
+
 class StylesheetHandler(Handler):
   """Handle requests for CSS stylesheets."""
 
@@ -269,6 +290,8 @@ handler_map = [
     , ('/service_and_price_schedule'
         , 'price schedule'
         , PriceHandler)
+
+    , ('/resume', 'resume', ResumeHandler)
 
     , ('/css/all.css', 'all', StylesheetHandler)
     ]

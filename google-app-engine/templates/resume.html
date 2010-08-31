@@ -1,0 +1,105 @@
+{% comment %}
+
+Resume Template
+===============
+
+This is the template that the resume page uses.
+
+For more information regarding the Django template syntax, have a look at the
+documentation.
+http://docs.djangoproject.com/en/1.2/topics/templates/#topics-templates
+
+copyright: (c) 2010 by Kris Walker. Some rights reserved.
+
+License
+-------
+
+All text content, excluding XHTML markup source code, in this file is (c) 2010
+by Kris Walker (http://www.kixx.name) and, unless otherwise indicated, is
+licensed under a Creative Commons Attribution-Share Alike 3.0 Unported License
+(http://creativecommons.org/licenses/by-sa/3.0/).
+
+See CC-LICENSE in this folder for more details.
+
+All XHTML and related source code is copyright (c) 2010 by Kris Walker
+(http://www.kixx.name). All rights reserved.
+
+{% endcomment %}{% extends "base.html" %}
+
+{% block title %}Resume{% endblock %}
+
+{% block conditional_ie %}<!--[if IE 6]>
+<style type="text/css">
+  #background { position: absolute; }
+  /* @jello layout */
+  #container { height: 0; position: relative; }
+  /* Fix @margin doubling on floated elements. */
+  #navigation li.navigation { display: inline; }
+</style>
+<![endif]-->{% endblock %}
+
+{% block header %}
+          <strong class="header-content">Kris Walker.</strong>
+          Web development, programming, and life experiences.{% endblock %}
+
+{% block page %}
+    <div id="main" class="hresume">
+      <div id="vcard" class="contact vcard">
+        <p id="kris-name" class="fn n">
+          <span class="given-name">Kris</span> <span class="family-name">Walker</span>
+        </p>
+        <address class="adr">
+          <span class="street-address">310 North Grand Ave.</span>
+          <span class="locality">Poughkeepsie</span>, <span class="region">NY</span> <span class="postal-code">12603</span><span class="country-name">USA</span>
+        </address>
+        <p>
+          Email: <a class="email" href="mailto:kixxauth@gmail.com">kixxauth@gmail.com</a>
+          Web: <a class="url" href="http://www.kixxname.com">http://www.kixxname.com</a>
+          <a class="url" href="http://www.linkedin.com/in/kixx7">LinkedIn Profile</a>
+        </p>
+      </div><!-- end #vcard -->
+      <div id="resume-summary">
+        <h2>Summary</h2>
+        <p class="summary">
+         &quot;Process, on the other hand, refers to the emotional intelligence skills you have about managing projects, visualizing success, persuading other people of your point of view, dealing with multiple priorities, etc. This stuff is insanely valuable and hard to learn. Unfortunately, it&#39;s usually overlooked by headhunters and HR folks, partly because it&#39;s hard to accredit or check off in a database&quot;
+        -- Seth Godin
+        </p>
+      </div>
+      <div id="resume-education">
+        <h2>Education &amp; Affiliations</h2>
+        <ol id="education-calendar" class="vcalendar">
+          <li class="education vevent vcard">
+            <p class="htitle"><span class="summary">BS Film Studies</span><a class="org url" href="http://www.ithaca.edu/">Ithaca College</a></p>
+            <p class="date_duration"><abbr class="dtstart" title="1997-08-01">August 1997</abbr> - <abbr class="dtend" title="2001-05-01">May 2001</abbr></p>
+            <p class="description">The film studies program at Ithaca College
+            is where I cut my teeth on both the theory and practice of media. I
+            studied classical photography and cinematography, as well as
+            digital photography and the digital dark room. Later I moved away
+            from classic photography and into multimedia.  While I was there I
+            also took classes on screenwriting, economics, mathematics, and
+            computer science.  I was also member of the crew team at Ithaca
+            College. Rowing was a great experience that taught discipline and teamwork,
+            but is also a growing brotherhood and sisterhood of great people who have a shared experience.</p>
+          </li>
+        </ol>
+      </div>
+      <div id="resume-experience">
+        <h2>Professional Experience</h2>
+        <ol id="experience-calendar" class="vcalendar">{% for item in resume_experiences %}
+          <li class="experience vevent vcard">
+            <p class="htitle"><object data="#kris-name" class="include"></object>
+              <span class="title">{{ item.title }}</span>
+              <a class="url org" href="{{ item.org_url }}">{{ item.org }}</a>, <span class="location">{{ item.location }}</span></p>
+              <p class="date_duration"><abbr class="dtstart" title="{{ item.start_mf }}">{{ item.start_read }}</abbr> - <abbr class="dtend" title="{{ end.start_mf }}">{{ item.end_read }}</abbr></p>
+              <p class="description">{{ item.description }}</p>
+          </li>{% endfor %}
+        </ol>
+      </div><!-- end #resume-expierience -->
+      <div id="resume-tags">
+        <h2>Tags</h2>
+        <ul class="tags">{% for tag in resume_tags %}
+          <li><a class="skill" rel="tag" href="{{ tag.url }}">{{ tag.name }}</a></li>{% endfor %}
+        </ul>
+      </div>
+    </div><!-- end #main -->{% endblock %}
+
