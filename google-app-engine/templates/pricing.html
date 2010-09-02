@@ -31,11 +31,8 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 {% block conditional_ie %}<!--[if IE 6]>
 <style type="text/css">
 	#background { position: absolute; }
-	/* @jello layout */
 	#container { height: 0; position: relative; }
-	/* Fix @margin doubling on floated elements. */
 	#navigation li.navigation { display: inline; }
-	/* @pricing */
 	div.package { position: static; }
 	p.package-price.full { display: none; } /* IE6 can't get position right. */
 </style>
@@ -46,7 +43,7 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 {% block page %}
 	<div id="main">
 		<div id="contact-order">
-			<p class="contact-order"><a id="contact-order-email" title="Kris Walker's email address." href="mailto:kixxauth@gmail.com">kixxauth@gmail.com</a> <a id="portfolio-link" href="/website_and_mobile_design_portfolio" title="Kris Walker's web design portfolio.">Go to: Sample websites.</a></p>
+			<p id="contact-order-action"><a id="contact-order-email" title="Kris Walker's email address." href="mailto:kixxauth@gmail.com">kixxauth@gmail.com</a> <a id="portfolio-link" href="/website_and_mobile_design_portfolio" title="Kris Walker's web design portfolio.">Go to: Sample websites.</a></p>
 			<p class="contact-order">The featured packages are just starting points and can be modified to suite your goals and budget. Contact me about the Growing Business and Bootstrapper discounts *. (The full price schedule with discounts is listed below.)</p>
 			<p class="contact-order">And, don't forget, I also work on improving existing websites too!</p>
 		</div>

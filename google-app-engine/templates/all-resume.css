@@ -35,16 +35,21 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 	#main {
 		background-color: #d5512b;
 		position: relative;
-		padding: 0 2% 1em;
+		padding: 1.5em 2%;
 		margin-top: 1.5em;
 	}
 	#main a:hover { text-decoration: underline; }
-	#hcard-Kris-Walker, #resume-summary, #resume-education, #resume-experience, #resume-tags {
+	#resume-summary, #resume-education, #resume-experience, #resume-tags {
 		margin-top: 1.5em;
 		background-color: #fff;
 		padding-bottom: 3em;
 	}
-	#hcard-Kris-Walker { position: relative; padding-top: 1em; }
+	#hcard-Kris-Walker {
+		background-color: #fff;
+		position: relative;
+		padding: 1em 0 2em;
+		width: 99.5%;
+	}
 	img.photo { float: left; margin: 0 2em 2em 1em; }
 	a.url.fn { font-size: 1.5em; color: #003d75; }
 	#hcard-urls { font-size: 1.5em; }
@@ -54,7 +59,6 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 		font-family: "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
 		font-weight: bold;
 	}
-	#hcard-links { overflow: hidden; }
 	li.hcard-link { float: left; margin: 1em 0 0 1em; }
 	li.hcard-link a.url {
 		display: block;
@@ -64,6 +68,7 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 		background-color: transparent;
 		background-repeat: no-repeat;
 	}
+	#hcard-links { overflow: hidden; }
 	#hcard-email { background-image: url(/img/icon_Gmail-48.gif); }
 	#hcard-blog { background-image: url(/img/icon_Blogger-48.gif); }
 	#hcard-twitter { background-image: url(/img/icon_Twitter-48.gif); }
@@ -80,7 +85,7 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 	}
 	address.adr {
 		clear: both;
-		margin: 2em;
+		margin: 2em 2em 0;
 		font-weight: bold;
 		font-size: 1.1em;
 	}

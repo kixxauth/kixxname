@@ -45,10 +45,16 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 		background-color: #f6e50a;
 		margin-top: 1.5em;
 		font-size: 1.2em;
-		padding: 0 1em 1em;
+		padding: 1em 1em 1em;
 		line-height: 1.2;
 	}
-	#contact-order-email { font-size: 1.2em; color: #003d75; }
+	#contact-order-action { overflow: hidden; position: relative; }
+	#contact-order-email {
+		font-size: 1.2em; color: #003d75;
+		display: block;
+		width: 12em;
+		float: left;
+	}
 	#portfolio-link {
 		display: block;
 		background-color: #003d75;
@@ -58,7 +64,10 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 		color: #fff;
 	}
 	#contact-order-email:hover { text-decoration: underline; }
-	p.contact-order { margin-top: 1em; }
+	p.contact-order {
+		clear: both;
+		margin-top: 1em;
+	}
 	#packages { overflow: hidden; position: relative; }
 	div.package {
 		background-color: #fff;
