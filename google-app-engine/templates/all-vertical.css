@@ -15,87 +15,81 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 
 {% block styles %}
 @media screen {
-  /* @fontstack */
-  #header-content a.header, div.content h3.content, div.content a.action {
-    font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
-  }
-  div.content h4.content, #content-pledge p.content {
-    font-family: 'Comic Book', 'Marker Felt', 'Comic Sans MS', 'URW Gothic L', serif;
-  }
-  /* @border */
-  #main div.content, div.content a.action, #content-pledge p.content {
-    border: 3px solid #000;
-  }
-  #header-content a.header {
-    display: block;
-    color: #000;
-    font-size: 1.3em;
-    padding-bottom: .3em;
-    text-align: left;
-  }
-  #main {
-    overflow: hidden;
-    position: relative;
-  }
-  #main div.content {
-    background-color: #fff;
-    float: left;
-    width: 48%;
-    height: 26em;
-    margin-top: 1em;
-    overflow: hidden;
-    position: relative;
-  }
-  #content-pricing, #content-growing {
-    margin-left: 2%;
-  }
-  #content-pledge {
-    font-size: 1.2em;
-    line-height: 1.2;
-    position: absolute;
-    top: 47.3%;
-    left: 0;
-    z-index: 1;
-  }
-  #content-pledge p.content{
-    background-color: #ddd;
-    margin-left: 24%;
-    padding: .2em 1em;
-    width: 50%;
-  }
-  div.content h3.content, div.content h4.content {
-    background-color: #f6e50a;
-  }
-  div.content h3.content {
-    font-size: 1.6em;
-    padding: 1em .5em 0;
-  }
-  div.content h4.content {
-    font-size: 1.5em;
-    padding: 0 .7em .1em;
-    line-height: 2;
-    border-bottom: 3px solid #000;
-    text-align: center;
-  }
-  div.content p.content {
-    font-size: 1.05em;
-    padding: 1.5em 1.2em 0;
-  }
-  div.content p.action {
-    width: 100%;
-    position: absolute;
-    bottom: 3em;
-  }
-  div.content a.action {
-    background-color: #003d75;
-    font-size: 1.5em;
-    display: block;
-    padding: .2em .5em .4em;
-    line-height: 1.2;
-    color: #fff;
-    width: 12em;
-    margin: 0 auto;
-    text-align: center;
-  }
+	/* @fontstack */
+	#header-content a.header, div.content h3.content, div.content a.action {
+		font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
+	}
+	div.content h4.content, #content-pledge p.content {
+		font-family: 'Comic Book', 'Marker Felt', 'Comic Sans MS', 'URW Gothic L', serif;
+	}
+	/* @border */
+	#main div.content, div.content a.action, #content-pledge p.content {
+		border: 3px solid #000;
+	}
+	#header-content a.header {
+		display: block;
+		color: #000;
+		font-size: 1.3em;
+		padding-bottom: .3em;
+		text-align: left;
+	}
+	#main { overflow: hidden; position: relative; }
+	#main div.content {
+		background-color: #fff;
+		float: left;
+		width: 48%;
+		height: 26em;
+		margin-top: 1em;
+		overflow: hidden;
+		position: relative;
+	}
+	#content-pricing, #content-growing { margin-left: 2%; }
+	#content-pledge {
+		font-size: 1.2em;
+		line-height: 1.2;
+		position: absolute;
+		top: 47.3%;
+		left: 0;
+		z-index: 1;
+	}
+	#content-pledge p.content{
+		background-color: #d5512b;
+		margin-left: 24%;
+		padding: .2em 1em;
+		width: 50%;
+		color: #fff;
+	}
+	div.content h3.content, div.content h4.content { background-color: #f6e50a; }
+	div.content h3.content {
+		font-size: 1.6em;
+		padding: 1em .5em 0;
+	}
+	div.content h4.content {
+		font-size: 1.5em;
+		padding: 0 .7em .1em;
+		line-height: 2;
+		border-bottom: 3px solid #000;
+		text-align: center;
+	}
+	div.content p.content {
+		font-size: 1.05em;
+		padding: 1.5em 1.2em 0;
+	}
+	div.content p.action {
+		width: 100%;
+		position: absolute;
+		bottom: 3em;
+	}
+	div.content a.action {
+		background-color: #003d75;
+		font-size: 1.5em;
+		display: block;
+		padding: .2em .5em .4em;
+		line-height: 1.2;
+		color: #fff;
+		width: 12em;
+		margin: 0 auto;
+		text-align: center;
+	}
 }
 {% endblock %}

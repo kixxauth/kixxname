@@ -15,52 +15,61 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 
 {% block styles %}
 @media screen {
-  /* @fontstack */
-  strong.header-content, h3.portfolio-title {
-    font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
-  }
-  /* @border */
-  li.portfolio-item div.item-content, h3.portfolio-title, img.item-image {
-    border: 3px solid #000;
-  }
-  strong.header-content {
-    display: block;
-    text-align: left;
-    font-size: 1.2em;
-    padding-bottom: .3em;
-  }
-  #main li.portfolio-item {
-    margin-top: 1em;
-    position: relative;
-    padding: 1em 0 0 2%;
-    width: 97%;
-  }
-  h3.portfolio-title {
-    background-color: #f6e50a;
-    font-size: 1.3em;
-    width: 20em;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    padding: .1em 0 .3em 1em;
-  }
-  li.portfolio-item div.item-content {
-    background-color: #fff;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  img.item-image {
-    float: right;
-    margin: 16px;
-  }
-  p.item-description {
-    font-size: .9em;
-    color: #222;
-    padding: 5em 0 3em 3%;
-    margin-right: 500px;
-    text-indent: 3em;
-  }
+	/* @fontstack */
+	p.action, strong.header-content, h3.portfolio-title {
+		font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
+	}
+	/* @border */
+	p.action, li.portfolio-item div.item-content, h3.portfolio-title, img.item-image {
+		border: 3px solid #000;
+	}
+	strong.header-content {
+		display: block;
+		text-align: left;
+		font-size: 1.2em;
+		padding-bottom: .3em;
+	}
+	#main { width: 98.5%; }
+	p.action {
+		position: relative;
+		margin-top: 1em;
+		width: 22em;
+	}
+	a.action {
+		display: block;
+		background-color: #003d75;
+		font-size: 1.3em;
+		padding: .2em 1em .4em;
+		color: #fff;
+	}
+	#main li.portfolio-item {
+		margin-top: 1em;
+		position: relative;
+		padding: 1em 0 0 2%;
+	}
+	h3.portfolio-title {
+		background-color: #f6e50a;
+		font-size: 1.3em;
+		width: 20em;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		padding: .1em 0 .3em 1em;
+	}
+	li.portfolio-item div.item-content {
+		background-color: #fff;
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+	img.item-image { float: right; margin: 16px; }
+	p.item-description {
+		font-size: .9em;
+		color: #222;
+		padding: 5em 0 3em 3%;
+		margin-right: 500px;
+		text-indent: 3em;
+	}
 }
 {% endblock %}

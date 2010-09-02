@@ -26,23 +26,7 @@ Unless otherwise noted, this file is (c) 2010 by Kris Walker. All rights reserve
 Copyright (c) 2007-2009 blueprintcss.org
 See blueprintcss.org for more information.
 ----------------------------------------------------------*/
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, code,
-del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, dialog, figure, footer, header,
-hgroup, nav, section {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline;
-}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section { margin: 0; padding: 0; border: 0; font-weight: normal; font-style: normal; font-size: 100%; font-family: inherit; vertical-align: baseline; }
 article, aside, dialog, figure, footer, header,
 hgroup, nav, section { display:block; }
 body { line-height: 1.5; }
@@ -57,15 +41,15 @@ ul, ol { list-style: none outside none; }
 a img { border: none; }
 
 /*---------------------------------------------------------
-  copyright: (c) 2010 by Kris Walker. All rights reserved.
+	copyright: (c) 2010 by Kris Walker. All rights reserved.
 ----------------------------------------------------------*/
 /* Firefox bug: https://bugzilla.mozilla.org/show_bug.cgi?id=567573 */
 @font-face {
-  font-family: 'BorisBlackBloxx';
-  src: url('/fonts/borisblackbloxx-webfont.eot');
-  src: local('☺'), url('/fonts/borisblackbloxx-webfont.woff') format('woff'), url('/fonts/borisblackbloxx-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'BorisBlackBloxx';
+	src: url('/fonts/borisblackbloxx-webfont.eot');
+	src: local('☺'), url('/fonts/borisblackbloxx-webfont.woff') format('woff'), url('/fonts/borisblackbloxx-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
 	font-family: 'Comic Book';
@@ -76,193 +60,165 @@ a img { border: none; }
 }
 /* @jello @layout http://sandbox.mikepurvis.com/css/jello/ */
 body {
-  font-family: "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
-  font-size: 100%;
-  color: #000;
+	font-family: "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
+	font-size: 100%;
+	color: #000;
 }
 @media screen {
-  body {
-    background: #fff url(/img/bg.png) repeat fixed top left;
-    /* @jello */
-    padding: 0 390px;
-  }
-  a {
-    text-decoration: none;
-    outline: none;
-  }
-  /* @fontstack */
-  #sitemap h3.sitemap, #license h3.license {
-    font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
-    text-align: center;
-  }
-  #header-content, #navigation li.navigation a.navigation {
-    font-family: 'Comic Book', 'Marker Felt', 'Comic Sans MS', 'URW Gothic L', serif;
-  }
-  /* @border */
-  #header-content, #header-subcontent, #navigation, #navigation li.navigation a.navigation,
-  #footer, div.sitemap, #license {
-    border: 3px solid #000;
-  }
-  #background {
-    background: transparent url(/img/pow_bg.gif) no-repeat;
-    filter:alpha(opacity=70); /* IE6, IE7, IE8 ... sometimes */
-    -moz-opacity:0.7;
-    -khtml-opacity: 0.7;
-    opacity: 0.7;
-    width: 750px;
-    height: 696px;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-  #stretcher {
-    /* @jello */
-    width: 45%;
-    margin: 0 auto;
-  }
-  #container {
-    /* @jello */
-    margin: 0 -382px;
-    padding: 2em 0;
-  }
-  #header {
-    position: relative;
-    padding-top: 2em;
-  }
-  #header-content {
-    background-color: #fff;
-    width: 85%;
-    font-size: 1.8em;
-    line-height: 1.2;
-    padding: 1.5em 5% 1em;
-    text-align: center;
-  }
-  #header-subcontent {
-    height: 90px;
-    width: 300px;
-    background: #f6e50a url(/img/logo.gif) no-repeat scroll 5px 8px;
-    padding: 10px;
-    text-indent: -9999px;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  #navigation {
-    background-color: #003d75;
-    font-size: 1.2em;
-    padding: .5em .5em .5em 0;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 2%;
-  }
-  #navigation li.navigation {
-    float: left;
-    margin-left: .5em;
-  }
-  #navigation li.navigation a.navigation {
-    background-color: #f6e50a;
-    display: block;
-    padding: .2em .5em .2em;
-    line-height: 1.2;
-    color: #000;
-  }
-  #footer {
-    background-color: #fff;
-    width: 98.5%;
-    position: relative;
-    margin-top: 1em;
-    padding-bottom: 1em;
-  }
-  #sitemap {
-    margin-top: 1em;
-    overflow: hidden;
-    position: relative;
-  }
-  #sitemap, #license {
-    width: 97%;
-    margin-left: 2%;
-  }
-  div.sitemap {
-    background-color: #fff;
-    height: 27em;
-    float: left;
-    position: relative;
-  }
-  #sitemap h3.sitemap {
-    background-color: #d5512b;
-    color: #fff;
-    font-size: 1.2em;
-    padding: .2em .5em .3em;
-    border-bottom: 3px solid #000;
-    margin-bottom: 1em;
-    line-height: 1.2;
-  }
-  #sitemap-skills {
-    width: 46%;
-  }
-  #sitemap-about, #sitemap-net {
-    width: 23%;
-  }
-  #sitemap-skills, #sitemap-net {
-    margin-left: 2.4%;
-  }
-  #sitemap #portrait {
-    text-align: center;
-  }
-  #social-links {
-    margin-right: 1em;
-  }
-  #sitemap li.social-link {
-    float: left;
-    margin: 1em 0 0 1em;
-  }
-  #sitemap li.social-link a.social-link{
-    display: block;
-    text-indent: -3987px;
-    height: 48px;
-    width: 48px;
-    background-color: transparent;
-    background-repeat: no-repeat;
-  }
-  #social-email {
-    background-image: url(/img/icon_Gmail-48.gif);
-  }
-  #social-blog {
-    background-image: url(/img/icon_Blogger-48.gif);
-  }
-  #social-twitter {
-    background-image: url(/img/icon_Twitter-48.gif);
-  }
-  #social-delicious {
-    background-image: url(/img/icon_Delicious-48.gif);
-  }
-  #social-linkedin {
-    background-image: url(/img/icon_LinkedIn-48.gif);
-  }
-  #sitemap #social-github {
-    height: 160px;
-    width: 160px;
-    background-image: url(/img/github_ribbon.gif);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-  #license {
-    background-color: #f6e50a;
-    font-size: .9em;
-    padding: 1em 2%;
-    width: 91.2%;
-    margin-top: 1em;
-  }
-  #license h3.license {
-    font-size: 1.5em;
-    padding-bottom: .2em;
-    border-bottom: 1px dashed #000;
-    margin-bottom: .5em;
-  }
+	body {
+		background: #fff url(/img/bg.png) repeat fixed top left;
+		/* @jello */
+		padding: 0 390px;
+	}
+	a { text-decoration: none; outline: none; }
+	/* @fontstack */
+	#sitemap h3.sitemap, #license h3.license {
+		font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
+		text-align: center;
+	}
+	#header-content, #navigation li.navigation a.navigation, a.sitemap-about, a.sitemap-skills	{
+		font-family: 'Comic Book', 'Marker Felt', 'Comic Sans MS', 'URW Gothic L', serif;
+	}
+	/* @border */
+	#header-content, #header-subcontent, #navigation, #navigation li.navigation a.navigation, #footer, div.sitemap, #license, a.sitemap-skills { border: 3px solid #000; }
+	#background {
+		background: transparent url(/img/pow_bg.gif) no-repeat;
+		filter:alpha(opacity=70); /* IE6, IE7, IE8 ... sometimes */
+		-moz-opacity:0.7;
+		-khtml-opacity: 0.7;
+		opacity: 0.7;
+		width: 750px;
+		height: 696px;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+	#stretcher { /* @jello */ width: 45%; margin: 0 auto; }
+	#container { /* @jello */ margin: 0 -382px; padding: 2em 0; }
+	#header { position: relative; padding-top: 2em; }
+	#header-content {
+		background-color: #fff;
+		width: 85%;
+		font-size: 1.8em;
+		line-height: 1.2;
+		padding: 1.5em 5% 1em;
+		text-align: center;
+	}
+	#header-subcontent {
+		height: 90px;
+		width: 300px;
+		background: #f6e50a url(/img/logo.gif) no-repeat scroll 5px 8px;
+		padding: 10px;
+		text-indent: -9999px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	#navigation {
+		background-color: #003d75;
+		font-size: 1.2em;
+		padding: .5em .5em .5em 0;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: 2%;
+	}
+	#navigation li.navigation { float: left; margin-left: .5em; }
+	#navigation li.navigation a.navigation {
+		background-color: #f6e50a;
+		display: block;
+		padding: .2em .5em .2em;
+		line-height: 1.2;
+		color: #000;
+	}
+	#footer {
+		background-color: #fff;
+		width: 98.5%;
+		position: relative;
+		margin-top: 1em;
+		padding-bottom: 1em;
+	}
+	#sitemap {
+		margin-top: 1em;
+		overflow: hidden;
+		position: relative;
+	}
+	#sitemap, #license { width: 97%; margin-left: 2%; }
+	div.sitemap {
+		background-color: #fff;
+		height: 27em;
+		float: left;
+		position: relative;
+	}
+	#sitemap h3.sitemap {
+		background-color: #d5512b;
+		color: #fff;
+		font-size: 1.2em;
+		padding: .2em .5em .3em;
+		border-bottom: 3px solid #000;
+		margin-bottom: 1em;
+		line-height: 1.2;
+	}
+	#sitemap-skills { background-color: #003d75; width: 46%; }
+	#sitemap-about, #sitemap-net { width: 23%; }
+	#sitemap-skills, #sitemap-net { margin-left: 2.4%; }
+	#sitemap #portrait { text-align: center; }
+	#sitemap ul.sitemap-about { margin: 1em; }
+	a.sitemap-about {
+		display: block;
+		text-align: center;
+		color: #003d75;
+	}
+	a.sitemap-about:hover { text-decoration: underline; }
+	#sitemap ul.sitemap-skills { margin: 1em 4%; }
+	a.sitemap-skills {
+		background-color: #f6e50a;
+		display: block;
+		padding: .2em .5em .2em;
+		line-height: 1.2;
+		color: #000;
+		font-size: 1.3em;
+		margin-top: 1em;
+	}
+	#social-links { margin-right: 1em; }
+	#sitemap li.social-link {
+		float: left;
+		margin: 1em 0 0 1em;
+	}
+	#sitemap li.social-link a.social-link{
+		display: block;
+		text-indent: -3987px;
+		height: 48px;
+		width: 48px;
+		background-color: transparent;
+		background-repeat: no-repeat;
+	}
+	#social-email { background-image: url(/img/icon_Gmail-48.gif); }
+	#social-blog { background-image: url(/img/icon_Blogger-48.gif); }
+	#social-twitter { background-image: url(/img/icon_Twitter-48.gif); }
+	#social-delicious { background-image: url(/img/icon_Delicious-48.gif); }
+	#social-linkedin { background-image: url(/img/icon_LinkedIn-48.gif); }
+	#sitemap #social-github {
+		height: 160px;
+		width: 160px;
+		background-image: url(/img/github_ribbon.gif);
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+	#license {
+		background-color: #f6e50a;
+		font-size: .9em;
+		padding: 1em 2%;
+		width: 91.2%;
+		margin-top: 1em;
+	}
+	#license h3.license {
+		font-size: 1.5em;
+		padding-bottom: .2em;
+		border-bottom: 1px dashed #000;
+		margin-bottom: .5em;
+	}
 }
-#page {
-  width: 100%; /* helps IE */
-}
+#page { width: 100%; /* helps IE */ }
 {% block styles %}{% endblock %}

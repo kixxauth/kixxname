@@ -30,103 +30,69 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 
 {% block conditional_ie %}<!--[if IE 6]>
 <style type="text/css">
-  #background { position: absolute; }
-  /* @jello layout */
-  #container { height: 0; position: relative; }
-  /* Fix @margin doubling on floated elements. */
-  #navigation li.navigation { display: inline; }
-  /* @resume */
-  img.photo, li.hcard-link, li.tag-container { position: relative; } /* fix floats */
-  #resume-tags ul.tags { width: 80%; }
-  #hcard-links #hcard-github { display: none; } /* IE6 can't handle this position. */
+	#background { position: absolute; }
+	#container { height: 0; position: relative; }
+	#navigation li.navigation { display: inline; }
+	img.photo, li.hcard-link, li.tag-container { position: relative; } /* fix floats */
+	#resume-tags ul.tags { width: 80%; }
 </style>
 <![endif]--><!--[if IE]>
 <style type="text/css">
-  object { display: none; }
+	object { display: none; }
 </style>
 <![endif]-->{% endblock %}
 
-{% block header %}
-          <strong class="header-content">Kris Walker.</strong>
-          Web development, programming, and life experiences.{% endblock %}
+{% block header %} <strong class="header-content">Kris Walker.</strong> Web development, programming, and life experiences.{% endblock %}
 
 {% block page %}
-    <div id="main" class="hresume">
-      <div id="hcard-Kris-Walker" class="vcard">
-        <img src="/img/kris_walker_portrait-150.jpg" alt="photo of " class="photo"/>
-        <a class="url fn" href="http://www.kixx.name/">Kris Walker</a>
-        <p id="hcard-urls">
-          <strong class="hcard-urls">Email: <a class="email" href="mailto:kixxauth@gmail.com">kixxauth@gmail.com</a></strong>
-          <strong class="hcard-urls">Web: <a class="url" href="http://www.kixx.name">www.kixx.name</a></strong>
-        </p>
-        <ul id="hcard-links">
-          <li class="hcard-link"><a class="url blog"
-              href="http://fireworksfactory.blogspot.com/"
-              id="hcard-blog" title="Kris Walker's blog.">Kris Walker blogs.</a></li>
-          <li class="hcard-link"><a class="url microblog"
-              href="http://twitter.com/kixxauth"
-              id="hcard-twitter" title="Kris Walker on Twitter.">Kris Walker tweets.</a></li>
-          <li class="hcard-link"><a class="url bookmarks"
-              href="http://www.delicious.com/kristoffwalk/"
-              id="hcard-delicious" title="Kris Walker's Delicious bookmarks.">Kris Walker&#39;s bookmarks.</a></li>
-          <li class="hcard-link"><a class="url professional"
-              href="http://www.linkedin.com/in/kixx7"
-              id="hcard-linkedin" title="Kris Walker's page on LinkedIn">Kris Walker as a professional.</a></li>
-          <li class="hcard-link"><a class="url repository"
-              href="http://github.com/kixxauth"
-              id="hcard-github" title="Kris Walker's computer code on GitHub">Fork me on GitHub.</a></li>
-        </ul>
-        <address class="adr">
-          <span class="street-address">310 North Grand Ave.</span>
-          <span class="locality">Poughkeepsie</span>,
-          <span class="region">New York</span> <span class="postal-code">12603</span>
-          <span class="country-name">United States of America</span>
-        </address>
-      </div><!-- end #hcard-Kris-Walker -->
-      <div id="resume-summary">
-        <h2 class="resume-section">Summary</h2>
-        <div class="summary">
-          <blockquote class="summary-quote">
-            &quot;Process, on the other hand, refers to the emotional intelligence skills you have about managing projects, visualizing success, persuading other people of your point of view, dealing with multiple priorities, etc. This stuff is insanely valuable and hard to learn. Unfortunately, it&#39;s usually overlooked by headhunters and HR folks, partly because it&#39;s hard to accredit or check off in a database&quot;</blockquote>
-          <p class="quoted">-- Seth Godin</p>
-          <p class="resume-content">Don&#39;t look at this resume. My resume will not tell you if I care about your project or if I&#39;ll just take on any project that comes my way. Instead of reading through bullet points, why don&#39;t you ask me to write you a letter explaining why I want to take on your project and how I got the skills needed to do the best job. As I&#39;m sure you&#39;ve already discovered, English writing skill is just as important for programmers and web developers these days as traditional programming skill. However, if you absolutely must look through my bulleted list of life experiences, I included a few interesting items as sources of my "emotional intelligence".</p>
-        </div>
-      </div>
-      <div id="resume-education">
-        <h2 class="resume-section">Education</h2>
-        <ol id="education-calendar" class="vcalendar">
-          <li class="education vevent vcard">
-            <p class="htitle"><span class="summary">BS Film Studies</span> : <a class="org url" href="http://www.ithaca.edu/">Ithaca College</a></p>
-            <p class="date_duration"><abbr class="dtstart" title="1997-08-01">August 1997</abbr> - <abbr class="dtend" title="2001-05-01">May 2001</abbr></p>
-            <p class="description">The film studies program at Ithaca College
-            is where I cut my teeth on both the theory and practice of media. I
-            studied classical photography and cinematography, as well as
-            digital photography and the digital dark room. Later I moved away
-            from classic photography and into multimedia.  While I was there I
-            also took classes on screenwriting, economics, mathematics, and
-            computer science.  I was also member of the crew team at Ithaca
-            College. Rowing was a great experience that taught discipline and teamwork,
-            but is also a growing brotherhood and sisterhood of great people who have a shared experience.</p>
-          </li>
-        </ol>
-      </div>
-      <div id="resume-experience">
-        <h2 class="resume-section">Professional Experience</h2>
-        <ol id="experience-calendar" class="vcalendar">{% for item in resume_experiences %}
-          <li class="experience vevent vcard">
-            <p class="htitle"><object data="#kris-name" class="include"></object>
-              <span class="title">{{ item.title }}</span> :
-              <a class="url org" href="{{ item.org_url }}">{{ item.org }}</a>, <span class="location">{{ item.location }}</span></p>
-              <p class="date_duration"><abbr class="dtstart" title="{{ item.start_mf }}">{{ item.start_read }}</abbr> - <abbr class="dtend" title="{{ end.start_mf }}">{{ item.end_read }}</abbr></p>
-              <p class="description">{{ item.description }}</p>
-          </li>{% endfor %}
-        </ol>
-      </div><!-- end #resume-expierience -->
-      <div id="resume-tags">
-        <h2 class="resume-section">Tags</h2>
-        <ul class="tags">{% for tag in resume_tags %}
-          <li class="tag-container"><a class="skill" rel="tag" href="{{ tag.url }}">{{ tag.name }}</a></li>{% endfor %}
-        </ul>
-      </div>
-    </div><!-- end #main -->{% endblock %}
+	<div id="main" class="hresume">
+		<div id="hcard-Kris-Walker" class="vcard">
+			<img src="/img/kris_walker_portrait-150.jpg" alt="photo of " class="photo"/>
+			<a class="url fn" href="http://www.kixx.name/">Kris Walker</a>
+			<p id="hcard-urls"> <strong class="hcard-urls">Email: <a class="email" href="mailto:kixxauth@gmail.com">kixxauth@gmail.com</a></strong> <strong class="hcard-urls">Web: <a class="url" href="http://www.kixx.name">www.kixx.name</a></strong> </p>
+			<ul id="hcard-links">
+				<li class="hcard-link"><a class="url blog" href="http://fireworksfactory.blogspot.com/" id="hcard-blog" title="Kris Walker's blog.">Kris Walker blogs.</a></li>
+				<li class="hcard-link"><a class="url microblog" href="http://twitter.com/kixxauth" id="hcard-twitter" title="Kris Walker on Twitter.">Kris Walker tweets.</a></li>
+				<li class="hcard-link"><a class="url bookmarks" href="http://www.delicious.com/kristoffwalk/" id="hcard-delicious" title="Kris Walker's Delicious bookmarks.">Kris Walker&#39;s bookmarks.</a></li>
+				<li class="hcard-link"><a class="url professional" href="http://www.linkedin.com/in/kixx7" id="hcard-linkedin" title="Kris Walker's page on LinkedIn">Kris Walker as a professional.</a></li>
+				<li class="hcard-link"><a class="url repository" href="http://github.com/kixxauth" id="hcard-github" title="Kris Walker's computer code on GitHub">Fork me on GitHub.</a></li>
+			</ul>
+			<address class="adr">
+				<span class="street-address">310 North Grand Ave.</span>
+				<span class="locality">Poughkeepsie</span>,
+				<span class="region">New York</span> <span class="postal-code">12603</span>
+				<span class="country-name">United States of America</span>
+			</address></div><!-- end #hcard-Kris-Walker -->
+		<div id="resume-summary">
+			<h2 class="resume-section">Summary</h2>
+			<div class="summary">
+				<blockquote class="summary-quote"><p>&quot;Process, on the other hand, refers to the emotional intelligence skills you have about managing projects, visualizing success, persuading other people of your point of view, dealing with multiple priorities, etc. This stuff is insanely valuable and hard to learn. Unfortunately, it&#39;s usually overlooked by headhunters and HR folks, partly because it&#39;s hard to accredit or check off in a database&quot;</p></blockquote> <p class="quoted">-- Seth Godin</p>
+				<p class="resume-content">Don&#39;t look at this resume. My resume will not tell you if I care about your project or if I&#39;ll just take on any project that comes my way. Instead of reading through bullet points, why don&#39;t you ask me to write you a letter explaining why I want to take on your project and how I got the skills needed to do the best job. As I&#39;m sure you&#39;ve already discovered, English writing skill is just as important for programmers and web developers these days as traditional programming skill. However, if you absolutely must look through my bulleted list of life experiences, I included a few interesting items as sources of my "emotional intelligence".</p> </div>
+		</div>
+		<div id="resume-education">
+			<h2 class="resume-section">Education</h2>
+			<ol id="education-calendar" class="vcalendar">
+				<li class="education vevent vcard">
+					<p class="htitle"><span class="summary">BS Film Studies</span> : <a class="org url" href="http://www.ithaca.edu/">Ithaca College</a></p>
+					<p class="date_duration"><abbr class="dtstart" title="1997-08-01">August 1997</abbr> - <abbr class="dtend" title="2001-05-01">May 2001</abbr></p>
+					<p class="description">The film studies program at Ithaca College is where I cut my teeth on both the theory and practice of media. I studied classical photography and cinematography, as well as digital photography and the digital dark room. Later I moved away from classic photography and into multimedia.  While I was there I also took classes on screenwriting, economics, mathematics, and computer science.  I was also member of the crew team at Ithaca College. Rowing was a great experience that taught discipline and teamwork, but is also a growing brotherhood and sisterhood of great people who have a shared experience.</p>
+				</li>
+			</ol>
+		</div>
+		<div id="resume-experience">
+			<h2 class="resume-section">Professional Experience</h2>
+			<ol id="experience-calendar" class="vcalendar">{% for item in resume_experiences %}
+				<li class="experience vevent vcard">
+					<p class="htitle"><object data="#kris-name" class="include"></object>
+						<span class="title">{{ item.title }}</span> : <a class="url org" href="{{ item.org_url }}">{{ item.org }}</a>, <span class="location">{{ item.location }}</span></p>
+					<p class="date_duration"><abbr class="dtstart" title="{{ item.start_mf }}">{{ item.start_read }}</abbr> - <abbr class="dtend" title="{{ end.start_mf }}">{{ item.end_read }}</abbr></p>
+					<p class="description">{{ item.description }}</p>
+				</li>{% endfor %}
+			</ol></div><!-- end #resume-expierience -->
+		<div id="resume-tags">
+			<h2 class="resume-section">Tags</h2>
+			<ul class="tags">{% for tag in resume_tags %}
+				<li class="tag-container"><a class="skill" rel="tag" href="{{ tag.url }}">{{ tag.name }}</a></li>{% endfor %}
+			</ul></div>
+	</div><!-- end #main -->{% endblock %}
 

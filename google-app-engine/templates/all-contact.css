@@ -15,98 +15,71 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 
 {% block styles %}
 @media screen {
-  /* @fontstack */
-  strong.header-content, a.url.fn {
-    font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
-  }
-  #hcard-urls {
-    font-family: 'Comic Book', 'Marker Felt', 'Comic Sans MS', 'URW Gothic L', serif;
-  }
-  strong.header-content {
-    display: block;
-    text-align: left;
-    font-size: 1.2em;
-    padding-bottom: .3em;
-  }
-  #hcard-Kris-Walker {
-    background-color: #fff;
-    border: 3px solid #000;
-    position: relative;
-    width: 98.5%;
-    margin-top: 1em;
-    padding: 1em 0 3em;
-  }
-  #hcard-Kris-Walker a:hover {
-    text-decoration: underline;
-  }
-  img.photo {
-    float: left;
-    margin: 0 2em 2em 1em;
-  }
-  a.url.fn {
-    font-size: 1.5em;
-    color: #003d75;
-  }
-  #hcard-urls {
-    font-size: 1.5em;
-  }
-  strong.hcard-urls {
-    font-weight: normal;
-    display: block;
-  }
-  #hcard-urls a.email, #hcard-urls a.url {
-    color: #003d75;
-    font-family: "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
-    font-weight: bold;
-  }
-  #hcard-links {
-    overflow: hidden;
-  }
-  li.hcard-link {
-    float: left;
-    margin: 1em 0 0 1em;
-  }
-  li.hcard-link a.url {
-    display: block;
-    text-indent: -3987px;
-    height: 48px;
-    width: 48px;
-    background-color: transparent;
-    background-repeat: no-repeat;
-  }
-  #hcard-email {
-    background-image: url(/img/icon_Gmail-48.gif);
-  }
-  #hcard-blog {
-    background-image: url(/img/icon_Blogger-48.gif);
-  }
-  #hcard-twitter {
-    background-image: url(/img/icon_Twitter-48.gif);
-  }
-  #hcard-delicious {
-    background-image: url(/img/icon_Delicious-48.gif);
-  }
-  #hcard-linkedin {
-    background-image: url(/img/icon_LinkedIn-48.gif);
-  }
-  #hcard-links #hcard-github {
-    height: 160px;
-    width: 160px;
-    background-image: url(/img/github_ribbon.gif);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-  address.adr {
-    clear: both;
-    margin: 2em;
-    font-weight: bold;
-    font-size: 1.1em;
-  }
-  span.country-name {
-    font-weight: normal;
-    font-size: 0.9em;
-    color: #777;
-  }
+	/* @fontstack */
+	strong.header-content, a.url.fn {
+		font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
+	}
+	#hcard-urls {
+		font-family: 'Comic Book', 'Marker Felt', 'Comic Sans MS', 'URW Gothic L', serif;
+	}
+	strong.header-content {
+		display: block;
+		text-align: left;
+		font-size: 1.2em;
+		padding-bottom: .3em;
+	}
+	#hcard-Kris-Walker {
+		background-color: #fff;
+		border: 3px solid #000;
+		position: relative;
+		width: 98.5%;
+		margin-top: 1em;
+		padding: 1em 0 3em;
+	}
+	#hcard-Kris-Walker a:hover { text-decoration: underline; }
+	img.photo { float: left; margin: 0 2em 2em 1em; }
+	a.url.fn { font-size: 1.5em; color: #003d75; }
+	#hcard-urls { font-size: 1.5em; }
+	strong.hcard-urls { font-weight: normal; display: block; }
+	#hcard-urls a.email, #hcard-urls a.url {
+		color: #003d75;
+		font-family: "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
+		font-weight: bold;
+	}
+	#hcard-links { overflow: hidden; }
+	li.hcard-link { float: left; margin: 1em 0 0 1em; }
+	li.hcard-link a.url {
+		display: block;
+		text-indent: -3987px;
+		height: 48px;
+		width: 48px;
+		background-color: transparent;
+		background-repeat: no-repeat;
+	}
+	#hcard-email { background-image: url(/img/icon_Gmail-48.gif); }
+	#hcard-blog { background-image: url(/img/icon_Blogger-48.gif); }
+	#hcard-twitter { background-image: url(/img/icon_Twitter-48.gif); }
+	#hcard-delicious { background-image: url(/img/icon_Delicious-48.gif); }
+	#hcard-linkedin { background-image: url(/img/icon_LinkedIn-48.gif); }
+	#hcard-links #hcard-github {
+		height: 140px;
+		width: 140px;
+		background-image: url(/img/forkme_right_green_007200.gif);
+		position: absolute;
+		margin: 0;
+		top: 0;
+		right: 0;
+	}
+	address.adr {
+		clear: both;
+		margin: 2em;
+		font-weight: bold;
+		font-size: 1.1em;
+	}
+	span.country-name {
+		font-weight: normal;
+		font-size: 0.9em;
+		color: #777;
+	}
 }
 {% endblock %}

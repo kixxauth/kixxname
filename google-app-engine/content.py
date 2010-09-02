@@ -33,7 +33,8 @@ PORTFOLIO = [
     ]
 
 LOCALES = {
-      'poughkeepsie_and_hudson_valley': ['The Hudson Valley', 'Poughkeepsie']
+      'home': ['Ulster counties', 'Dutchess']
+    , 'poughkeepsie_and_hudson_valley': ['The Hudson Valley', 'Poughkeepsie']
     }
 
 ACTIONS = {
@@ -76,10 +77,7 @@ RESUME_EXPERIENCES = [
       , 'start_read': 'April 2009'
       , 'end_mf': time.strftime('%Y-%m-%d')
       , 'end_read': 'present'
-      , 'description': """Since April of 2009 I have been bootrapping a unique kind of software firm. Our aim
-        is to change the way software is built and used by small businesses. While we're at it, we're also exploring
-        a new way to structure a corporation. Stop by and check us out at
-        <a title="The Fireworks Project builds small business software." href="http://www.fireworksproject.com">www.fireworksproject.com</a>"""
+      , 'description': """Since April of 2009 I have been bootrapping a unique kind of software firm. Our aim is to change the way software is built and used by small businesses. While we're at it, we're also exploring a new way to structure a corporation. Stop by and check us out at <a title="The Fireworks Project builds small business software." href="http://www.fireworksproject.com">www.fireworksproject.com</a>"""
       }
     , {
         'title': 'Freelancer'
@@ -90,12 +88,7 @@ RESUME_EXPERIENCES = [
       , 'start_read': 'January 2008'
       , 'end_mf': time.strftime('%Y-%m-%d')
       , 'end_read': 'present'
-      , 'description': """I design and build websites as well as handle a multitude of programming tasks.
-          For more information about web design and development you should check out my home page at
-          <a title="Kris Walker's web design home page." href="http://www.kixx.name/">
-          www.kixx.name</a>. To get the scoop on my programming abilities check out my programming page at
-          <a title="Kris Walker does computer programming and software engineering." href="http://www.kixx.name/freelance_programming">www.kixx.name/freelance_programming</a>.
-          Or, you can check out the tag list of skills at the bottom of this page."""
+      , 'description': """I design and build websites as well as handle a multitude of programming tasks.  For more information about web design and development you should check out my home page at <a title="Kris Walker's web design home page." href="http://www.kixx.name/"> www.kixx.name</a>. To get the scoop on my programming abilities check out my programming page at <a title="Kris Walker does computer programming and software engineering." href="http://www.kixx.name/freelance_programming">www.kixx.name/freelance_programming</a>.  Or, you can check out the tag list of skills at the bottom of this page."""
       }
     , {
         'title': 'Regional Manager'
@@ -106,8 +99,7 @@ RESUME_EXPERIENCES = [
       , 'start_read': 'May 2005'
       , 'end_mf': '2008-01-01'
       , 'end_read': 'January 2008'
-      , 'description': """I bootstrapped the regional branch location in New York City for Gentle Giant. The personal growth and development I experienced while working on this project has been invaluable to me. I learned to grasp opportunity, execute on ideas, manage people, keep happy customers, and provide opportunity for everyone under my management. Most of all I learned how important it is to maintain a good quality of life for everyone involved in an entrepreneurial project, even for my self."""
-      }
+      , 'description': """I bootstrapped the regional branch location in New York City for Gentle Giant. The personal growth and development I experienced while working on this project has been invaluable to me. I learned to grasp opportunity, execute on ideas, manage people, keep happy customers, and provide opportunity for everyone under my management. Most of all I learned how important it is to maintain a good quality of life for everyone involved in an entrepreneurial project, even for my self.""" }
     , {
         'title': 'High School Rowing Coach'
       , 'org_url': 'http://www.greenwichwaterclub.com/'
@@ -117,8 +109,7 @@ RESUME_EXPERIENCES = [
       , 'start_read': 'August 2004'
       , 'end_mf': '2005-05-01'
       , 'end_read': 'May 2005'
-      , 'description': """Coaching is one of the most rewarding things I've ever done. Someday I'm going to "retire" and just be a coach."""
-      }
+      , 'description': """Coaching is one of the most rewarding things I've ever done. Someday I'm going to "retire" and just be a coach.""" }
     , {
         'title': 'Runner &amp; Cyclist'
       , 'org_url': 'http://www.kixx.name/'
@@ -128,9 +119,7 @@ RESUME_EXPERIENCES = [
       , 'start_read': 'March 2002'
       , 'end_mf': time.strftime('%Y-%m-%d')
       , 'end_read': 'present'
-      , 'description': """I ran the Boston Marathon twice, but twice is enough. I did it in 3:35 and 3:45.
-          I&#39;ve also ridden the 150 mile road ride from Boston to Vermont.
-          I would really like to do that again someday."""
+      , 'description': """I ran the Boston Marathon twice, but twice is enough. I did it in 3:35 and 3:45.  I&#39;ve also ridden the 150 mile road ride from Boston to Vermont.  I would really like to do that again someday."""
       }
     , {
         'title': 'Mover'
@@ -141,8 +130,7 @@ RESUME_EXPERIENCES = [
       , 'start_read': 'September 2001'
       , 'end_mf': '2004-08-01'
       , 'end_read': 'August 2004'
-      , 'description': """My best guess is that I have moved a little over 2,000 customers for Gentle Giant (I would never do that job for any other organization). I met and interacted with a more diverse collection of individuals than most people will ever get the chance to. The company attracts the best and most interesting customers in the industry and employs amazing people."""
-      }
+      , 'description': """My best guess is that I have moved a little over 2,000 customers for Gentle Giant (I would never do that job for any other organization). I met and interacted with a more diverse collection of individuals than most people will ever get the chance to. The company attracts the best and most interesting customers in the industry and employs amazing people.""" }
     , {
         'title': 'Fork Truck Operator'
       , 'org_url': 'http://www.bestwaylumber.com/'
@@ -152,8 +140,7 @@ RESUME_EXPERIENCES = [
       , 'start_read': 'May 1999'
       , 'end_mf': '2000-09-01'
       , 'end_read': 'September 2000'
-      , 'description': """Used fork trucks to unload rail cars, sort stacks of lumber, and feed lumber into treatment or kiln drying. Bestway produced 600,000 board feet of treated lumber per day with a skeleton crew. This is where I learned that efficiency pays big dividends."""
-      }
+      , 'description': """Used fork trucks to unload rail cars, sort stacks of lumber, and feed lumber into treatment or kiln drying. Bestway produced 600,000 board feet of treated lumber per day with a skeleton crew. This is where I learned that efficiency pays big dividends.""" }
     ]
 
 RESUME_TAGS = [

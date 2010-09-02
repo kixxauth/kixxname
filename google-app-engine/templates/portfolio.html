@@ -30,26 +30,24 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 
 {% block conditional_ie %}<!--[if IE 6]>
 <style type="text/css">
-  #background { position: absolute; }
-  /* @jello layout */
-  #container { height: 0; position: relative; }
-  /* Fix @margin doubling on floated elements. */
-  #navigation li.navigation, img.item-image { display: inline; }
+	#background { position: absolute; }
+	#container { height: 0; position: relative; }
+	#navigation li.navigation, img.item-image { display: inline; }
 </style>
 <![endif]-->{% endblock %}
 
-{% block header %}
-          <strong class="header-content">A small sample</strong>
-          of my web design and development work.{% endblock %}
+{% block header %}<strong class="header-content">A small sample</strong> of my web design and development work.{% endblock %}
 
 {% block page %}
-    <ul id="main">
-      {% for item in portfolio %}
-      <li class="portfolio-item"><h3 class="portfolio-title">{{ item.title }}</h3>
-        <div class="item-content">
-          <img class="item-image" src="{{ item.source }}" alt="{{ item.alt }}" width="450" height="300" />
-          <p class="item-description">{{ item.description }}</p>
-        </div></li>{% endfor %}
-    </ul><!-- end #main -->{% endblock %}
-
+	<div id="main">
+		<p class="action"><a href="/service_and_price_schedule" title="Service and price schedule." class="action">Go to: Services &amp; pricing.</a></p>
+		<ul id="portfolio">{% for item in portfolio %}
+			<li class="portfolio-item"><h3 class="portfolio-title">{{ item.title }}</h3>
+				<div class="item-content">
+					<img class="item-image" src="{{ item.source }}" alt="{{ item.alt }}" width="450" height="300" />
+					<p class="item-description">{{ item.description }}</p>
+				</div></li>{% endfor %}
+		</ul>
+		<p class="action"><a href="/service_and_price_schedule" title="Service and price schedule." class="action">Go to: Services &amp; pricing.</a></p>
+	</div><!-- end #main -->{% endblock %}
 

@@ -283,7 +283,11 @@ class StylesheetHandler(Handler):
 # http://werkzeug.pocoo.org/documentation/0.6.2/routing.html#rule-format
 #
 handler_map = [
-      ('/poughkeepsie_and_hudson_valley_website_design'
+      ('/'
+        , 'home,website_design'
+        , VerticalHandler)
+
+    , ('/poughkeepsie_and_hudson_valley_website_design'
         , 'poughkeepsie_and_hudson_valley,website_design'
         , VerticalHandler)
 

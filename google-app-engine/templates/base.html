@@ -32,91 +32,66 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 'handheld_device' is triggered for iPhone, iPad, and Android only.
 {% endcomment %}{% if handheld_device %}
 {# iPhone and Android #}<link rel="stylesheet" media="all and (max-device-width:480px)"
-  href="./css/handheld.css?maxwidth=480&class={{ page_class }}"/>
+	href="./css/handheld.css?maxwidth=480&class={{ page_class }}"/>
 {# iPad #}<link rel="stylesheet" media="all and (min-device-width: 481px) and (max-device-width: 1024px)"
-  href="./css/handheld.css?maxwidth=1024&class={{ page_class }}">
+	href="./css/handheld.css?maxwidth=1024&class={{ page_class }}">
 {% else %}
 <link rel="stylesheet" media="all" href="./css/all.css?class={{ page_class }}"/>{% endif %}
 {# Conditional comments to target IE. #}{% block conditional_ie %}{% endblock %}
 </head><body id="kixxname">{# Holds the fixed background image. #}<div id="background"></div>
 {# Jello layout. #}<div id="stretcher"><div id="container">
-  <div id="page" class="page-{{ page_class }}">
-    <div id="header" class="header-{{ page_class }}">
-      <h1 id="header-content" class="header">{% block header %}{% endblock %}</h1>
-      <h2 id="header-subcontent" class="header"><strong class="header">Fireworks</strong> <em class="header">Computer Systems</em></h2>
-      <ul id="navigation" class="navigation-{{ page_class }}">
-        <li class="navigation first"><a href="/resume" title="Kris Walker's resume." class="navigation">Resume</a>
-        </li><li class="navigation"><a href="http://fireworksfactory.blogspot.com/" title="Kris Walker's blog." class="navigation">Blog</a>
-        </li><li class="navigation last"><a href="/contact" title="Contact Kris Walker." class="navigation">Contact me</a></li>
-      </ul></div>
-    {% block page %}{% endblock %}</div><!-- end #page -->
-  <div id="footer">
-    <div id="sitemap">
-      <div id="sitemap-about" class="sitemap">
-        <h3 class="sitemap">About Kris Walker.</h3>
-        <p id="portrait">
-          <img src="/img/kris_walker_portrait-150.jpg" width="150" height="150"
-            alt="Portrait of Kris Walker." />
-        </p>
-      </div>
-      <div id="sitemap-skills" class="sitemap">
-        <h3 class="sitemap">Kris Walker does computer programming and web design.</h3>
-      </div>
-      <div id="sitemap-net" class="sitemap">
-        <h3 class="sitemap">Kris Walker on the net.</h3>
-        <ul id="social-links">
-          <li class="social-link">
-            <a href="mailto:kixxauth@gmail.com" class="social-link"
-              id="social-email" title="Kris Walker's email address.">email me</a>
-          </li>
-          <li class="social-link">
-            <a class="social-link"
-              href="http://fireworksfactory.blogspot.com/"
-              id="social-blog" title="Kris Walker's blog.">Kris Walker blogs.</a>
-          </li>
-          <li class="social-link">
-            <a class="social-link"
-              href="http://twitter.com/kixxauth"
-              id="social-twitter" title="Kris Walker on Twitter.">Kris Walker tweets.</a>
-          </li>
-          <li class="social-link">
-            <a class="social-link"
-              href="http://www.delicious.com/kristoffwalk/"
-              id="social-delicious" title="Kris Walker's Delicious bookmarks.">Kris Walker&#39;s bookmarks.</a>
-          </li>
-          <li class="social-link">
-            <a class="social-link"
-              href="http://www.linkedin.com/in/kixx7"
-              id="social-linkedin" title="Kris Walker's page on LinkedIn">Kris Walker as a professional.</a>
-          </li>
-          <li class="social-link">
-            <a class="social-link"
-              href="http://github.com/kixxauth"
-              id="social-github" title="Kris Walker's computer code on GitHub">Fork me on GitHub.</a>
-          </li>
-        </ul>
-      </div>
-    </div><!-- end #sitemap -->
-    <div id="license">
-      <h3 class="license">Legalese</h3>
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
-        <img alt="Creative Commons License" style="border-width:0"
-        src="http://kixxname.appspot.com/img/somerights20.png" />
-      </a>
-      Copyright &copy; 2010 by
-      <a xmlns:cc="http://creativecommons.org/ns#"
-        href="http://www.kixx.name"
-        rel="cc:attributionURL">Kris Walker</a>
-      Except where otherwise noted, content on this site is licensed under a
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
-        Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
-      </a>. Based on source code at
-      <a xmlns:dc="http://purl.org/dc/elements/1.1/"
-        href="http://github.com/kixxauth/kixxname" rel="dc:source">github.com/kixxauth/kixxname</a>.
-      Permissions beyond the scope of this license may be available at
-      <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.kixx.name" rel="cc:morePermissions">
-        www.kixx.name
-      </a>.
-    </div><!-- end #license -->
-  </div><!-- end #footer -->
+<div id="page" class="page-{{ page_class }}">
+	<div id="header" class="header-{{ page_class }}">
+		<h1 id="header-content" class="header">{% block header %}{% endblock %}</h1>
+		<h2 id="header-subcontent" class="header"><strong class="header">Fireworks</strong> <em class="header">Computer Systems</em></h2>
+		<ul id="navigation" class="navigation-{{ page_class }}">
+			<li class="navigation first"><a href="/resume" title="Kris Walker's resume." class="navigation">Resume</a></li>
+			<li class="navigation"><a href="http://fireworksfactory.blogspot.com/" title="Kris Walker's blog." class="navigation">Blog</a></li>
+			<li class="navigation last"><a href="/contact" title="Contact Kris Walker." class="navigation">Contact me</a></li>
+		</ul></div>{% block page %}{% endblock %}</div><!-- end #page -->
+<div id="footer">
+	<div id="sitemap">
+		<div id="sitemap-about" class="sitemap">
+			<h3 class="sitemap">About Kris Walker.</h3>
+			<p id="portrait"><img src="/img/kris_walker_portrait-150.jpg" width="150" height="150" alt="Portrait of Kris Walker." /></p>
+			<ul class="sitemap-about">
+				<li><a class="sitemap-about" href="http://www.inc.com/" title="Inc. Magazine: For growing companies.">Entrepreneur</a></li>
+				<li><a class="sitemap-about" href="http://www.alistapart.com/" title="A List Apart: For people who make websites.">Web Developer</a></li>
+				<li><a class="sitemap-about" href="http://stackoverflow.com/" title="Stack Overflow: Q&amp;A for programmers.">Programmer</a></li>
+				<li><a class="sitemap-about" href="http://www.americanalpineclub.org/" title="The American Alpine Club: Mountaineering and Alpinism.">Mountaineer</a></li>
+				<li><a class="sitemap-about" href="http://www.row2k.com/" title="Row2k: All about rowing.">Rower</a></li>
+				<li><a class="sitemap-about" href="http://www.midhudsonbicycle.org/" title="Mid-Hudson Bicycle Club: Cycling in the Hudson Valley">Cyclist</a></li>
+			</ul></div>
+		<div id="sitemap-skills" class="sitemap">
+			<h3 class="sitemap">Kris Walker does computer programming and web design.</h3>
+			<ul class="sitemap-skills">
+				<li><a class="sitemap-skills" href="/website_and_mobile_design_portfolio" title="Kris Walker's design portfolio for web and mobile.">Web Design Portfolio</a></li>
+				<li><a class="sitemap-skills" href="/service_and_price_schedule" title="Upfront web development pricing.">Web Development Prices</a></li>
+				<li><a class="sitemap-skills" href="/freelance_programming" title="Kris Walker is a freelance programmer.">Freelance Programming</a></li>
+				<li><a class="sitemap-skills" href="/resume" title="Kris Walker's resume">Resume</a></li>
+			</ul></div>
+		<div id="sitemap-net" class="sitemap">
+			<h3 class="sitemap">Kris Walker on the net.</h3>
+			<ul id="social-links">
+				<li class="social-link"> <a class="social-link" href="mailto:kixxauth@gmail.com" id="social-email" title="Kris Walker's email address.">email me</a> </li>
+				<li class="social-link"> <a class="social-link" href="http://fireworksfactory.blogspot.com/" id="social-blog" title="Kris Walker's blog.">Kris Walker blogs.</a> </li>
+				<li class="social-link"> <a class="social-link" href="http://twitter.com/kixxauth" id="social-twitter" title="Kris Walker on Twitter.">Kris Walker tweets.</a> </li>
+				<li class="social-link"> <a class="social-link" href="http://www.delicious.com/kristoffwalk/" id="social-delicious" title="Kris Walker's Delicious bookmarks.">Kris Walker&#39;s bookmarks.</a> </li>
+				<li class="social-link"> <a class="social-link" href="http://www.linkedin.com/in/kixx7" id="social-linkedin" title="Kris Walker's page on LinkedIn">Kris Walker as a professional.</a> </li>
+				<li class="social-link"> <a class="social-link" href="http://github.com/kixxauth" id="social-github" title="Kris Walker's computer code on GitHub">Fork me on GitHub.</a> </li>
+			</ul></div>
+	</div><!-- end #sitemap -->
+	<div id="license">
+		<h3 class="license">Legalese</h3>
+		<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://kixxname.appspot.com/img/somerights20.png" /></a>
+		Copyright &copy; 2010 by
+		<a xmlns:cc="http://creativecommons.org/ns#" href="http://www.kixx.name" rel="cc:attributionURL">Kris Walker</a>.
+		Except where otherwise noted, content on this site is licensed under a
+		<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"> Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License </a>.
+		Based on source code at
+		<a xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://github.com/kixxauth/kixxname" rel="dc:source">github.com/kixxauth/kixxname</a>.
+		Permissions beyond the scope of this license may be available at
+		<a xmlns:cc="http://creativecommons.org/ns#" href="http://www.kixx.name" rel="cc:morePermissions"> www.kixx.name </a>.
+	</div><!-- end #license -->
+</div><!-- end #footer -->
 </div><!-- end #container --></div><!-- end #stretcher --></body></html>
