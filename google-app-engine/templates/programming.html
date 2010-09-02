@@ -1,0 +1,106 @@
+{% comment %}
+
+Programming Template
+====================
+
+This is the template that the freelance programming page uses.
+
+For more information regarding the Django template syntax, have a look at the
+documentation.
+http://docs.djangoproject.com/en/1.2/topics/templates/#topics-templates
+
+copyright: (c) 2010 by Kris Walker. Some rights reserved.
+
+License
+-------
+
+All text content, excluding XHTML markup source code, in this file is (c) 2010
+by Kris Walker (http://www.kixx.name) and, unless otherwise indicated, is
+licensed under a Creative Commons Attribution-Share Alike 3.0 Unported License
+(http://creativecommons.org/licenses/by-sa/3.0/).
+
+See CC-LICENSE in this folder for more details.
+
+All XHTML and related source code is copyright (c) 2010 by Kris Walker
+(http://www.kixx.name). All rights reserved.
+
+{% endcomment %}{% extends "base.html" %}
+
+{% block title %}Contact me.{% endblock %}
+
+{% block conditional_ie %}<!--[if IE 6]>
+<style type="text/css">
+  #background { position: absolute; }
+  /* @jello layout */
+  #container { height: 0; position: relative; }
+  /* Fix @margin doubling on floated elements. */
+  #navigation li.navigation, #description, li.projects, #skill-tags { display: inline; }
+</style>
+<![endif]-->{% endblock %}
+
+{% block header %}
+          <strong class="header-content">Programming.</strong>
+          Bending computers to your will every day.{% endblock %}
+
+{% block page %}
+    <div id="main">
+      <p id="description">I&#39;ve done everything from vector clocks to AJAX
+      requests. I know both RDMS and NoSQL databases in theory and practice.
+      I&#39;ve even done parallel programming in Erlang. Although I have no
+      formal training in programming I know how to get your project done. My
+      emphasis is on shipping a working product but I&#39;m no cowboy. So, if
+      you use an automated testing framework, or use an agile workflow, you can
+      count on me to work within your guidelines.
+      <a class="contact" href="/contact" title="Contact Kris Walker.">Contact Me</a></p>
+      <ul id="skill-tags">{% for tag in resume_tags %}
+        <li class="tag-container"><a class="skill" rel="tag" href="{{ tag.url }}">{{ tag.name }}</a></li>{% endfor %}
+      </ul>
+      <ul id="projects">
+        <li class="projects">
+        <p class="project-description"><strong class="project-description">
+          Full website (Python, Google App Engine, Werkzeug, JavaScript,
+          jQuery, HTML + CSS)</strong> A complete website built in Python using
+          the WSGI standard and the Werkzeug utilities along with Django
+          templating. Includes analytics in both the back and front end.</p>
+          <p class="project-link"><a class="project-link" title="Full website project repository."
+            href="http://github.com/kixxauth/Fireworks-Project-Website">Code Repository</a></p>
+        </li>
+        <li class="projects">
+          <p class="project-description"><strong class="project-description">
+          jQuery plugin (JavaScript, jQuery).</strong> A JavaScript program
+          designed to be used as a jQuery plugin for running simple slide show
+          presentations (Powerpoint) in a website.</p>
+          <p class="project-link"><a class="project-link" title="jQuery plugin project repository."
+            href="http://github.com/kixxauth/Impression">Code Repository</a></p>
+        </li>
+        <li class="projects">
+          <p class="project-description"><strong class="project-description">
+          Enterprise resource management client (Firefox extension, JavaScript,
+          AJAX, jQuery, XPCOM).</strong> This project is a custom client side
+          application for an ERM system. All the business logic is on the client
+          and is implemented in JavaScript.</p>
+          <p class="project-link"><a class="project-link" title="Firefox extention project repository."
+            href="http://github.com/kixxauth/crownconstruction">Code Repository</a></p>
+        </li>
+        <li class="projects">
+          <p class="project-description"><strong class="project-description">
+          A distributed datastore (Python, Google App Engine).</strong> This
+          project contains many complex subsystems including challenge response
+          authentication and schemaless/NoSQL data storage abstraction.
+          Remote queries are handled with a custom protocol built on HTTP.</p>
+          <p class="project-link"><a class="project-link" title="DCube project repository."
+            href="http://github.com/kixxauth/DCube">Code Repository</a></p>
+        </li>
+        <li class="projects">
+          <p class="project-description"><strong class="project-description">
+          A challenge response authentication (CHAP) module for
+          Python.</strong> This is a python module that allows me (or anyone
+          else) to repeat the complex workings of a CHAP session without having
+          to re-implement it every time.</p>
+          <p class="project-link"><a class="project-link" title="PyChap project repository."
+            href="http://github.com/kixxauth/PyChap">Code Repository</a></p>
+        </li>
+      </ul>
+    </div><!-- end #main -->{% endblock %}
+
+

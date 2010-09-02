@@ -1,0 +1,66 @@
+{% comment %}
+
+Portfolio styles template.
+=========================
+
+This is the style template that the portfolio page uses.
+
+For more information regarding the Django template syntax, have a look at the
+documentation.
+http://docs.djangoproject.com/en/1.2/topics/templates/#topics-templates
+
+copyright: (c) 2010 by Kris Walker. All rights reserved.
+
+{% endcomment %}{% extends "reset.css" %}
+
+{% block styles %}
+@media screen {
+  /* @fontstack */
+  strong.header-content, h3.portfolio-title {
+    font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
+  }
+  /* @border */
+  li.portfolio-item div.item-content, h3.portfolio-title, img.item-image {
+    border: 3px solid #000;
+  }
+  strong.header-content {
+    display: block;
+    text-align: left;
+    font-size: 1.2em;
+    padding-bottom: .3em;
+  }
+  #main li.portfolio-item {
+    margin-top: 1em;
+    position: relative;
+    padding: 1em 0 0 2%;
+    width: 97%;
+  }
+  h3.portfolio-title {
+    background-color: #f6e50a;
+    font-size: 1.3em;
+    width: 20em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: .1em 0 .3em 1em;
+  }
+  li.portfolio-item div.item-content {
+    background-color: #fff;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  img.item-image {
+    float: right;
+    margin: 16px;
+  }
+  p.item-description {
+    font-size: .9em;
+    color: #222;
+    padding: 5em 0 3em 3%;
+    margin-right: 500px;
+    text-indent: 3em;
+  }
+}
+{% endblock %}

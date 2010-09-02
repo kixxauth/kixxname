@@ -6,8 +6,31 @@ VERTICAL_DESCRIPTION = ('Kris Walker %s (for fun and profit) right here in %s an
     'Including %s for iPhone and other mobile phones too.')
 
 PRICING_DESCRIPTION = 'Upfront pricing for your website design, including free.'
-RESUME_DESCRIPTION = 'Kris Walker&#39;s web development, computer programming, and life long resume.'
-CONTACT_DESCRIPTION = 'Kris Walker&#39;s contact information. (In hcard microformat.)'
+RESUME_DESCRIPTION = "Kris Walker's web development, computer programming, and life long resume."
+CONTACT_DESCRIPTION = "Kris Walker's contact information. (In hcard microformat.)"
+PORTFOLIO_DESCRIPTION = "Kris Walker's design portfolio for the web, including mobile websites."
+PROGRAMMING_DESCRIPTION = "Kris Walker does computer programming to bend computers to your will."
+
+PORTFOLIO = [
+      {
+        'title': 'Lisa Walker Photography'
+      , 'description': """A nice photographer's website, including a slide show for her portfolio. This website is designed with a content management system so the website owner can update her portfolio of photographs without needing any special web technology skills. The goal of any photography website, of course, is to show off the photographs, and that is what this website was designed to do."""
+      ,  'source': '/img/portfolio-lisa_walker_photography-thumb.png'
+      ,  'alt': 'Screenshot of Lisa Walker Photography website.'
+      }
+    , {
+        'title': 'The Fireworks Project'
+      , 'description': """This website is the first for this start up software company. It is a custom design that includes analytical data tracking to measure the site traffic and how long visitors stay to read any particular page, as well as the links they click on within the site. All this data is important to the site owners for tracking the success of their marketing efforts."""
+      , 'source': '/img/portfolio-the_fireworks_project-thumb.png'
+      , 'alt': 'Screenshot of The Fireworks Project website.'
+      }
+    , {
+        'title': 'Crown Construction'
+      , 'description': """This project is not a website, but a custom web application built for internal use by a home remodeling firm. It allows them to keep all their customer records organized and available nomatter where they are. The design is a custom design just for this purpose."""
+      , 'source': '/img/portfolio-crown_construction-thumb.png'
+      , 'alt': 'Screenshot of the Crown Construction web application.'
+      }
+    ]
 
 LOCALES = {
       'poughkeepsie_and_hudson_valley': ['The Hudson Valley', 'Poughkeepsie']
@@ -135,16 +158,22 @@ RESUME_EXPERIENCES = [
 
 RESUME_TAGS = [
       'programming'
-    , 'web development'
     , 'web design'
-    , 'front end web development'
-    , 'back end web development'
+    , 'web development'
+    , 'front end'
+    , 'back end'
+    , 'Firefox extensions'
     , 'HTML'
     , 'CSS'
     , 'JavaScript'
+    , 'Python'
+    , 'PHP'
+    , 'Perl'
+    , 'Erlang'
     , 'jQuery'
     , 'Dojo'
     , 'YUI'
+    , 'Node.js'
     , 'Google App Engine'
     , 'Amazon Web Services'
     , 'WSGI'
@@ -153,18 +182,18 @@ RESUME_TAGS = [
     , 'Werkzeug'
     , 'Drupal'
     , 'Wordpress'
-    , 'Python'
-    , 'PHP'
-    , 'Perl'
-    , 'Erlang'
-    , 'Node.js'
+    , 'NoSQL'
     , 'CouchDB'
     , 'MongoDB'
     , 'MySQL'
+    , 'XPCOM'
     , 'Apache'
     , 'HTTP'
     , 'OAuth'
     , 'OpenID'
+    , 'Extreme Programming'
+    , 'Agile Development'
+    , 'Scrum'
     ]
 
 def vertical(locale, action):
@@ -280,3 +309,16 @@ contact = {
     'page_class': 'contact'
     , 'description': CONTACT_DESCRIPTION
     }
+
+portfolio = {
+      'page_class': 'portfolio'
+    , 'description': PORTFOLIO_DESCRIPTION
+    , 'portfolio': PORTFOLIO
+    }
+
+programming = {
+      'page_class': 'programming'
+    , 'description': PROGRAMMING_DESCRIPTION
+    , 'resume_tags': map(resume_tag, RESUME_TAGS)
+    }
+

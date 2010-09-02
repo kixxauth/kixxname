@@ -88,6 +88,7 @@ body {
   }
   a {
     text-decoration: none;
+    outline: none;
   }
   /* @fontstack */
   #sitemap h3.sitemap, #license h3.license {
