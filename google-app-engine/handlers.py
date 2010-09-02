@@ -227,76 +227,13 @@ class PriceHandler(BaseHandler):
     """Accept the HTTP HEAD method."""
     return self.respond()
 
-class ResumeHandler(BaseHandler):
-  """Handle requests for the resume page."""
+class SimpleHandler(BaseHandler):
+  """Handle requests for simple named pages."""
 
   def respond(self):
     response = set_common_headers(
         self.out(
-          utils.render_template('resume', content.resume)))
-    response.mimetype = 'text/html'
-
-    # Expire in 10 days.
-    response.expires = int(time.time()) + (86400 * 10)
-    return self.finalize_response(response)
-
-  def get(self):
-    """Accept the HTTP GET method."""
-    return self.respond()
-
-  def head(self):
-    """Accept the HTTP HEAD method."""
-    return self.respond()
-
-class ContactHandler(BaseHandler):
-  """Handle requests for the contact page."""
-
-  def respond(self):
-    response = set_common_headers(
-        self.out(
-          utils.render_template('contact', content.contact)))
-    response.mimetype = 'text/html'
-
-    # Expire in 10 days.
-    response.expires = int(time.time()) + (86400 * 10)
-    return self.finalize_response(response)
-
-  def get(self):
-    """Accept the HTTP GET method."""
-    return self.respond()
-
-  def head(self):
-    """Accept the HTTP HEAD method."""
-    return self.respond()
-
-class PortfolioHandler(BaseHandler):
-  """Handle requests for the portfolio page."""
-
-  def respond(self):
-    response = set_common_headers(
-        self.out(
-          utils.render_template('portfolio', content.portfolio)))
-    response.mimetype = 'text/html'
-
-    # Expire in 10 days.
-    response.expires = int(time.time()) + (86400 * 10)
-    return self.finalize_response(response)
-
-  def get(self):
-    """Accept the HTTP GET method."""
-    return self.respond()
-
-  def head(self):
-    """Accept the HTTP HEAD method."""
-    return self.respond()
-
-class ProgrammingHandler(BaseHandler):
-  """Handle requests for the programming page."""
-
-  def respond(self):
-    response = set_common_headers(
-        self.out(
-          utils.render_template('programming', content.programming)))
+          utils.render_template(self.name, getattr(content, self.name, {}))))
     response.mimetype = 'text/html'
 
     # Expire in 10 days.
@@ -354,13 +291,13 @@ handler_map = [
         , 'price schedule'
         , PriceHandler)
 
-    , ('/resume', 'resume', ResumeHandler)
+    , ('/resume', 'resume', SimpleHandler)
 
-    , ('/freelance_programming', 'programming', ProgrammingHandler)
+    , ('/freelance_programming', 'programming', SimpleHandler)
 
-    , ('/contact', 'contact', ContactHandler)
+    , ('/contact', 'contact', SimpleHandler)
 
-    , ('/website_and_mobile_design_portfolio', 'portfolio', PortfolioHandler)
+    , ('/website_and_mobile_design_portfolio', 'portfolio', SimpleHandler)
 
     , ('/css/all.css', 'all', StylesheetHandler)
     ]
