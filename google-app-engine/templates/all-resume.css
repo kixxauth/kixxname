@@ -119,6 +119,7 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 		font-style: italic;
 	}
 	p.quoted { text-indent: 4em; }
+	object { display: none; }
 	p.htitle { font-size: 1.3em; }
 	p.htitle a.org { color: #003d75; }
 	p.htitle span.location { display: block; }
