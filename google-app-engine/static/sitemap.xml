@@ -10,29 +10,29 @@
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://www.kixx.name/hudson_valley_web_design</loc>
+  <loc>http://www.kixx.name/service_and_price_schedule</loc>
   <priority>0.90</priority>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://www.kixx.name/poughkeepsie_web_design</loc>
+  <loc>http://www.kixx.name/website_and_mobile_design_portfolio</loc>
   <priority>0.80</priority>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://www.kixx.name/greenwich_web_design</loc>
-  <priority>0.80</priority>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.kixx.name/contact</loc>
+  <priority>0.70</priority>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.kixx.name/dutchess_county_web_design</loc>
-  <priority>0.80</priority>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.kixx.name/feelance_programming</loc>
+  <priority>0.70</priority>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://www.kixx.name/fairfield_county_web_design</loc>
-  <priority>0.80</priority>
-  <changefreq>weekly</changefreq>
+  <loc>http://www.kixx.name/resume</loc>
+  <priority>0.70</priority>
+  <changefreq>monthly</changefreq>
 </url>
 </urlset>
 

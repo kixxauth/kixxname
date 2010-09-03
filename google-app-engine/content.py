@@ -5,10 +5,10 @@ import time
 VERTICAL_DESCRIPTION = ('Kris Walker %s (for fun and profit) right here in %s and %s. '
     'Including %s for iPhone and other mobile phones too.')
 
-PRICING_DESCRIPTION = 'Upfront pricing for your website design, including free.'
+PRICING_DESCRIPTION = 'Upfront pricing for your website design... Including free options.'
 RESUME_DESCRIPTION = "Kris Walker's web development, computer programming, and life long resume."
 CONTACT_DESCRIPTION = "Kris Walker's contact information. (In hcard microformat.)"
-PORTFOLIO_DESCRIPTION = "Kris Walker's design portfolio for the web, including mobile websites."
+PORTFOLIO_DESCRIPTION = "Kris Walker's design portfolio for the web... Including mobile websites."
 PROGRAMMING_DESCRIPTION = "Kris Walker does computer programming to bend computers to your will."
 
 PORTFOLIO = [
@@ -33,8 +33,7 @@ PORTFOLIO = [
     ]
 
 LOCALES = {
-      'home': ['Ulster counties', 'Dutchess']
-    , 'poughkeepsie_and_hudson_valley': ['The Hudson Valley', 'Poughkeepsie']
+      'poughkeepsie_and_hudson_valley': ['The Hudson Valley', 'Poughkeepsie']
     }
 
 ACTIONS = {
@@ -43,6 +42,16 @@ ACTIONS = {
       'website_design': [
           'website design' # Page title, description * for iPhone and ...
         , 'website designer &amp; builder' # Page intro (header)
+        , 'designs and builds websites' # description * right here in ...
+        , 'websites' # Portfolio link.
+        , 'Creating websites' # First content section.
+        , ''
+        ]
+
+      # Targeting 'web and website design'
+    , 'mixed': [
+          'web design' # Page title, description * for iPhone and ...
+        , 'web designer &amp; developer' # Page intro (header)
         , 'designs and builds websites' # description * right here in ...
         , 'websites' # Portfolio link.
         , 'Creating websites' # First content section.

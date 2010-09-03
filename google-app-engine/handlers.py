@@ -284,11 +284,7 @@ class StylesheetHandler(Handler):
 #
 handler_map = [
       ('/'
-        , 'home,website_design'
-        , VerticalHandler)
-
-    , ('/poughkeepsie_and_hudson_valley_website_design'
-        , 'poughkeepsie_and_hudson_valley,website_design'
+        , 'poughkeepsie_and_hudson_valley,mixed'
         , VerticalHandler)
 
     , ('/service_and_price_schedule'
