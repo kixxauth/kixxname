@@ -23,7 +23,7 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 		font-family: 'Comic Book', 'Marker Felt', 'Comic Sans MS', 'URW Gothic L', serif;
 	}
 	/* @border */
-	#main div.content, div.content a.action, #content-pledge p.content {
+	#main, #main div.content, div.content a.action, #content-pledge p.content {
 		border: 3px solid #000;
 	}
 	#header-content a.header {
@@ -33,17 +33,18 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 		padding-bottom: .3em;
 		text-align: left;
 	}
-	#main { overflow: hidden; position: relative; }
-	#main div.content {
+	#main { overflow: hidden; }
+	#main, #main div.content {
 		background-color: #fff;
+		position: relative;
+		margin-top: 1em;
+	}
+	#main div.content { margin-left: 2%; overflow: hidden;}
+	#main div.sub-content {
 		float: left;
 		width: 48%;
 		height: 26em;
-		margin-top: 1em;
-		overflow: hidden;
-		position: relative;
 	}
-	#content-pricing, #content-growing { margin-left: 2%; }
 	#content-pledge {
 		font-size: 1.2em;
 		line-height: 1.2;
@@ -60,36 +61,50 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 		color: #fff;
 	}
 	div.content h3.content, div.content h4.content { background-color: #f6e50a; }
-	div.content h3.content {
-		font-size: 1.6em;
-		padding: 1em .5em 0;
+	#content-service { width: 95.5%; padding-bottom: 1em; }
+	#content-service h3.content, #content-service h4.content {
+		padding: .3em 2% 0;
+		width: 60%;
+		border-right: 3px solid #000;
 	}
-	div.content h4.content {
+	#content-service h3.content {
+		font-size: 1.6em;
+		line-height: 1.2;
+	}
+	#content-service h4.content {
 		font-size: 1.5em;
-		padding: 0 .7em .1em;
 		line-height: 2;
 		border-bottom: 3px solid #000;
-		text-align: center;
 	}
-	div.content p.content {
+	#programming-action {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	#programming-action a.programming-action {
+		display: block;
+		text-indent: -9999px;
+		width: 304px;
+		height: 200px;
+		background: transparent url(/img/programming-action.gif) no-repeat;
+	}
+	#content-service p.content {
 		font-size: 1.05em;
-		padding: 1.5em 1.2em 0;
+		padding: 2em 1.2em 0;
+		width: 65%;
 	}
 	div.content p.action {
-		width: 100%;
-		position: absolute;
-		bottom: 3em;
+		float: left;
+		margin: 1.5em 0 0 6%;
+		width: 40%;
 	}
 	div.content a.action {
 		background-color: #003d75;
 		font-size: 1.5em;
 		display: block;
-		padding: .2em .5em .4em;
-		line-height: 1.2;
 		color: #fff;
-		width: 12em;
-		margin: 0 auto;
 		text-align: center;
+		padding-bottom: .2em;
 	}
 }
 {% endblock %}

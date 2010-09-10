@@ -36,8 +36,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142137"
-     inkscape:cx="123.24974"
-     inkscape:cy="647.43363"
+     inkscape:cx="546.22963"
+     inkscape:cy="364.59095"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -272,5 +272,85 @@
            id="tspan3269"
            sodipodi:role="line">Fork Me on GitHub</tspan></text>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:BorisBlackBloxx;-inkscape-font-specification:BorisBlackBloxx"
+       x="565.68536"
+       y="585.67175"
+       id="text3299"><tspan
+         sodipodi:role="line"
+         id="tspan3301"
+         x="565.68536"
+         y="585.67175" /></text>
+    <path
+       style="fill:#d74f28;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 359.91731,522.03215 L 380.42341,557.38748 L 354.96758,572.23673 L 371.93813,594.86415 L 359.21021,624.56262 L 384.66605,633.755 L 389.61581,661.33217 L 416.48586,655.67531 L 426.38535,683.9596 L 456.08384,666.28192 L 474.4686,691.03065 L 499.92444,666.98902 L 525.38029,685.37379 L 539.52242,656.38243 L 565.68537,673.35298 L 577.70618,642.24029 L 599.62649,658.50374 L 599.62649,521.32504 L 359.91731,522.03215 z"
+       id="path3321"
+       sodipodi:nodetypes="ccccccccccccccccccc"
+       inkscape:export-filename="/home/kixx/Projects/GAE/kixxname/assets/programming-action.png"
+       inkscape:export-xdpi="132.58252"
+       inkscape:export-ydpi="132.58252" />
+    <text
+       xml:space="preserve"
+       style="font-size:29.60110092px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:0.94117647;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:BorisBlackBloxx;-inkscape-font-specification:BorisBlackBloxx"
+       x="377.10703"
+       y="614.32837"
+       id="text3283"
+       transform="scale(1.0321499,0.9688516)"><tspan
+         sodipodi:role="line"
+         id="tspan3285"
+         x="377.10703"
+         y="614.32837">JavaScript</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:BorisBlackBloxx;-inkscape-font-specification:BorisBlackBloxx"
+       x="410.82901"
+       y="565.75146"
+       id="text3287"><tspan
+         sodipodi:role="line"
+         id="tspan3289"
+         x="410.82901"
+         y="565.75146">Python</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Comic Book;-inkscape-font-specification:Comic Book"
+       x="434.87064"
+       y="647.19"
+       id="text3291"><tspan
+         sodipodi:role="line"
+         id="tspan3293"
+         x="434.87064"
+         y="647.19">and more</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:21.12491035px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:BorisBlackBloxx;-inkscape-font-specification:BorisBlackBloxx"
+       x="526.62299"
+       y="530.39886"
+       id="text3295"
+       transform="scale(0.9384841,1.0655481)"><tspan
+         sodipodi:role="line"
+         id="tspan3297"
+         x="526.62299"
+         y="530.39886">PHP</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:BorisBlackBloxx;-inkscape-font-specification:BorisBlackBloxx"
+       x="499.92447"
+       y="621.73419"
+       id="text3303"><tspan
+         sodipodi:role="line"
+         id="tspan3305"
+         x="499.92447"
+         y="621.73419">Perl</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:BorisBlackBloxx;-inkscape-font-specification:BorisBlackBloxx"
+       x="404.46506"
+       y="622.31995"
+       id="text3307"><tspan
+         sodipodi:role="line"
+         id="tspan3309"
+         x="404.46506"
+         y="622.31995">MySQL</tspan></text>
   </g>
 </svg>
