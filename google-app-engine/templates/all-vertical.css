@@ -33,7 +33,7 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 		padding-bottom: .3em;
 		text-align: left;
 	}
-	#main { overflow: hidden; }
+	#main { overflow: hidden; width: 100%; padding-bottom: 1.5em; }
 	#main, #main div.content {
 		background-color: #fff;
 		position: relative;
@@ -102,7 +102,7 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 		padding: .5em 2%;
 		clear: both;
 		width: 70%;
-		margin: 0 auto 1em;
+		margin: 0 auto;
 	}
 }
 {% endblock %}
