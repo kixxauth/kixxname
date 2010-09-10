@@ -4,7 +4,6 @@ import time
 
 VERTICAL_DESCRIPTION = ('Kris Walker %s (for fun and profit) right here in %s and %s. '
     'Including %s for iPhone and other mobile phones too.')
-
 PRICING_DESCRIPTION = 'Upfront pricing for your website design... Including free options.'
 RESUME_DESCRIPTION = "Kris Walker's web development, computer programming, and life long resume."
 CONTACT_DESCRIPTION = "Kris Walker's contact information. (In hcard microformat.)"
@@ -51,7 +50,7 @@ ACTIONS = {
       # Targeting 'web and website design'
     , 'mixed': [
           'web design' # Page title, description * for iPhone and ...
-        , 'web designer &amp; developer' # Page intro (header)
+        , 'web designer and developer' # Page intro (header)
         , 'designs and builds websites' # description * right here in ...
         , 'websites' # Portfolio link.
         , 'Creating websites' # First content section.
