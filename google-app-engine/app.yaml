@@ -62,7 +62,7 @@ application: kixxname
 #
 # where `VERSION` refers to this version string.
 #
-version: 1.2
+version: 1-2
 
 # ### The name of the App Engine runtime environment.
 #
