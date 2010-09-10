@@ -19,11 +19,11 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 	#header-content a.header, div.content h3.content, div.content a.action {
 		font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
 	}
-	div.content h4.content, #content-pledge p.content {
+	div.content h4.content, #content-pledge {
 		font-family: 'Comic Book', 'Marker Felt', 'Comic Sans MS', 'URW Gothic L', serif;
 	}
 	/* @border */
-	#main, #main div.content, div.content a.action, #content-pledge p.content {
+	#main, #main div.content, div.content a.action, #content-pledge {
 		border: 3px solid #000;
 	}
 	#header-content a.header {
@@ -37,37 +37,23 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 	#main, #main div.content {
 		background-color: #fff;
 		position: relative;
-		margin-top: 1em;
+		margin-top: 1.5em;
 	}
-	#main div.content { margin-left: 2%; overflow: hidden;}
+	#main div.content { margin-left: 2%; overflow: hidden; padding-bottom: 1em;}
 	#main div.sub-content {
 		float: left;
-		width: 48%;
-		height: 26em;
-	}
-	#content-pledge {
-		font-size: 1.2em;
-		line-height: 1.2;
-		position: absolute;
-		top: 47.3%;
-		left: 0;
-		z-index: 1;
-	}
-	#content-pledge p.content{
-		background-color: #d5512b;
-		margin-left: 24%;
-		padding: .2em 1em;
-		width: 50%;
-		color: #fff;
+		width: 46.5%;
+		margin-bottom: 1.5em;
 	}
 	div.content h3.content, div.content h4.content { background-color: #f6e50a; }
-	#content-service { width: 95.5%; padding-bottom: 1em; }
+	#content-service { width: 95.5%; }
 	#content-service h3.content, #content-service h4.content {
 		padding: .3em 2% 0;
 		width: 60%;
 		border-right: 3px solid #000;
+		position: relative;
 	}
-	#content-service h3.content {
+	#content-service h3.content, div.sub-content h3.content {
 		font-size: 1.6em;
 		line-height: 1.2;
 	}
@@ -76,6 +62,11 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 		line-height: 2;
 		border-bottom: 3px solid #000;
 	}
+	div.sub-content h3.content {
+		padding: .1em 1em .3em;
+		border-bottom: 3px solid #000;
+	}
+	p.content { font-size: 1.05em; padding: 1.7em 1.2em 0; }
 	#programming-action {
 		position: absolute;
 		top: 0;
@@ -88,11 +79,7 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 		height: 200px;
 		background: transparent url(/img/programming-action.gif) no-repeat;
 	}
-	#content-service p.content {
-		font-size: 1.05em;
-		padding: 2em 1.2em 0;
-		width: 65%;
-	}
+	#content-service p.content { width: 65%; }
 	div.content p.action {
 		float: left;
 		margin: 1.5em 0 0 6%;
@@ -105,6 +92,17 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 		color: #fff;
 		text-align: center;
 		padding-bottom: .2em;
+	}
+	#content-pledge {
+		text-align: center;
+		font-size: 1.5em;
+		line-height: 1.2;
+		background-color: #d5512b;
+		color: #fff;
+		padding: .5em 2%;
+		clear: both;
+		width: 70%;
+		margin: 0 auto 1em;
 	}
 }
 {% endblock %}
