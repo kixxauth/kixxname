@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
+<head>
+<title>The Accidental Programming Language.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Vollkorn:regular,bold' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection, print" />
+<link rel="stylesheet" href="./css/slidy.css" type="text/css" media="screen, projection, print" />
+<link rel="stylesheet" href="./css/styles.css" type="text/css" media="screen, projection, print" />
+<script src="./js/slidy.js" charset="utf-8" type="text/javascript">
+</script>
+</head>
+<body>
+
+<div class="slide cover title">
+	<h1 id="presentation-title">The Accidental Programming Language.</h1>
+	<h2 id="presentation-subtitle">A twisted history of JavaScript.</h2>
+
+  <div id="cover-sheet">
+    <h4 class="author"><a href="http://www.kixx.name/">Kris Walker</a></h4>
+    <h4><a href="http://twitter.com/kixxauth">@kixxauth</a></h4>
+		<p>
+		This presentation contains 25 slides, including this one. All of which are
+		available at
+      <a href="http://www.kixx.name/presentations/accidental_javascript.html">
+        www.kixx.name/presentations/accidental_javascript.html</a>
+    </p>
+  </div>
+  <ul id="instructions">
+    <li>Advance to next slide with mouse click or space bar</li>
+
+    <li>Move forward/backward between slides with Cursor Left,
+    Cursor Right, <strong>Pg Up</strong> and <strong>Pg Dn</strong>
+    keys</li>
+
+    <li><strong>Home</strong> key for first slide, <strong>End</strong>
+     key for last slide</li>
+
+    <li>The "<strong>C</strong>" key for an automatically generated
+    table of contents (or click on "contents" on the toolbar)</li>
+
+    <li>Function <strong>F11</strong> to go full screen and back</li>
+
+    <li>The "<strong>F</strong>" key toggles the display of the footer</li>
+
+    <li>The "<strong>A</strong>" key toggles display of current vs all slides
+
+    <ul>
+    <li>Use the "A" key when you want to view or print all slides</li>
+    </ul>
+    </li>
+
+    <li>Font sizes automatically adapt to browser window size
+
+    <ul>
+    <li>use <strong>S</strong> and <strong>B</strong> keys for
+    manual control (or &lt; and &gt;, or the <strong>-</strong> and
+    <strong>+</strong> keys on the number pad</li>
+    </ul>
+    </li>
+
+    <li>Switching off JavaScript reveals all slides</li>
+    </ul>
+    </li>
+
+  </ul>
+			<p class="license">
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/us/88x31.png" /></a><br /><span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dc:title" rel="dc:type">The Accidental Programming Language</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.kixx.name" property="cc:attributionName" rel="cc:attributionURL">Kris Walker</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">Creative Commons Attribution-Share Alike 3.0 United States License</a>.<br />Based on a work at <a xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://www.kixx.name/presentations/accidental_javascript.html" rel="dc:source">www.kixx.name/presentations/accidental_javascript.html</a>.
+</p>
+</div><!-- cover -->
+
+<div class="slide">
+  <h1 class="slide-title">In the beginning.</h1>
+  <img class="content left" width="30%" src="./img/400px-Tim_Berners-Lee_CP.jpg" />
+  <p>
+	An Englishman named Tim Barners-Lee invented and developed the World Wide Web
+	throughout the year 1990.
+  </p>
+  <p>
+	By Christmas of that year he had built all the tools he needed to demonstrate
+	his idea:
+  </p>
+  <ul class="incremental">
+    <li>A server.</li>
+    <li>A browser.</li>
+    <li>And some web pages.</li>
+  </ul>
+
+  <ul class="sources">
+    <li class="sources">
+    <a href="http://en.wikipedia.org/wiki/World_wide_web">wikipedia.org/wiki/World_wide_web</a>
+    </li>
+    <li class="sources">
+    <a href="http://commons.wikimedia.org/wiki/File:Tim_Berners-Lee_CP.jpg">commons.wikimedia.org/wiki/File:Tim_Berners-Lee_CP.jpg</a>
+    </li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1 class="slide-title">Tim's first Web server.</h1>
+  <img class="content center" width="70%" src="./img/800px-First_Web_Server.jpg" />
+
+  <ul class="sources">
+    <li class="sources">
+    <a href="http://commons.wikimedia.org/wiki/File:First_Web_Server.jpg">commons.wikimedia.org/wiki/File:First_Web_Server.jpg</a>
+    </li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1 class="slide-title">Near death experience.</h1>
+  <img class="incremental right" width="40%" src="./img/University_of_Illinois.png" />
+  <p>
+  Tim's vision of the WWW was to collaborate on scientific projects with
+  laboratories and universities around the World.
+  </p>
+
+  <ul class="sources">
+    <li class="sources">
+    <a href="http://en.wikipedia.org/wiki/World_wide_web">wikipedia.org/wiki/World_wide_web</a>
+    </li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1 class="slide-title">The breakthrough.</h1>
+  <img class="content left" width="30%" src="./img/Marc_Andreessen.jpg" />
+  <p>
+  Marc Andreesen, a student at U of Illinois, made one simple addition to Tim's
+  HTML that changed the World forever.
+  </p>
+
+  <p class="incremental huge">
+  &lt;img src="" /&gt;
+  </p>
+  <p class="incremental">
+  <a href="http://diveintomark.org/archives/2009/11/02/why-do-we-have-an-img-element">diveintomark.org/archives/2009/11/02/why-do-we-have-an-img-element</a>
+  </p>
+
+  <ul class="sources">
+    <li class="sources">
+    <a href="http://en.wikipedia.org/wiki/World_wide_web">wikipedia.org/wiki/World_wide_web</a>
+    </li>
+    <li class="sources">
+    <a href="http://commons.wikimedia.org/wiki/File:Marc_Andreessen.jpg">commons.wikimedia.org/wiki/File:Marc_Andreessen.jpg</a>
+    </li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1 class="slide-title">This is where Al Gore comes in.</h1>
+  <img class="content right" width="30%" src="./img/450px-Mosaic_browser_plaque_ncsa.jpg" />
+  <p>
+  Marc and his friends called their web browser "Mosaic" and introduced it to the
+  World in 1993.
+  </p>
+  <p class="incremental">
+  The funding for Marc's web browser project at U of Illinois came from the
+  High Performance Computing and Communication Act of 1991, one of several
+  computing developments initiated by <span class="highlight">U.S. Senator Al Gore</span>.
+  </p>
+  <ul class="sources">
+    <li class="sources">
+    <a href="http://en.wikipedia.org/wiki/Mosaic_%28web_browser%29">wikipedia.org/wiki/Mosaic_(web_browser)</a>
+    </li>
+    <li class="sources">
+    <a href="http://commons.wikimedia.org/wiki/File:Mosaic_browser_plaque_ncsa.jpg">commons.wikimedia.org/wiki/File:Mosaic_browser_plaque_ncsa.jpg</a>
+    </li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1 class="slide-title">And it was good.</h1>
+  <img class="content left" width="30%" src="./img/NASDAQ_IXIC_-_dot-com_bubble_small.png" />
+  <p>
+	After graduating in the Spring of 1994 Marc started a company called Netscape
+	and their first product was... 
+  </p>
+  <p class="incremental">
+	Yup -- Netscape "Navigator". It was released on November 14th, 1994.
+  </p>
+  <p class="incremental">
+  Netscape went public on August 9th, 1995 for $28 per
+	share.
+  </p>
+  <p class="incremental">
+	By the end of the day it was trading at $75 per share.
+  </p>
+  <ul class="sources">
+    <li class="sources">
+    <a href="http://en.wikipedia.org/wiki/Netscape">http://en.wikipedia.org/wiki/Netscape</a>
+    </li>
+    <li class="sources">
+    <a href="http://commons.wikimedia.org/wiki/File:NASDAQ_IXIC_-_dot-com_bubble_small.png">http://commons.wikimedia.org/wiki/File:NASDAQ_IXIC_-_dot-com_bubble_small.png</a>
+    </li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1 class="slide-title">But, trouble was brewing...</h1>
+  <img width="70%" src="./img/The_Evil_Empire.text_drawing.jpg" />
+  <ul class="sources">
+    <li class="sources">
+    <a href="http://commons.wikimedia.org/wiki/File:The_Evil_Empire.text_drawing.jpg">http://commons.wikimedia.org/wiki/File:The_Evil_Empire.text_drawing.jpg</a>
+    </li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1 class="slide-title">His Billness</h1>
+  <img class="content right" width="30%" src="./img/600px-Bill_Gates_-_World_Economic_Forum_Annual_Meeting_New_York_2002.jpg" />
+  <p>
+	Bill realized he had made a big mistake by brushing off the WWW.
+  </p>
+  <p class="incremental">
+  Microsoft licensed the Mosaic browser technology from the University of
+  Illinois.
+  </p>
+  <p class="incremental huge">
+  The irony was not lost on the folks at Netscape.
+  <p>
+  <ul class="sources">
+    <li class="sources">
+    <a href="http://commons.wikimedia.org/wiki/File:Bill_Gates_-_World_Economic_Forum_Annual_Meeting_New_York_2002.jpg">http://commons.wikimedia.org/wiki/File:Bill_Gates_-_World_Economic_Forum_Annual_Meeting_New_York_2002.jpg</a>
+    </li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1 class="slide-title">It's all fun and games until sombody goes out of business.</h1>
+  <img width="70%" src="./img/big_e.jpg" />
+  <ul class="sources">
+    <li class="sources">
+    <a href="http://www.flickr.com/photos/phoneboy/2116016112/">www.flickr.com/photos/phoneboy/2116016112/</a>
+    </li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1 class="slide-title">Browser war.</h1>
+  <img class="content left" src="./img/618px-SS-15_ICBM.JPEG" width="30%" />
+  <p>
+  Microsoft and Netscape added features at a rapid pace, each trying to out match the other.
+  </p>
+  <p class="incremental">
+  Stupid HTML tags like &lt;BLINK&gt; and &lt;MARQUEE&gt; were added.
+  </p>
+  <p class="incremental">
+  Bug fixes and security problems were ignored.
+  </p>
+  <p class="incremental">
+  Standards compliance was thrown out the window.
+  </p>
+  <ul class="sources">
+    <li class="sources">
+    <a href="http://commons.wikimedia.org/wiki/File:SS-15_ICBM.JPEG">http://commons.wikimedia.org/wiki/File:SS-15_ICBM.JPEG</a>
+    </li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1 class="slide-title">The nuclear option.</h1>
+  <p>
+  The Netscape crew still had a trick up their sleeve.
+  </p>
+</div>
+
+<div class="slide">
+  <h1 class="slide-title">The birth of a language.</h1>
+  <img class="incremental content right" src="./img/brendan_eich.jpg" width="30%" />
+  <p>
+  Marc Andreessen went out looking for a really smart guy to invent a
+  programming language they could tie into the browser. He found Brendan Eich.
+  </p>
+  <p class="incremental">
+  Brendan was indeed very smart.
+  </p>
+  <ul class="sources">
+    <li class="sources">
+    <a href="http://www.flickr.com/photos/equanimity/4055148344/">http://www.flickr.com/photos/equanimity/4055148344/</a>
+    </li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1 class="slide-title">The Manhattan project.</h1>
+  <img class="content right" src="./img/js_source.png" width="30%" />
+  <p class="incremental">
+	Brendan invented the new scripting language in 10 days.
+  </p>
+  <p class="incremental">
+  LiveScript was included into the Netscape Navigator 2.0 browser in
+  september of 1995.
+  </p>
+</div>
+
+<div class="slide">
+  <h1 class="slide-title">Confusion.</h1>
+  <img class="content left" with="30%" src="./img/java_mug.jpg" />
+  <p>
+  There was another language called Java that was invented at Sun Microsystems
+  around the same time.
+  </p>
+  <p class="incremental">
+	So, LiveScript legally changed its name to JavaScript.
+  </p>
+  <p class="incremental">
+  JavaScript actually has nothing to do with Java ... And don't forget it.
+  </p>
+  <ul class="sources">
+    <li class="sources">
+    <a href="http://www.flickr.com/photos/equanimity/4055148344/">http://www.flickr.com/photos/equanimity/4055148344/</a>
+    </li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1 class="slide-title">It gets worse before it gets better.</h1>
+  <p>
+  "His Billness" quickly realized the danger his fiefdom faced from the threat of JavaScript.
+  </p>
+  <p class="incremental">
+  So, he locked them in the basement and and forced them to build an exact copy of JavaScript.
+  </p>
+  <p class="incremental">
+  Feature for feature and bug for bug.
+  </p>
+</div>
+
+<div class="slide">
+  <img src="./img/800px-Explosions.jpg" width="80%" />
+  <ul class="sources">
+    <li class="sources">
+    <a href="http://commons.wikimedia.org/wiki/File:Explosions.jpg">commons.wikimedia.org/wiki/File:Explosions.jpg</a>
+    </li>
+  </ul>
+</div>
+
+<div class="slide">
+  <img src="./img/stupid_web_pages.png" width="100%"/>
+  <ul class="sources">
+    </li>
+    <li class="sources">
+    <a href="http://toastytech.com/evil/onlyie.html">toastytech.com/evil/onlyie.html</a>
+    </li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1 class="slide-title">Things are not looking good.</h1>
+  <p class="incremental">
+  JavaScript was scorned by professionals and dismissed by amateurs.
+  </p>
+</div>
+
+<div class="slide">
+  <p class="huge">
+  Fast forward to 2004.
+  </p>
+  <img width="100%" src="./img/lars_jens.jpg" />
+  <ul class="sources">
+    <li class="sources">
+    <a href="http://www.flickr.com/photos/niallkennedy/3573459849/">www.flickr.com/photos/niallkennedy/3573459849/</a>
+    </li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h1 class="slide-title">JavaScript? Seriously?</h1>
+  <p>
+  Lars and Jens Rasmussen developed an online mapping tool during 2004, and on
+  February 8th, 2005 it was released as Google Maps.
+  </p>
+  <p class="incremental">
+  How the H - E double hocky sticks did they do that with a web page?
+  </p>
+  <img id="ajax-image" class="content incremental" width="30%" src="./img/ajax.jpg" />
+</div>
+
+<div class="slide">
+  <h1 class="slide-title">The DOM! Ahhhhhhhh.</h1>
+  <p>
+	If you don't know what DOM is, just be glad that you're still sane.
+  </p>
+</div>
+
+<div class="slide">
+  <h1 class="slide-title">Saved again.</h1>
+  <p>
+	Young programmers don't really understand their limitations.
+  </p>
+  <p class="incremental">
+	 So, the rest of us get to reap the rewards of their pugnacious nature.
+  </p>
+</div>
+
+<div class="slide">
+	<div class="jslib">
+		<h1 class="lib-title">jQuery</h1>
+		<p class="content">
+		<img class="left" src="img/John_Resig.jpg" width="150" />
+		The one and only jQuery. You may have heard of it.
+		</p>
+		<p>
+		<a href="http://jquery.com/">jquery.com/</a>
+		</p>
+  </div>
+	<div class="jslib">
+		<h1 class="lib-title">Prototype</h1>
+		<p class="content">
+		<img class="left" src="img/Sam_Stephenson.jpg" width="150" />
+		Prototype JavaScript framework.
+		</p>
+		<p>
+		<a href="http://www.prototypejs.org/">www.prototypejs.org</a>
+		</p>
+  </div>
+	<div class="jslib">
+		<h1 class="lib-title">YUI</h1>
+		<p class="content">
+		<img class="left" src="img/yuilib.jpg" width="150" />
+		Yahoo! User Interface (YUI as it is known).
+		</p>
+		<p>
+		<a href="http://developer.yahoo.com/yui/">developer.yahoo.com/yui/</a>
+		</p>
+  </div>
+	<div class="jslib">
+		<h1 class="lib-title">Dojo</h1>
+		<p class="content">
+		<img class="left" src="img/Dojo.png" width="150" />
+		The Dojo Toolkit.
+		</p>
+		<p>
+		<a href="http://www.dojotoolkit.org/">www.dojotoolkit.org</a>
+		</p>
+  </div>
+</div>
+
+<div class="slide">
+  <h1>Now it's time for you to take it from here.</h1>
+  <p>
+	What will you do with a web browser and JavaScript?
+  </p>
+    <h4 class="author"><a href="http://www.kixx.name/">Kris Walker</a></h4>
+    <h4><a href="http://twitter.com/kixxauth">@kixxauth</a></h4>
+	<p class="description">
+	This entire presentation has been created with valid HTML, CSS, and
+	JavaScript. You too can make your own slide shows without tithing to
+	Microsoft by following the instructions at
+	<a href="http://www.w3.org/Talks/Tools/Slidy/#%281%29">www.w3.org/Talks/Tools/Slidy/</a>
+	</p>
+</div>
+
+</body>
+</html>
