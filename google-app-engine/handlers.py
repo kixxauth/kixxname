@@ -292,10 +292,14 @@ handler_map = [
         , PriceHandler)
 
     , ('/resume', 'resume', SimpleHandler)
+    , ('/resume/', 'resume', SimpleHandler)
+    , ('/resume/index.html', 'resume', SimpleHandler)
 
     , ('/freelance_programming', 'programming', SimpleHandler)
 
     , ('/contact', 'contact', SimpleHandler)
+    , ('/vcard/', 'contact', SimpleHandler)
+    , ('/vcard/index.html', 'contact', SimpleHandler)
 
     , ('/website_and_mobile_design_portfolio', 'portfolio', SimpleHandler)
 

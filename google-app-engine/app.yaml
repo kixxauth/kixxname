@@ -62,7 +62,7 @@ application: kixxname
 #
 # where `VERSION` refers to this version string.
 #
-version: 1-2
+version: 1-3
 
 # ### The name of the App Engine runtime environment.
 #
@@ -167,6 +167,12 @@ api_version: 1
 #
 handlers:
 
+# ### All of our static css files.
+# `/google-app-engine/static/css/README.txt`
+- url: /statcss
+  static_dir: static/css
+  expiration: 21d
+
 # ### All of our static image files.
 # `/google-app-engine/static/img/README.txt`
 - url: /img
@@ -191,6 +197,12 @@ handlers:
 - url: /svgfonts
   static_dir: static/svgfonts
   mime_type: image/svg+xml
+  expiration: 21d
+
+# ### Presentations published to the web.
+# `/google-app-engine/static/presentations/README.txt`
+- url: /presentations
+  static_dir: static/presentations
   expiration: 21d
  
 # ### The favicon is static.
