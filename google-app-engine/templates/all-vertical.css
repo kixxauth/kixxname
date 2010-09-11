@@ -45,25 +45,24 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 		width: 46.5%;
 		margin-bottom: 1.5em;
 	}
-	div.content h3.content, div.content h4.content { background-color: #f6e50a; }
 	#content-service { width: 95.5%; }
-	#content-service h3.content, #content-service h4.content {
-		padding: .3em 2% 0;
-		width: 60%;
-		border-right: 3px solid #000;
-		position: relative;
-	}
 	#content-service h3.content, div.sub-content h3.content {
 		font-size: 1.6em;
 		line-height: 1.2;
 	}
+	#content-service h3.content, #content-service h4.content {
+		padding: .5em 2% 0;
+		width: 60%;
+		text-align: center;
+	}
 	#content-service h4.content {
 		font-size: 1.5em;
 		line-height: 2;
-		border-bottom: 3px solid #000;
 	}
 	div.sub-content h3.content {
-		padding: .1em 1em .3em;
+	  background-color: #f6e50a;
+		text-align: center;
+		padding: .2em 1em .4em;
 		border-bottom: 3px solid #000;
 	}
 	p.content { font-size: 1.05em; padding: 1.7em 1.2em 0; }
