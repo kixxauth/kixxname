@@ -3,6 +3,12 @@ body {
 	background: #edefd0 url("bg.jpg") top left repeat;
 	font-family: Vollkorn, "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 }
+a {
+	color: navy;
+}
+a:hover {
+	color: navy;
+}
 #presentation-title, #presentation-subtitle {
 	font-weight: bold;
 	margin: .3em 0 0 1em;
@@ -24,8 +30,23 @@ div.slide p, div.slide ul {
 div.cover-sheet p {
 	font-size: 70%;
 }
+#sub-intro {
+	font-size: 100%;
+}
+#sub-intro a {
+	display: block;
+	font-size: 100%;
+}
 #instructions {
 	font-size: 80%;
+}
+#instructions li {
+	margin-bottom: .3em;
+}
+div.slide p.license {
+	margin-top: 3em;
+	font-size: 70%;
+	font-family: sans-serif;
 }
 div.slide h1.slide-title {
 	color: #f7fad9;
@@ -61,7 +82,6 @@ div.slide ul.sources {
 	font-size: 0.7em;
 	font-family: sans-serif;
 }
-
 #ajax-image {
 	width: 30%;
 	display: block;
@@ -69,23 +89,25 @@ div.slide ul.sources {
 }
 div.jslib {
 	width: 42%;
-	height: 12em;
 	color: #f7fad9;
 	background-color: #3c1700;
-	padding: .2em 2% .3em;
+	padding: .2em 2% .5em;
 	float: left;
 	margin: 1em 0 0 3%;
+	text-align: center;
 }
 div.jslib p.content {
 	font-size: 100%;
 	overflow: hidden;
 }
-div.jslib img.left {
+div.jslib img {
 	margin-bottom: 0;
 }
 div.jslib a{
 	color: #f7fad9;
 }
-h1.lib-title {
+h3.lib-title {
+	font-size: 2em;
 	font-weight: bold;
+	line-height: 1.5;
 }
