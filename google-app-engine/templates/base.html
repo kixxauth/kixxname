@@ -33,12 +33,10 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>{% comment %}
 'handheld_device' is triggered for iPhone, iPad, and Android only.
 {% endcomment %}{% if handheld_device %}
-{# iPhone and Android #}<link rel="stylesheet" media="all and (max-device-width:480px)"
-	href="./css/handheld.css?maxwidth=480&class={{ page_class }}"/>
-{# iPad #}<link rel="stylesheet" media="all and (min-device-width: 481px) and (max-device-width: 1024px)"
-	href="./css/handheld.css?maxwidth=1024&class={{ page_class }}">
+{# iPhone and Android #}<link rel="stylesheet" media="all and (max-device-width:480px)" href="/css/handheld.css?maxwidth=480&class={{ page_class }}"/>
+{# iPad #}<link rel="stylesheet" media="all and (min-device-width: 481px) and (max-device-width: 1024px)" href="/css/handheld.css?maxwidth=1024&class={{ page_class }}">
 {% else %}
-<link rel="stylesheet" media="all" href="./css/all.css?class={{ page_class }}"/>{% endif %}
+<link rel="stylesheet" media="all" href="/css/all.css?class={{ page_class }}"/>{% endif %}
 {# Conditional comments to target IE. #}{% block conditional_ie %}{% endblock %}
 </head><body id="kixxname">{# Holds the fixed background image. #}<div id="background"></div>
 {# Jello layout. #}<div id="stretcher"><div id="container">
