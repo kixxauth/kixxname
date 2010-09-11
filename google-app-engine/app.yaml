@@ -167,6 +167,12 @@ api_version: 1
 #
 handlers:
 
+# ### All of our static css files.
+# `/google-app-engine/static/css/README.txt`
+- url: /css
+  static_dir: static/css
+  expiration: 21d
+
 # ### All of our static image files.
 # `/google-app-engine/static/img/README.txt`
 - url: /img
