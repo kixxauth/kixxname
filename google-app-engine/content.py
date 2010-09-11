@@ -280,15 +280,15 @@ pricing['price_seo_package_full'] = (pricing['price_starter_package_full'] +
                                      pricing['price_full_seo_service'])
 
 
-# Custom Design package
-pricing['price_custom_package_setup_bootstrap'] = pricing['price_start_package']
-pricing['price_custom_package_setup_growing'] = pricing['price_growing_package']
-pricing['price_custom_package_setup_full'] = pricing['price_full_package']
-
 # Time Saver package
 pricing['price_cms_package_setup_bootstrap'] = (pricing['price_start_cmspage'] * 2) + pricing['price_start_cms']
 pricing['price_cms_package_setup_growing'] = (pricing['price_growing_cmspage'] * 2) + pricing['price_growing_cms']
 pricing['price_cms_package_setup_full'] = (pricing['price_full_cmspage'] * 2) + pricing['price_full_cms']
+
+# Custom Design package
+pricing['price_custom_package_setup_bootstrap'] = (pricing['price_start_package'] + pricing['price_cms_package_setup_bootstrap'])
+pricing['price_custom_package_setup_growing'] = (pricing['price_growing_package'] + pricing['price_cms_package_setup_growing'])
+pricing['price_custom_package_setup_full'] = (pricing['price_full_package'] + pricing['price_cms_package_setup_full'])
 
 def resume_tag(tag):
   return {'url':'http://www.technorati.com/tag/'+ urllib.quote(tag), 'name': tag}

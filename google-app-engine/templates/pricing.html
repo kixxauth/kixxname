@@ -32,21 +32,14 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 <style type="text/css">
 	#background { position: absolute; }
 	#container { height: 0; position: relative; }
-	#navigation li.navigation { display: inline; }
-	div.package { position: static; }
-	p.package-price.full { display: none; } /* IE6 can't get position right. */
+	#navigation li.navigation, ul.package-features { display: inline; }
 </style>
 <![endif]-->{% endblock %}
 
-{% block header %} <strong class="header-content">Upfront pricing.</strong> Information you need to make the right decision about your website design.{% endblock %}
+{% block header %} <strong class="header-content">Upfront pricing.</strong> Information you need to make the right decision about your project.{% endblock %}
 
 {% block page %}
 	<div id="main">
-		<div id="contact-order">
-			<p id="contact-order-action"><a id="contact-order-email" title="Kris Walker's email address." href="mailto:kris@kixx.name">kris@kixx.name</a> <a id="portfolio-link" href="/website_and_mobile_design_portfolio" title="Kris Walker's web design portfolio.">Go to: Sample websites.</a></p>
-			<p class="contact-order">The featured packages are just starting points and can be modified to suite your goals and budget. Contact me about the Growing Business and Bootstrapper discounts *. (The full price schedule with discounts is listed below.)</p>
-			<p class="contact-order">And, don't forget, I also work on improving existing websites too!</p>
-		</div>
 		<div id="packages">
 			<div id="starter-package" class="package">
 				<h3 class="package-name">Start Up Package</h3>
@@ -63,18 +56,8 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 						<span class="dollar">$</span><strong class="price">{{ price_starter_package_full }}</strong>
 						<em class="conditions">per year</em>
 					</p>
-					<p class="package-price starter growing">
-						<strong class="package-discount growing"><em class="discount">Save 15%</em> Growing Business Discount*</strong>
-						<em class="setup">Free</em> set up then
-						<span class="dollar">$</span><strong class="price">{{ price_starter_package_growing }}</strong>
-						<em class="conditions">per year</em>
-					</p>
-					<p class="package-price starter start">
-						<strong class="package-discount start"><em class="discount">Save 25%</em> Bootstrapper Discount*</strong>
-						<em class="setup">Free</em> set up then
-						<span class="dollar">$</span><strong class="price">{{ price_starter_package_bootstrap }}</strong>
-						<em class="conditions">per year</em>
-					</p>
+					<p class="package-price basic growing">Save 15% Growing Business Discount* Free set up then ${{ price_starter_package_growing }} per year</p>
+					<p class="package-price basic bootstrapper">Save 25% Bootstrapper Discount* Free set up then ${{ price_starter_package_bootstrap }} per year</p>
 				</div>
 			</div>
 			<div id="seo-package" class="package">
@@ -90,18 +73,8 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 						<span class="dollar">$</span><strong class="price">{{ price_seo_package_full }}</strong>
 						<em class="conditions">per year</em>
 					</p>
-					<p class="package-price starter growing">
-						<strong class="package-discount growing"><em class="discount">Save 15%</em> Growing Business Discount*</strong>
-						<em class="setup">Free</em> set up then
-						<span class="dollar">$</span><strong class="price">{{ price_seo_package_growing }}</strong>
-						<em class="conditions">per year</em>
-					</p>
-					<p class="package-price starter start">
-						<strong class="package-discount start"><em class="discount">Save 25%</em> Bootstrapper Discount*</strong>
-						<em class="setup">Free</em> set up then
-						<span class="dollar">$</span><strong class="price">{{ price_seo_package_bootstrap }}</strong>
-						<em class="conditions">per year</em>
-					</p>
+					<p class="package-price seo growing">Save 15% Growing Business Discount* Free set up then ${{ price_seo_package_growing }} per year</p>
+					<p class="package-price seo bootstrapper">Save 25% Bootstrapper Discount* Free set up then ${{ price_seo_package_bootstrap }} per year</p>
 				</div>
 			</div>
 			<div id="cms-package" class="package">
@@ -112,22 +85,12 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 				</ul>
 				<div class="package-price">
 					<p class="package-price starter full">
-						<em class="setup"><span class="dollar">$</span>{{ price_custom_package_setup_full }}</em> set up then
+						<em class="setup"><span class="dollar">$</span>{{ price_cms_package_setup_full }}</em> set up then
 						<span class="dollar">$</span><strong class="price">{{ price_seo_package_full }}</strong>
 						<em class="conditions">per year</em>
 					</p>
-					<p class="package-price starter growing">
-						<strong class="package-discount growing"><em class="discount">Save 15%</em> Growing Business Discount*</strong>
-						<em class="setup"><span class="dollar">$</span>{{ price_custom_package_setup_growing }}</em> set up then
-						<span class="dollar">$</span><strong class="price">{{ price_seo_package_growing }}</strong>
-						<em class="conditions">per year</em>
-					</p>
-					<p class="package-price starter start">
-						<strong class="package-discount start"><em class="discount">Save 25%</em> Bootstrapper Discount*</strong>
-						<em class="setup"><span class="dollar">$</span>{{ price_custom_package_setup_bootstrap }}</em> set up then
-						<span class="dollar">$</span><strong class="price">{{ price_seo_package_bootstrap }}</strong>
-						<em class="conditions">per year</em>
-					</p>
+					<p class="package-price cms growing">Save 15% Growing Business Discount* ${{ price_cms_package_setup_growing }} set up then ${{ price_seo_package_growing }} per year</p>
+					<p class="package-price cms bootstrapper">Save 25% Bootstrapper Discount* ${{ price_cms_package_setup_bootstrap }} set up then ${{ price_seo_package_bootstrap }} per year</p>
 				</div>
 			</div>
 			<div id="custom-package" class="package">
@@ -138,25 +101,20 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 				</ul>
 				<div class="package-price">
 					<p class="package-price starter full">
-						<em class="setup"><span class="dollar">$</span>{{ price_cms_package_setup_full }}</em> set up then
+						<em class="setup"><span class="dollar">$</span>{{ price_custom_package_setup_full }}</em> set up then
 						<span class="dollar">$</span><strong class="price">{{ price_seo_package_full }}</strong>
 						<em class="conditions">per year</em>
 					</p>
-					<p class="package-price starter growing">
-						<strong class="package-discount growing"><em class="discount">Save 15%</em> Growing Business Discount*</strong>
-						<em class="setup"><span class="dollar">$</span>{{ price_cms_package_setup_growing }}</em> set up then
-						<span class="dollar">$</span><strong class="price">{{ price_seo_package_growing }}</strong>
-						<em class="conditions">per year</em>
-					</p>
-					<p class="package-price starter start">
-						<strong class="package-discount start"><em class="discount">Save 25%</em> Bootstrapper Discount*</strong>
-						<em class="setup"><span class="dollar">$</span>{{ price_cms_package_setup_bootstrap }}</em> set up then
-						<span class="dollar">$</span><strong class="price">{{ price_seo_package_bootstrap }}</strong>
-						<em class="conditions">per year</em>
-					</p>
+					<p class="package-price custom growing">Save 15% Growing Business Discount* ${{ price_custom_package_setup_growing }} set up then ${{ price_seo_package_growing }} per year</p>
+					<p class="package-price custom bootstrapper">Save 25% Bootstrapper Discount* ${{ price_custom_package_setup_bootstrap }} set up then ${{ price_seo_package_bootstrap }} per year</p>
 				</div>
 			</div>
 		</div><!-- end #packages -->
+		<div id="contact-order">
+			<p id="contact-order-action"><a id="contact-order-email" title="Kris Walker's email address." href="mailto:kris@kixx.name">kris@kixx.name</a> <a id="portfolio-link" href="/website_and_mobile_design_portfolio" title="Kris Walker's web design portfolio.">Go to: Sample websites.</a></p>
+			<p class="contact-order">The featured packages are just starting points and can be modified to suite your goals and budget. Contact me about the Growing Business and Bootstrapper discounts *. (The full price schedule with discounts is listed below.)</p>
+			<p class="contact-order">And, don't forget, I also work on improving existing websites too!</p>
+		</div>
 		<h2 id="price-list-head">The full price schedule.</h2>
 		<table id="website" class="pricing" cellspacing="0">
 			<thead class="website"> <tr id="website-head" class="website odd head"> <th class="first">New Websites</th> <th class="price-level full">Full</th> <th class="price-level growing">Growing*</th> <th class="price-level start">Bootstrapper*</th> <th>Free</th> </tr> </thead>
