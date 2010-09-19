@@ -14,20 +14,23 @@ PORTFOLIO = [
       {
         'title': 'Lisa Walker Photography'
       , 'description': """A nice photographer's website, including a slide show for her portfolio. This website is designed with a content management system so the website owner can update her portfolio of photographs without needing any special web technology skills. The goal of any photography website, of course, is to show off the photographs, and that is what this website was designed to do."""
-      ,  'source': '/img/portfolio-lisa_walker_photography-thumb.png'
-      ,  'alt': 'Screenshot of Lisa Walker Photography website.'
+      , 'source': '/img/portfolio-lisa_walker_photography-thumb.png'
+      , 'alt': 'Screenshot of Lisa Walker Photography website.'
+      , 'href': 'http://www.lisawalkerphotography.com/'
       }
     , {
         'title': 'The Fireworks Project'
       , 'description': """This website is the first for this start up software company. It is a custom design that includes analytical data tracking to measure the site traffic and how long visitors stay to read any particular page, as well as the links they click on within the site. All this data is important to the site owners for tracking the success of their marketing efforts."""
       , 'source': '/img/portfolio-the_fireworks_project-thumb.png'
       , 'alt': 'Screenshot of The Fireworks Project website.'
+      , 'href': 'http://www.fireworksproject.com/'
       }
     , {
         'title': 'Crown Construction'
       , 'description': """This project is not a website, but a custom web application built for internal use by a home remodeling firm. It allows them to keep all their customer records organized and available nomatter where they are. The design is a custom design just for this purpose."""
       , 'source': '/img/portfolio-crown_construction-thumb.png'
       , 'alt': 'Screenshot of the Crown Construction web application.'
+      , 'href': '/img/big-screenshot-crown-construction.png'
       }
     ]
 
