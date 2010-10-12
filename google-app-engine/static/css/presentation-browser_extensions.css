@@ -1,0 +1,23 @@
+body {
+	font-family: "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, sans-serif;
+	background-color: #000;
+	color: #fff5df;
+}
+
+div.slide h1 {
+	border: 2px solid #555;
+	background-color: #333;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	padding: .3em 1em .5em;
+}
+
+div.slide {
+	font-size: 120%;
+}
+
+div.slide a, div.slide a:visited, div.slide a:hover {
+	color: #fff5df;
+	text-decoration: underline;
+}
