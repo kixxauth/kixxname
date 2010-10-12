@@ -20,7 +20,7 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 	h2.discounts-explanation, #price-list-head, #contact-order-email, #portfolio-link {
 		font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
 	}
-	table.pricing, strong.package-discount em.discount, #contact-order {
+	table.pricing, strong.package-discount em.discount {
 		font-family: 'Comic Book', 'Marker Felt', 'Comic Sans MS', 'URW Gothic L', serif;
 	}
 	/* @border */
@@ -67,64 +67,6 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 	p.contact-order {
 		clear: both;
 		margin-top: 1em;
-	}
-	#packages { overflow: hidden; position: relative; }
-	div.package {
-		background-color: #fff;
-		width: 44.1%;
-		margin-top: 1.5em;
-		height: 22em;
-		padding: 0.5em 2% 0;
-		float: left;
-		color: #003d75;
-		position: relative;
-	}
-	#seo-package, #custom-package { margin-left: 2%; }
-	h3.package-name { font-size: 1.2em; }
-	ul.package-features {
-		margin-top: .5em;
-		list-style: circle outside;
-		margin-left: 1em;
-		line-height: 1.2;
-		width: 50%;
-		font-size: .9em;
-		float: left;
-	}
-	div.package-price {
-		width: 100%;
-		clear: both;
-		padding-top: 1.5em;
-		overflow: hidden;
-	}
-	p.package-price {
-		width: 47%;
-		line-height: 1.2;
-		font-size: 1.05em;
-	}
-	p.package-price.growing { float: left; }
-	p.package-price.start { float: right; }
-	em.setup {
-		font-weight: bold;
-		font-size: 1.2em;
-		line-height: 1;
-	}
-	strong.price {
-		font-weight: bold;
-		font-size: 1.3em;
-	}
-	strong.package-discount {
-		display: block;
-		font-weight: normal;
-		font-size: .9em;
-		margin-bottom: 1em;
-	}
-	strong.package-discount em.discount { font-size: 2em; }
-	p.package-price.full {
-		width: 40%;
-		color: #333;
-		position: absolute;
-		top: 3.5em;
-		right: 0;
 	}
 	#price-list-head {
 		background-color: #f6e50a;
