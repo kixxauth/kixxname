@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
+<head>
+<meta name="generator" content= "organic" />
+<title>HTML Slidy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content= "Copyright &#169; 2010 Kris Walker" />
+<meta name="duration" content="60" />
+<meta name="font-size-adjustment" content="-2" />
+<link rel="stylesheet" href="/statcss/slidy2.css" type="text/css" />
+<link rel="stylesheet" href="/statcss/presentation-browser_extensions.css" type="text/css" />
+<script src="/js/slidy2.js" charset="utf-8" type="text/javascript">
+</script>
+</head>
+<body>
+<div class="background">
+</div>
+<div class="slide cover title">
+	<h1>Firefox and Chrome browser extensions.</h1>
+	<p><a href="http://www.kixx.name/">Kris Walker</a>,
+	&lt;<a href="mailto:kris@kixx.name">kris@kixx.name</a>&gt;</p>
+	<p>Reference links for this presentation can be found at:
+	<a href="http://www.delicious.com/kristoffwalk/browser.extension.talk"
+		title="Presentation links on Delicious.">www.delicious.com/kristoffwalk/browser.extension.talk</a></p>
+	<p><em>Hit the space bar for next slide</em></p>
+</div>
+
+<h1>The Docs</h1>
+
+<p>The <a href="https://developer.mozilla.org/en-US/">Mozilla docs</a> can be a quagmire.</p>
+
+<p>Migrating to a new format; Better? Maybe.</p>
+
+<p>You can build <a href="https://developer.mozilla.org/en-US/apps">applications</a> <em>and</em> <a href="https://developer.mozilla.org/en-US/addons">extensions</a> on the Mozilla platform.</p>
+
+<h1>The Mozilla Platform</h1>
+
+<p><img src="http://people.mozilla.com/~schrep/theMozillaPlatform.png" alt="Mozill platform diagram." title="" /></p>
+
+<h1>XPCOM</h1>
+
+<p>Just like Microsoft COM (Component Object Model) except when it's not.</p>
+
+<p>XPCOM is cross platform COM.</p>
+
+<p>Components encapsulate with enforced interface contracts.</p>
+
+<p>Components can be written in any language (in theory... but mostly just C++).</p>
+
+<p>Components can be scripted in any language (in theory... but mostly in JavaScript).</p>
+
+<p>The Mozilla Platform probably already has all the components you need.</p>
+
+<h1>JavaScript</h1>
+
+<p>Almost all Mozilla applications are glued together with JavaScript.</p>
+
+<p>It's not as bad as it sounds.</p>
+
+<p>JavaScript <a href="http://www.amazon.com/exec/obidos/ASIN/0596517742/wrrrldwideweb">book</a> for programmers of other means.</p>
+
+<h1>XUL</h1>
+
+<h2>Tastes just like html.</h2>
+
+<ul>
+<li>XML flavor</li>
+<li>CSS3</li>
+<li>Scriptable DOM</li>
+</ul>
+
+<p>Except:</p>
+
+<ul>
+<li>Strange (but useful) box model.</li>
+<li><p>When it does work with JS libraries, it is often problematic.</p>
+
+<p><code>xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"</code></p></li>
+</ul>
+
+<h1>XUL Bindings.</h1>
+
+<h2>Object oriented XML</h2>
+
+<p>A binding is best thought of as a class in object oriented programming.  You
+could also think of them as "widget builders."</p>
+
+<p>A binding is built with a set of XUL, CSS, and JavaScript.</p>
+
+<p>Bindings are very powerful tools for people who enjoy pain.</p>
+
+<h1>Overlays</h1>
+
+<h2>Uniquely XUL</h2>
+
+<p>Works by matching file names and id selectors along with a few other XUL
+attributes.</p>
+
+<p>Can be declared in a manifest file to be loaded at runtime, or programmatically
+loaded with a supplied XPCOM component (using JavaScript).</p>
+
+<h1>Bootstrapping the platform.</h1>
+
+<p>The Mozilla platform makes internal use of two unique URL protocols:</p>
+
+<ul>
+<li>chrome:</li>
+<li>resource:</li>
+</ul>
+
+<p>These urls are mapped to actual locations on the <em>local</em> file system.</p>
+
+<p>This allows the platform to access files without really knowing where they are.</p>
+
+<p>Files loaded from one of these protocols is given full privileges to do anything
+that the platform is capable of.</p>
+
+<h1>XULRunner</h1>
+
+<h2>The holy grail of application development.</h2>
+
+<p>The primary tool for bootstrapping the Mozilla Platform.</p>
+
+<p>In fact, Firefox is a XULRunner Application.</p>
+
+<p>Cross platform; write once; run everywhere; yadda, yadda, yadda.</p>
+
+<p>If a user has Firefox installed, they also have XULRunner installed.</p>
+
+<h1>Extending the Mozilla Platform</h1>
+
+<h2>The main course.</h2>
+
+<h3>The hooks for plugging into the platform.</h3>
+
+<ul>
+<li>install.rdf</li>
+<li>chrome.manifest</li>
+<li>overlays</li>
+<li>bindings (forget about it)</li>
+<li>Semi structured directory structure.</li>
+</ul>
+
+<h1>My quick and dirty strategy.</h1>
+
+<ul>
+<li>Create a bash script to fire up Firefox in dev mode.<br />
+<code>#!/bin/bash</code><br />
+<code>/home/kixx/Firefox/firefox -no-remote -P Developer</code></li>
+<li>install.rdf</li>
+<li>chrome.manifest</li>
+<li>overlay.xul (add an item to the tools menu)</li>
+<li>UI action opens an HTML page from a chrome: URL.</li>
+<li>Import JavaScript with <code>&lt;script src=""&gt;</code> and get to work.</li>
+</ul>
+
+<p>I've recently been fooling around with <a href="http://wiki.commonjs.org/wiki/CommonJS">CommonJS</a> too.</p>
+
+<h1>Packaging and Deployment.</h1>
+
+<p>Zip it all up into a zip file, but with an <code>.xpi</code> file extension.</p>
+
+<p>Command line <code>zip -r myextension.xpi ./myextension/*</code> works great for this.</p>
+
+<p><code>install.rdf</code> must be in the root.</p>
+
+<p>May point to an <code>update.rdf</code> from the <code>install.rdf</code>. This must be hosted on https.</p>
+
+<p>Security? Mozilla currently employs the "common sense" approach.</p>
+
+<h1>JetPack and Addon Builder</h1>
+
+<p>Attempting full IDE <a href="https://jetpack.mozillalabs.com/">kits</a>.</p>
+
+<p>Interesting premise (especially CommonJS)</p>
+
+<p>Great potential, but IDE... Really? (just my opinion).</p>
+
+<h1>Mozilla Resources</h1>
+
+<h2>Most useful docs:</h2>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en/Code_snippets">Code Snippets</a></li>
+<li><a href="https://developer.mozilla.org/en/XPCOM_API_Reference">XMPCOM Reference</a></li>
+<li><a href="https://developer.mozilla.org/en/XUL">XUL Reference</a></li>
+<li><a href="https://developer.mozilla.org/en/JavaScript/Reference">JavaScript Reference</a></li>
+<li><a href="https://developer.mozilla.org/en/Gecko_DOM_Reference">DOM Reference</a></li>
+<li><a href="https://developer.mozilla.org/en/XULRunner">XULRunner Overview</a></li>
+<li><a href="https://developer.mozilla.org/en/Chrome_Registration">chrome.manifest</a></li>
+<li><a href="https://developer.mozilla.org/en/Setting_up_extension_development_environment">Browser development settings</a></li>
+<li><a href="https://addons.mozilla.org/en-US/developers/tools/builder">Extension builder</a></li>
+<li><a href="https://jetpack.mozillalabs.com/">JetPack</a></li>
+</ul>
+
+<h2>XPCOM</h2>
+
+<ul>
+<li>XPXOM as told by <a href="http://www.ibm.com/developerworks/webservices/library/co-xpcom2.html">IBM dev pages</a> </li>
+<li><a href="https://developer.mozilla.org/en/Creating_Custom_Firefox_Extensions_with_the_Mozilla_Build_System">Mozilla Overview</a></li>
+<li><a href="https://developer.mozilla.org/en/PyXPCOM">Python Binding</a>: </li>
+</ul>
+
+<h2>Others</h2>
+
+<ul>
+<li><a href="http://wiki.commonjs.org/wiki/CommonJS">CommonJS</a></li>
+</ul>
+
+<h1>Chromium</h1>
+
+<h2>And now for something completely different.</h2>
+
+<p>Totally sandboxed. You can't get anywhere near the metal.</p>
+
+<p>The entire API is exposed with regular JavaScript. No interfacing with
+component objects here.</p>
+
+<p>This does two things:</p>
+
+<ul>
+<li>Limits what you can build.</li>
+<li>Makes building extensions really easy.</li>
+</ul>
+
+<h1>Totally Asynchronous API</h1>
+
+<h2>Because that's the way of the real world.</h2>
+
+<p><a href="http://code.google.com/chrome/extensions/docs.html">Google Docs</a></p>
+
+<p>The extension and its capabilities are defined at load time with a manifest
+called <code>manifest.json</code>.</p>
+
+<p>Every API call takes a dictionary object which specifies the parameters of the
+call, and a callback funtion to invoke with the result when it is ready.</p>
+
+<p>This standardized API actually makes good intuitive sense.</p>
+
+<h1>The sandboxes.</h1>
+
+<ul>
+<li>Background pages.</li>
+<li>UI widgets.</li>
+<li>Page Scripts.</li>
+</ul>
+
+<p>All of these are declared in the <code>manifest.json</code> at load time.</p>
+
+<p>Main component of functionality is the background page.</p>
+
+<p>Communication between background pages and UI widgets is done with
+direct (async) JavaScript calls.</p>
+
+<p>Page scripts have access to the DOM of loaded websites but must proxy any
+information they get back to the background page with encoded text messages.</p>
+
+<h1>Building and deployment.</h1>
+
+<h2>So easy, it shouldn't even have a slide.</h2>
+
+<p>It's all done from the extension manager (settings - tools - extensions)</p>
+
+<h1>Fini</h1>
+<p>Related link collection:</p>
+<p><a href="http://www.delicious.com/kristoffwalk/browser.extension.talk" title="Browser extension links on Delicious.">www.delicious.com/kristoffwalk/browser.extension.talk</a></p>
+
+<!-- Markdown
+The Docs
+========
+The [Mozilla docs][1] can be a quagmire.
+
+Migrating to a new format; Better? Maybe.
+
+You can build [applications][2] *and* [extensions][3] on the Mozilla platform.
+
+The Mozilla Platform
+====================
+![Mozill platform diagram.](http://people.mozilla.com/~schrep/theMozillaPlatform.png)
+
+XPCOM
+=====
+Just like Microsoft COM (Component Object Model) except when it's not.
+
+XPCOM is cross platform COM.
+
+Components encapsulate with enforced interface contracts.
+
+Components can be written in any language (in theory... but mostly just C++).
+
+Components can be scripted in any language (in theory... but mostly in JavaScript).
+
+The Mozilla Platform probably already has all the components you need.
+
+JavaScript
+==========
+Almost all Mozilla applications are glued together with JavaScript.
+
+It's not as bad as it sounds.
+
+JavaScript [book](http://www.amazon.com/exec/obidos/ASIN/0596517742/wrrrldwideweb) for programmers of other means.
+
+XUL
+===
+##Tastes just like html.
+* XML flavor
+* CSS3
+* Scriptable DOM
+
+Except:
+
+* Strange (but useful) box model.
+* When it does work with JS libraries, it is often problematic.
+
+	`xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"`
+
+XUL Bindings.
+=============
+##Object oriented XML
+
+A binding is best thought of as a class in object oriented programming.  You
+could also think of them as "widget builders."
+
+A binding is built with a set of XUL, CSS, and JavaScript.
+
+Bindings are very powerful tools for people who enjoy pain.
+
+Overlays
+========
+## Uniquely XUL
+
+Works by matching file names and id selectors along with a few other XUL
+attributes.
+
+Can be declared in a manifest file to be loaded at runtime, or programmatically
+loaded with a supplied XPCOM component (using JavaScript).
+
+Bootstrapping the platform.
+===========================
+
+The Mozilla platform makes internal use of two unique URL protocols:
+
+* chrome:
+* resource:
+
+These urls are mapped to actual locations on the *local* file system.
+
+This allows the platform to access files without really knowing where they are.
+
+Files loaded from one of these protocols is given full privileges to do anything
+that the platform is capable of.
+
+XULRunner
+=========
+## The holy grail of application development.
+
+The primary tool for bootstrapping the Mozilla Platform.
+
+In fact, Firefox is a XULRunner Application.
+
+Cross platform; write once; run everywhere; yadda, yadda, yadda.
+
+If a user has Firefox installed, they also have XULRunner installed.
+
+Extending the Mozilla Platform
+==============================
+## The main course.
+
+### The hooks for plugging into the platform.
+* install.rdf
+* chrome.manifest
+* overlays
+* bindings (forget about it)
+* Semi structured directory structure.
+
+My quick and dirty strategy.
+============================
+* Create a bash script to fire up Firefox in dev mode.<br />
+	`#!/bin/bash`<br />
+	`/home/kixx/Firefox/firefox -no-remote -P Developer`
+* install.rdf
+* chrome.manifest
+* overlay.xul (add an item to the tools menu)
+* UI action opens an HTML page from a chrome: URL.
+* Import JavaScript with `<script src="">` and get to work.
+
+I've recently been fooling around with [CommonJS][17] too.
+
+Packaging and Deployment.
+========================
+
+Zip it all up into a zip file, but with an `.xpi` file extension.
+
+Command line `zip -r myextension.xpi ./myextension/*` works great for this.
+
+`install.rdf` must be in the root.
+
+May point to an `update.rdf` from the `install.rdf`. This must be hosted on https.
+
+Security? Mozilla currently employs the "common sense" approach.
+
+JetPack and Addon Builder
+=========================
+
+Attempting full IDE [kits][4].
+
+Interesting premise (especially CommonJS)
+
+Great potential, but IDE... Really? (just my opinion).
+
+Mozilla Resources
+=================
+## Most useful docs:
+* [Code Snippets][5]
+* [XMPCOM Reference][6]
+* [XUL Reference][7]
+* [JavaScript Reference][8]
+* [DOM Reference][9]
+* [XULRunner Overview][10]
+* [chrome.manifest][11]
+* [Browser development settings][12]
+* [Extension builder][13]
+* [JetPack][4]
+
+## XPCOM
+* XPXOM as told by [IBM dev pages][14] 
+* [Mozilla Overview][16]
+* [Python Binding][15]: 
+
+## Others
+* [CommonJS][17]
+
+Chromium
+========
+## And now for something completely different.
+
+Totally sandboxed. You can't get anywhere near the metal.
+
+The entire API is exposed with regular JavaScript. No interfacing with
+component objects here.
+
+This does two things:
+
+* Limits what you can build.
+* Makes building extensions really easy.
+
+Totally Asynchronous API
+========================
+## Because that's the way of the real world.
+
+[Google Docs][18]
+
+The extension and its capabilities are defined at load time with a manifest
+called `manifest.json`.
+
+Every API call takes a dictionary object which specifies the parameters of the
+call, and a callback funtion to invoke with the result when it is ready.
+
+This standardized API actually makes good intuitive sense.
+
+The sandboxes.
+==============
+* Background pages.
+* UI widgets.
+* Page Scripts.
+
+All of these are declared in the `manifest.json` at load time.
+
+Main component of functionality is the background page.
+
+Communication between background pages and UI widgets is done with
+direct (async) JavaScript calls.
+
+Page scripts have access to the DOM of loaded websites but must proxy any
+information they get back to the background page with encoded text messages.
+
+Building and deployment.
+========================
+## So easy, it shouldn't even have a slide.
+
+It's all done from the extension manager (settings - tools - extensions)
+
+Fini
+====
+
+  [1]: https://developer.mozilla.org/en-US/
+  [2]: https://developer.mozilla.org/en-US/apps
+  [3]: https://developer.mozilla.org/en-US/addons
+  [4]: https://jetpack.mozillalabs.com/
+  [5]: https://developer.mozilla.org/en/Code_snippets
+  [6]: https://developer.mozilla.org/en/XPCOM_API_Reference
+  [7]: https://developer.mozilla.org/en/XUL
+  [8]: https://developer.mozilla.org/en/JavaScript/Reference
+  [9]: https://developer.mozilla.org/en/Gecko_DOM_Reference
+  [10]: https://developer.mozilla.org/en/XULRunner
+  [11]: https://developer.mozilla.org/en/Chrome_Registration
+  [12]:https://developer.mozilla.org/en/Setting_up_extension_development_environment
+  [13]: https://addons.mozilla.org/en-US/developers/tools/builder
+  [14]: http://www.ibm.com/developerworks/webservices/library/co-xpcom2.html
+  [15]: https://developer.mozilla.org/en/PyXPCOM
+  [16]: https://developer.mozilla.org/en/Creating_Custom_Firefox_Extensions_with_the_Mozilla_Build_System
+  [17]: http://wiki.commonjs.org/wiki/CommonJS
+  [18]:http://code.google.com/chrome/extensions/docs.html
+	
+
+-->
+
+<!--
+<div class="handout">
+<p>For handouts, its often useful to include extra notes using a
+div element with class="handout" following each slide, as in:</p>
+
+<pre>
+&lt;div class="slide"&gt; 
+ <em>... your slide content ...</em>
+&lt;/div&gt;
+
+&lt;div class="handout"&gt;
+ <em>... stuff that only appears in the handouts ...</em>
+&lt;/div&gt;
+</pre>
+</div>
+-->
+
+</body> </html>

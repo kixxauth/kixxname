@@ -44,7 +44,9 @@ All XHTML and related source code is copyright (c) 2010 by Kris Walker
 		<ul id="portfolio">{% for item in portfolio %}
 			<li class="portfolio-item"><h3 class="portfolio-title">{{ item.title }}</h3>
 				<div class="item-content">
+					<a href="{{ item.href }}" title="{{ item.alt }}" target="_blank">
 					<img class="item-image" src="{{ item.source }}" alt="{{ item.alt }}" width="450" height="300" />
+					</a>
 					<p class="item-description">{{ item.description }}</p>
 				</div></li>{% endfor %}
 		</ul>

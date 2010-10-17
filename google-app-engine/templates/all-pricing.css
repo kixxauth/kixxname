@@ -20,7 +20,7 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 	h2.discounts-explanation, #price-list-head, #contact-order-email, #portfolio-link {
 		font-family: 'BorisBlackBloxx', 'Cooper Black', 'Marker Felt', Haettenschweiler, 'URW Gothic L', 'Arial Black', sans-serif;
 	}
-	table.pricing, strong.package-discount em.discount, #contact-order {
+	table.pricing, strong.package-discount em.discount {
 		font-family: 'Comic Book', 'Marker Felt', 'Comic Sans MS', 'URW Gothic L', serif;
 	}
 	/* @border */
@@ -41,65 +41,6 @@ copyright: (c) 2010 by Kris Walker. All rights reserved.
 		position: relative;
 		padding: 0 2% 1.5em;
 	}
-	#packages { overflow: hidden; position: relative; }
-	div.package {
-		background-color: #fff;
-		width: 48.1%;
-		margin-top: 1.5em;
-		height: 22em;
-		float: left;
-		color: #003d75;
-		position: relative;
-	}
-	#seo-package, #custom-package { margin-left: 2%; }
-	h3.package-name {
-		font-size: 1.3em;
-		margin: .1em 0 0 2%;
-		text-align: center;
-	}
-	ul.package-features {
-		margin: .5em 0 0 5%;
-		list-style: circle outside;
-		line-height: 1.2;
-		width: 50%;
-		font-size: .9em;
-		float: left;
-	}
-	div.package-price {
-		width: 100%;
-		clear: both;
-		padding-top: 1.5em;
-		position: relative;
-	}
-	p.package-price.growing, p.package-price.bootstrapper {
-		overflow: hidden;
-		width: 160px;
-		height: 150px;
-		background-image: url(/img/prices-sprite.gif);
-		background-repeat: no-repeat;
-		float: left;
-		margin-left: 2%;
-		text-indent: -9999px;
-	}
-	p.package-price.basic.growing { background-position: 0 0; }
-	p.package-price.basic.bootstrapper { background-position: -160px 0; }
-	p.package-price.seo.growing { background-position: 0 -150px; }
-	p.package-price.seo.bootstrapper { background-position: -160px -150px; }
-	p.package-price.cms.growing { background-position: 0 -300px; }
-	p.package-price.cms.bootstrapper { background-position: -160px -300px; }
-	p.package-price.custom.growing { background-position: 0 -450px; }
-	p.package-price.custom.bootstrapper { background-position: -160px -450px; }
-	p.package-price.full {
-		width: 40%;
-		color: #333;
-		position: absolute;
-		top: -4em;
-		right: 2%;
-		font-size: 1.05em;
-		line-height: 1.2;
-	}
-	p.package-price.full span.dollar { font-size: .9em; }
-	p.package-price.full strong.price { font-size: 1.5em; font-weight: bold;}
 	#contact-order {
 		background-color: #f6e50a;
 		margin-top: 1.5em;
