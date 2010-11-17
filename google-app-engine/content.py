@@ -33,13 +33,6 @@ PORTFOLIO = [
       , 'alt': 'Screenshot of the Crown Construction web application.'
       , 'href': '/img/big-screenshot-crown-construction.png'
       }
-    , {
-        'title': 'Lisa Walker Photography'
-      , 'description': """A nice photographer's website, including a slide show for her portfolio. This website is designed with a content management system so the website owner can update her portfolio of photographs without needing any special web technology skills. The goal of any photography website, of course, is to show off the photographs, and that is what this website was designed to do."""
-      , 'source': '/img/portfolio-lisa_walker_photography-thumb.png'
-      , 'alt': 'Screenshot of Lisa Walker Photography website.'
-      , 'href': 'http://www.lisawalkerphotography.com/'
-      }
     ]
 
 LOCALES = {
